@@ -5,6 +5,14 @@ body {
     padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 .global {    
     box-sizing: border-box;
     max-width: 1000px;

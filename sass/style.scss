@@ -12,26 +12,33 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap');
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap");
 
 /* Inportation des feuilles de style du thème*/
 
 /* Variable*/
 
-
-@import 'variable/couleur';
+/*@import "variable/couleurs";*/
 
 /* Base */
 
-
-@import "base/titre";
-
+@import "base/titres";
 
 /* Layout */
-@import 'layout/entete';
-@import 'layout/general.scss';
+@import "layout/entete";
+@import "layout/general";
 
 /* composant */
 
-@import "composants/bouton";
-@import "composants/menu";
+@import "composants/recherche";
+/*@import "composants/menu";*/

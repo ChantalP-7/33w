@@ -1,0 +1,21 @@
+/*
+* Composant
+*/
+
+
+.recherche {
+    display: flex;
+    border: 1px solid grey;
+    align-items: center;
+
+&__input {
+    border: none;
+    outline: none;
+    
+}
+
+&__button {
+    border-left: 1px solid grey;
+}
+
+}
