@@ -52,7 +52,7 @@ h2 {
   height: 75px;
 }
 .entete__nav {
-  margin: 0 0 auto 0;
+  margin: 0 2rem 0 auto;
 }
 .entete__menu {
   /*ul*/
@@ -62,13 +62,13 @@ h2 {
 }
 .entete__menu-item {
   /* li */
-  border-left: 1px solid grey;
+  margin-left: auto;
 }
-.entete a {
+.entete__menu-item a {
   display: bloc;
   background-color: burlywood;
 }
-.entete a:hover {
+.entete__menu-item a:hover {
   background-color: tomato;
 }
 
@@ -93,6 +93,16 @@ html {
   margin: 0 auto;
 }
 
+.hero {
+  background-image: url(images/acores.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 /* composant */
 /*
 * Composant

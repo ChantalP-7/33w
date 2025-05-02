@@ -14,7 +14,7 @@
   }
   /*------------------------------------- Nabigation */
   &__nav {
-    margin: 0 0 auto 0;
+    margin: 0 2rem 0 auto;
   }
 
   &__menu {
@@ -26,13 +26,14 @@
 
   &__menu-item {
     /* li */
-    border-left: 1px solid grey;
-  }
-  a {
-    display: bloc;
-    background-color: burlywood;
-    &:hover {
-      background-color: tomato;
+    margin-left: auto;
+
+    a {
+      display: bloc;
+      background-color: burlywood;
+      &:hover {
+        background-color: tomato;
+      }
     }
   }
 }
