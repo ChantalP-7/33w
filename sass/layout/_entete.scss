@@ -1,0 +1,38 @@
+/* ------------------------------------------ Layout entete*/
+
+.entete {
+  background-color: blanchedalmond;
+
+  &__contenu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 75px;
+    height: 75px;
+  }
+  /*------------------------------------- Nabigation */
+  &__nav {
+    margin: 0 0 auto 0;
+  }
+
+  &__menu {
+    /*ul*/
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  &__menu-item {
+    /* li */
+    border-left: 1px solid grey;
+  }
+  a {
+    display: bloc;
+    background-color: burlywood;
+    &:hover {
+      background-color: tomato;
+    }
+  }
+}

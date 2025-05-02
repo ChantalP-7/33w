@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: thème-33w-été25
+Theme Name: club-voyage
 Theme URI: https://referenced.ca
 Author: Eddy Martin
 Author URI: https://github.com/eddytuto
@@ -12,53 +12,102 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: club-voyage
 */
-/* Importation des  feuilles de style du thème */
-/* variables */
-/* Base */
-/* Layout */
+@import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap");
 html {
   box-sizing: border-box;
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-* {
-  border: 1px solid #ccc;
+/* Inportation des feuilles de style du thème*/
+/* Variable*/
+/*@import "variable/couleurs";*/
+/* Base */
+h1 {
+  font-family: Montserrat;
+  font-size: clamp(1.5rem, 5.4795vw - 0.137rem, 5rem);
+}
+
+h2 {
+  font-family: Montserrat;
+  font-size: clamp(1rem, 3.1111vw + 0.3333rem, 3rem);
+}
+
+/* Layout */
+/* ------------------------------------------ Layout entete*/
+.entete {
+  background-color: blanchedalmond;
+  /*------------------------------------- Nabigation */
+}
+.entete__contenu {
+  display: flex;
+  justify-content: space-between;
+}
+.entete__logo {
+  width: 75px;
+  height: 75px;
+}
+.entete__nav {
+  margin: 0 0 auto 0;
+}
+.entete__menu {
+  /*ul*/
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+.entete__menu-item {
+  /* li */
+  border-left: 1px solid grey;
+}
+.entete a {
+  display: bloc;
+  background-color: burlywood;
+}
+.entete a:hover {
+  background-color: tomato;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Mohave, sans-serif";
   font-size: 16px;
-  line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .global {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* ////////////////////////////////  composants */
-/**
-/////////////////////////////// Compsant .recherche
+/* composant */
+/*
+* Composant
 */
 .recherche {
-  border: 1px solid #aaa;
   display: flex;
+  border: 1px solid grey;
   align-items: center;
 }
 .recherche__input {
   border: none;
   outline: none;
 }
-.recherche__bouton {
-  border-left: 1px solid #aaa;
-}/*# sourceMappingURL=style.css.map */
+.recherche__button {
+  border-left: 1px solid grey;
+}
+
+/*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
