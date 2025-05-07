@@ -94,7 +94,7 @@ html {
 }
 
 .hero {
-  background-image: url(images/pexels-alfonso-escalante-1319242-2832251.jpg);
+  background-image: url(images/travel-8959738_1280.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -102,10 +102,22 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /*&__titre {
-  }
-  &__description {
-  }*/
+  padding: 20px;
+    &__contenu {
+      padding: 20px;
+    }
+    &__titre {
+    }
+    &__description {
+    }
+}
+
+.piedpage {
+    background-color: rgba(0, 0, 0, 0.849);
+    width: 100%;
+    text-align: center;
+    color: white; 
+    padding: 10px; 
 }
 
 /* composant */
