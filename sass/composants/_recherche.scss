@@ -5,17 +5,21 @@
 
 .recherche {
     display: flex;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     align-items: center;
+    gap: 10px
 
 &__input {
+    width: 250px;
     border: none;
-    outline: none;
-    
+    outline: none;   
+    padding: 10px;
+    border-radius: 3px; 
 }
 
-&__button {
-    border-left: 1px solid grey;
+&__button img:hover {
+    cursor: pointer;
+    
 }
 
 }

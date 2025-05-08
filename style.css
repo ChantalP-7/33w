@@ -40,12 +40,14 @@ h2 {
 /* Layout */
 /* ------------------------------------------ Layout entete*/
 .entete {
-  background-color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.774);
+  padding: 10px;
   /*------------------------------------- Nabigation */
 }
 .entete__contenu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .entete__logo {
   width: 75px;
@@ -65,11 +67,15 @@ h2 {
   margin-left: auto;
 }
 .entete__menu-item a {
-  display: bloc;
-  background-color: burlywood;
+  background-color: rgb(71, 181, 255);
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 3px;
 }
 .entete__menu-item a:hover {
-  background-color: tomato;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.842);
 }
 
 body {
@@ -94,7 +100,7 @@ html {
 }
 
 .hero {
-  background-image: url(images/travel-8959738_1280.jpg);
+  background-image: url(images/pexels-pixabay-273886.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -103,13 +109,13 @@ html {
   flex-direction: column;
   justify-content: space-around;
   padding: 20px;
-    &__contenu {
+   /* &__contenu {
       padding: 20px;
     }
     &__titre {
     }
     &__description {
-    }
+    }*/
 }
 
 .piedpage {
@@ -126,15 +132,19 @@ html {
 */
 .recherche {
   display: flex;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   align-items: center;
+  gap: 10px;
 }
 .recherche__input {
+  width: 250px;
   border: none;
   outline: none;
+  padding: 10px;
+  border-radius: 3px;
 }
-.recherche__button {
-  border-left: 1px solid grey;
+.recherche__button:hover {
+  cursor: pointer;
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
