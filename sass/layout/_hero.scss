@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(images/acores.jpg);
+  background-image: url(images/pexels-pixabay-273886.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -7,9 +7,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 20px;
 
-  &__titre {
+  &__contenu {
+    margin-left: 30px;
   }
   &__description {
+    background-color: rgba(255, 255, 255, 0.363);
+    padding: 10px;
+    border-radius: 3px;
+  }
+  &__titre {
+    font-weight: 400;
+  }
+  &__description {
+    font-family: Quicksand;
+    font-size: 20px;
+    width: 70ch;
   }
 }

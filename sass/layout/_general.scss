@@ -1,20 +1,22 @@
 body {
-    font-family: "Mohave, sans-serif";
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  font-family: "Mohave, sans-serif";
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-.global {    
-    box-sizing: border-box;
-    max-width: 1000px;
-    margin: 0 auto;
+.global {
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: 0 auto;
 }

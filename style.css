@@ -28,24 +28,46 @@ html {
 /*@import "variable/couleurs";*/
 /* Base */
 h1 {
-  font-family: Montserrat;
+  font-family: Courgette;
   font-size: clamp(1.5rem, 5.4795vw - 0.137rem, 5rem);
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: Courgette;
   font-size: clamp(1rem, 3.1111vw + 0.3333rem, 3rem);
 }
 
+h3 {
+  font-family: Courgette;
+  font-size: clamp(0.8rem, 2.375vw + 0.1667rem, 1.75rem);
+}
+
+h4 {
+  font-family: Courgette;
+  font-size: clamp(0.5rem, 1.75vw + 0.125rem, 1.25rem);
+}
+
+h5 {
+  font-family: Courgette;
+  font-size: clamp(0.4rem, 1.8vw - 0.05rem, 1rem);
+}
+
+h6 {
+  font-family: Courgette;
+  font-size: clamp(0.4rem, 2.4vw - 0.2rem, 1rem);
+}
+
 /* Layout */
-/* ------------------------------------------ Layout entete*/
 .entete {
-  background-color: blanchedalmond;
+  background-color: rgba(0, 0, 0, 0.747);
+  padding: 10px;
   /*------------------------------------- Nabigation */
 }
 .entete__contenu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
 }
 .entete__logo {
   width: 75px;
@@ -53,23 +75,31 @@ h2 {
 }
 .entete__nav {
   margin: 0 2rem 0 auto;
+  padding-right: 20px;
 }
 .entete__menu {
-  /*ul*/
+  /* ul */
   display: flex;
   list-style: none;
   gap: 1rem;
+  margin-right: 20px;
 }
 .entete__menu-item {
   /* li */
   margin-left: auto;
 }
 .entete__menu-item a {
-  display: bloc;
-  background-color: burlywood;
+  background-color: rgb(71, 181, 255);
+  padding: 8px 20px;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Quicksand;
 }
 .entete__menu-item a:hover {
-  background-color: tomato;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
 }
 
 body {
@@ -83,7 +113,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -94,7 +126,7 @@ html {
 }
 
 .hero {
-  background-image: url(images/acores.jpg);
+  background-image: url(images/pexels-pixabay-273886.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -102,22 +134,65 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 20px;
 }
+.hero__contenu {
+  margin-left: 30px;
+}
+.hero__description {
+  background-color: rgba(255, 255, 255, 0.363);
+  padding: 10px;
+  border-radius: 3px;
+}
+.hero__titre {
+  font-weight: 400;
+}
+.hero__description {
+  font-family: Quicksand;
+  font-size: 20px;
+  width: 70ch;
+}
+
+.piedpage {
+  background-color: rgba(0, 0, 0, 0.911);
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.piedpage h4 {
+  font-weight: 400;
+}
+
 /* composant */
 /*
 * Composant
 */
 .recherche {
   display: flex;
-  border: 1px solid grey;
+  /*border: 1px solid grey;*/
   align-items: center;
+  gap: 10px;
 }
 .recherche__input {
+  width: 250px;
   border: none;
   outline: none;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: Quicksand;
+  font-size: 16px;
 }
-.recherche__button {
-  border-left: 1px solid grey;
+.recherche__bouton {
+  background-color: rgb(71, 181, 255);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
+}
+.recherche__bouton:hover {
+  cursor: pointer;
+  background-color: white;
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
