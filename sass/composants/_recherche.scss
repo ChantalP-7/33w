@@ -25,7 +25,10 @@
     border-radius: 3px;
     &:hover {
       cursor: pointer;
-      background-color: white;
+      background-color: rgb(255, 205, 40);
+      svg:hover {
+        fill: black;
+      }
     }
   }
 }
