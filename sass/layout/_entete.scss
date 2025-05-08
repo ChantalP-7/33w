@@ -1,7 +1,5 @@
-/* ------------------------------------------ Layout entete*/
-
 .entete {
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.747);
   padding: 10px;
 
   &__contenu {
@@ -26,20 +24,24 @@
     display: flex;
     list-style: none;
     gap: 1rem;
+    margin-right: 20px;
   }
-
-  &__
 
   &__menu-item {
     /* li */
     margin-left: auto;
 
     a {
-      background-color: rgb(255, 255, 255);
-      padding: 8px 15px;
-      border: 3px;
+      background-color: rgb(71, 181, 255);
+      padding: 8px 20px;
+      border-radius: 2px;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-family: Quicksand;
       &:hover {
-        background-color: rgb(71, 181, 255);
+        background-color: white;
+        color: rgba(0, 0, 0, 0.829);
       }
     }
   }

@@ -58,9 +58,8 @@ h6 {
 }
 
 /* Layout */
-/* ------------------------------------------ Layout entete*/
 .entete {
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.747);
   padding: 10px;
   /*------------------------------------- Nabigation */
 }
@@ -83,18 +82,24 @@ h6 {
   display: flex;
   list-style: none;
   gap: 1rem;
+  margin-right: 20px;
 }
-.entete__ .entete__menu-item {
+.entete__menu-item {
   /* li */
   margin-left: auto;
 }
-.entete__ .entete__menu-item a {
-  background-color: rgb(255, 255, 255);
-  padding: 8px 15px;
-  border: 3px;
-}
-.entete__ .entete__menu-item a:hover {
+.entete__menu-item a {
   background-color: rgb(71, 181, 255);
+  padding: 8px 20px;
+  border-radius: 2px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Quicksand;
+}
+.entete__menu-item a:hover {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.829);
 }
 
 body {
@@ -129,17 +134,35 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /*&__titre {
-  }
-  &__description {
-  }*/
+  padding: 20px;
+}
+.hero__contenu {
+  margin-left: 30px;
+}
+.hero__description {
+  background-color: rgba(255, 255, 255, 0.363);
+  padding: 10px;
+  border-radius: 3px;
+}
+.hero__titre {
+  font-weight: 400;
+}
+.hero__description {
+  font-family: Quicksand;
+  font-size: 20px;
+  width: 70ch;
 }
 
 .piedpage {
-  background-color: rgba(0, 0, 0, 0.637);
+  background-color: rgba(0, 0, 0, 0.911);
   width: 100%;
   text-align: center;
   color: white;
+  padding: 10px;
+}
+
+.piedpage h4 {
+  font-weight: 400;
 }
 
 /* composant */
@@ -152,23 +175,24 @@ html {
   align-items: center;
   gap: 10px;
 }
-
 .recherche__input {
   width: 250px;
   border: none;
   outline: none;
   padding: 10px;
   border-radius: 3px;
+  font-family: Quicksand;
+  font-size: 16px;
 }
-
 .recherche__bouton {
   background-color: rgb(71, 181, 255);
-  border-radius: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 3px;
 }
-
 .recherche__bouton:hover {
   cursor: pointer;
   background-color: white;
 }
 
-/*@import "composants/menu";*/ /*# sourceMappingURL=style.css.map */
+/*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
