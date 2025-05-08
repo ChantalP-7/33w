@@ -28,19 +28,39 @@ html {
 /*@import "variable/couleurs";*/
 /* Base */
 h1 {
-  font-family: Montserrat;
+  font-family: Courgette;
   font-size: clamp(1.5rem, 5.4795vw - 0.137rem, 5rem);
 }
 
 h2 {
-  font-family: Montserrat;
+  font-family: Courgette;
   font-size: clamp(1rem, 3.1111vw + 0.3333rem, 3rem);
+}
+
+h3 {
+  font-family: Courgette;
+  font-size: clamp(0.8rem, 2.375vw + 0.1667rem, 1.75rem);
+}
+
+h4 {
+  font-family: Courgette;
+  font-size: clamp(0.5rem, 1.75vw + 0.125rem, 1.25rem);
+}
+
+h5 {
+  font-family: Courgette;
+  font-size: clamp(0.4rem, 1.8vw - 0.05rem, 1rem);
+}
+
+h6 {
+  font-family: Courgette;
+  font-size: clamp(0.4rem, 2.4vw - 0.2rem, 1rem);
 }
 
 /* Layout */
 /* ------------------------------------------ Layout entete*/
 .entete {
-  background-color: rgba(0, 0, 0, 0.774);
+  background-color: rgba(0, 0, 0, 0.637);
   padding: 10px;
   /*------------------------------------- Nabigation */
 }
@@ -48,6 +68,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-right: 20px;
 }
 .entete__logo {
   width: 75px;
@@ -55,27 +76,25 @@ h2 {
 }
 .entete__nav {
   margin: 0 2rem 0 auto;
+  padding-right: 20px;
 }
 .entete__menu {
-  /*ul*/
+  /* ul */
   display: flex;
   list-style: none;
   gap: 1rem;
 }
-.entete__menu-item {
+.entete__ .entete__menu-item {
   /* li */
   margin-left: auto;
 }
-.entete__menu-item a {
-  background-color: rgb(71, 181, 255);
-  color: white;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 3px;
-}
-.entete__menu-item a:hover {
+.entete__ .entete__menu-item a {
   background-color: rgb(255, 255, 255);
-  color: rgba(0, 0, 0, 0.842);
+  padding: 8px 15px;
+  border: 3px;
+}
+.entete__ .entete__menu-item a:hover {
+  background-color: rgb(71, 181, 255);
 }
 
 body {
@@ -89,7 +108,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -108,22 +129,17 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 20px;
-   /* &__contenu {
-      padding: 20px;
-    }
-    &__titre {
-    }
-    &__description {
-    }*/
+  /*&__titre {
+  }
+  &__description {
+  }*/
 }
 
 .piedpage {
-    background-color: rgba(0, 0, 0, 0.849);
-    width: 100%;
-    text-align: center;
-    color: white; 
-    padding: 10px; 
+  background-color: rgba(0, 0, 0, 0.637);
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 /* composant */
@@ -136,6 +152,7 @@ html {
   align-items: center;
   gap: 10px;
 }
+
 .recherche__input {
   width: 250px;
   border: none;
@@ -143,8 +160,15 @@ html {
   padding: 10px;
   border-radius: 3px;
 }
-.recherche__button:hover {
-  cursor: pointer;
+
+.recherche__bouton {
+  background-color: rgb(71, 181, 255);
+  border-radius: 2px;
 }
 
-/*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
+.recherche__bouton:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+/*@import "composants/menu";*/ /*# sourceMappingURL=style.css.map */

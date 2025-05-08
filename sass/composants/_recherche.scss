@@ -2,24 +2,24 @@
 * Composant
 */
 
-
 .recherche {
-    display: flex;
-    /*border: 1px solid grey;*/
-    align-items: center;
-    gap: 10px
-
-&__input {
+  display: flex;
+  /*border: 1px solid grey;*/
+  align-items: center;
+  gap: 10px &__input {
     width: 250px;
     border: none;
-    outline: none;   
+    outline: none;
     padding: 10px;
-    border-radius: 3px; 
-}
+    border-radius: 3px;
+  }
 
-&__button img:hover {
-    cursor: pointer;
-    
-}
-
+  &__bouton {
+    background-color: rgb(71, 181, 255);
+    border-radius: 2px;
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+    }
+  }
 }
