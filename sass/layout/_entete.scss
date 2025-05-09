@@ -1,3 +1,17 @@
+#chk__menu {
+  display: none;
+}
+
+#chk__menu:checked ~ .entete__nav {
+  display: flex;
+  flex-direction: column;
+  // ul
+
+  .entete__menu {
+    flex-direction: column;
+  }
+}
+
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
   padding: 15px;
@@ -19,8 +33,25 @@
   }
   /*------------------------------------- Nabigation */
   &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     margin: 0 2rem 0 auto;
     padding-right: 20px;
+
+    @media screen and (max-width: $point-rupture) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $point-rupture) {
+      display: block;
+      //position: absolute;
+      //top: 2;
+      //right: 2;
+    }
   }
 
   &__menu {
@@ -51,11 +82,8 @@
         color: rgba(255, 255, 255);
       }
     }
-    
   }
 }
 
-
 @media (max-width: 1000px) {
-  
 }

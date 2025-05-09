@@ -15,7 +15,13 @@
   <body>
     <header class="entete">
       <div class="entete__contenu">
-        <img src="images/mon-logo-voyage-vf (3).png" alt="logo club voyage" class="entete__logo"/>
+        <img
+          src="images/mon-logo-voyage-vf (3).png"
+          alt="logo club voyage"
+          class="entete__logo"
+        />
+        <label class="entete__burger"  for="chk__menu"><svg width="28" height="28" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#FFFFFF"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg><input type="checkbox"  name="chk__menu" id="chk__menu"></label>
+        
         <nav class="entete__nav">
           <ul class="entete__menu">
             <li class="entete__menu-item"><a href="#">Aventure</a></li>
@@ -25,25 +31,30 @@
             <li class="entete__menu-item"><a href="#">Croisière</a></li>
             <li class="entete__menu-item"><a href="#">Repos</a></li>
           </ul>
-        </nav>
-        <form class="recherche" action="">
-          <label for="recherche__input" aria-label="champ de recherche"></label>
-          <input 
-            class="recherche__input"
-            type="search"
-            name="recherche__input"
-            id="recherche__input"
-            placeholder="Chercher"
-          />
-          <button class="recherche__bouton">
-            <img
-              class="recherche__bouton-svg" alt="loupe"
-              src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
-              width="26"
-              height="26"
+
+          <form class="recherche" action="">
+            <label
+              for="recherche__input"
+              aria-label="champ de recherche"
+            ></label>
+            <input
+              class="recherche__input"
+              type="search"
+              name="recherche__input"
+              id="recherche__input"
+              placeholder="Chercher"
             />
-          </button>
-        </form>
+            <button class="recherche__bouton">
+              <img
+                class="recherche__bouton-svg"
+                alt="loupe"
+                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
+                width="26"
+                height="26"
+              />
+            </button>
+          </form>
+        </nav>
       </div>
     </header>
     <section class="hero">
@@ -65,4 +76,5 @@
       <p>Création : Chantal Pépin</p>
     </footer>
   </body>
+  <script src="script/checkbox.js"></script>
 </html>

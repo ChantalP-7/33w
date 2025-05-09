@@ -58,6 +58,18 @@ h6 {
 }
 
 /* Layout */
+#chk__menu {
+  display: none;
+}
+
+#chk__menu:checked ~ .entete__nav {
+  display: flex;
+  flex-direction: column;
+}
+#chk__menu:checked ~ .entete__nav .entete__menu {
+  flex-direction: column;
+}
+
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
   padding: 15px;
@@ -78,8 +90,24 @@ h6 {
   border: 2px solid white;
 }
 .entete__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   margin: 0 2rem 0 auto;
   padding-right: 20px;
+}
+@media screen and (max-width: 600px) {
+  .entete__nav {
+    display: none;
+  }
+}
+.entete__burger {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .entete__burger {
+    display: block;
+  }
 }
 .entete__menu {
   /* ul */
@@ -148,6 +176,9 @@ html {
   margin-left: 30px;
 }
 .hero__description {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40ch;
   background-color: rgba(255, 255, 255, 0.541);
   padding: 15px;
   border-radius: 10px;
