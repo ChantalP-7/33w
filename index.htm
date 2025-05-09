@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prototype de la page d'accueil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <title>On voyage ☀⛱</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
@@ -24,6 +24,9 @@
         <label for="chk__menu" class="entete__burger">
           <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF" width="32" height="32">
         </label>
+        <!--<label for="chk__menu-ferme" class="entete__burger-ferme">
+          <img src="https://s2.svgbox.net/hero-outline.svg?ic=x-circle&color=FFFFFF" width="32" height="32">
+        </label>-->
         <input type="checkbox" class="chk__menu" id="chk__menu" />
         <nav class="entete__nav">
           <ul class="entete__menu">
@@ -34,7 +37,7 @@
             <li class="entete__menu-item"><a href="#">Croisière</a></li>
             <li class="entete__menu-item"><a href="#">Repos</a></li>
           </ul>
-
+          <div class="entete__div">
           <form class="recherche" action="">
             <label
               for="recherche__input"
@@ -57,25 +60,44 @@
               />
             </button>
           </form>
+        </div>
         </nav>
       </div>
     </header>
     <section class="hero">
       <div class="hero__contenu">
-        <h1>Club de voyage</h1>
+        <h1>On voyage <img src="https://s2.svgbox.net/materialui.svg?ic=wb_sunny&color=000" width="50" height="50"> ⛱</h1>
         <p class="hero__description">
-          Notre Club de voyage attire les passionné.e.s de découvertes et
+          <strong>On voyage</strong> ☀⛱</h1>
+          attire les passionné.e.s de découvertes et
           d'aventures, où les membres partagent leurs expériences et conseils
           pour organiser des voyages inoubliables. <br /><br />Grâce à une
           communauté active, il permet de bénéficier d'offres exclusives, de
           participer à des événements et de découvrir de nouvelles destinations.
           Chaque voyage devient ainsi une occasion de se connecter, d'apprendre
           et d'explorer le monde ensemble.
+          <a class="hero__bouton" href="#">Explorer</a>
+          <div class="hero__media">
+          <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=facebook&color=000" width="32" height="32"></a>
+          <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=instagram&color=000" width="32" height="32"></a>
+          <a href="#"><img src="https://s2.svgbox.net/social.svg?ic=tiktok&color=000" width="32" height="32"></a>
+        </div>  
         </p>
+              
       </div>
     </section>
+    <section class="galerie">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+      <img src="images/canyon.jpg" class="galerie__img" alt="canyon">
+    </section>
     <footer class="piedpage">
-      <p>Tous droits réservés : Club Voyage - 2025</p>
+      <p>Tous droits réservés : On voyage ☀⛱ - 2025</p>
       <p>Création : Chantal Pépin</p>
     </footer>
   </body>

@@ -4,10 +4,9 @@
 
 .recherche {
   display: flex;
-  /*border: 1px solid grey;*/
   align-items: center;
   gap: 10px;
-
+  
   &__input {
     width: 250px;
     border: none;

@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(images/pexels-pixabay-273886.jpg);
+  background-image: url(images/canyon.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -12,21 +12,68 @@
 
   &__contenu {
     margin-left: 30px;
-  }
-  &__description {
     display: flex;
     flex-wrap: wrap;
-    max-width: 40ch;
-    background-color: rgba(255, 255, 255, 0.541);
-    padding: 15px;
-    border-radius: 10px;
+
+    @media screen and (max-width: $point-rupture) {
+      margin-left: 0px;
+      justify-content: center;
+      gap: 20px;
+      &__description {
+        max-width: 45ch;
+      }
+    }
+    @media screen and (max-width: $point-ruptureSmall) {
+      margin-left: 0px;
+      justify-content: center;
+      &__description {
+        max-width: 35ch;
+      }
+    }
+    @media screen and (max-width: $point-ruptureXSmall) {
+      margin-left: 0px;
+      justify-content: center;
+      &__description {
+        max-width: 25ch;
+      }
+    }
   }
+
   &__titre {
     font-weight: 400;
   }
   &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.541);
+    padding: 15px;
+    border-radius: 10px;
     font-family: Quicksand;
     font-size: 20px;
     width: 70ch;
+  }
+
+  &__bouton {
+    background-color: rgb(71, 181, 255);
+    padding: 8px 22px;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 0.829);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Quicksand;
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      border-color: 1px solid rgb(71, 181, 255);
+      color: rgb(22, 22, 22);
+    }
+  }
+
+  &__media {
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
 }

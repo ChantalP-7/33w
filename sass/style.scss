@@ -28,7 +28,7 @@ html {
 
 /* Variable*/
 
-/*@import "variable/couleurs";*/
+@import "variable/couleurs";
 @import "variable/dimension";
 
 /* Base */
@@ -44,4 +44,5 @@ html {
 /* composant */
 
 @import "composants/recherche";
+@import "composants/galerie";
 /*@import "composants/menu";*/
