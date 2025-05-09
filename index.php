@@ -10,8 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css" />    
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="entete">
@@ -22,7 +21,11 @@
           class="entete__logo"
         />
         <label for="chk__menu" class="entete__burger">
-          <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF" width="32" height="32">
+          <img
+            src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" fill="#FFFFFF"
+            width="32"
+            height="32"
+          />
         </label>
         <input type="checkbox" class="chk__menu" id="chk__menu" />
         <nav class="entete__nav">
@@ -34,7 +37,6 @@
             <li class="entete__menu-item"><a href="#">Croisière</a></li>
             <li class="entete__menu-item"><a href="#">Repos</a></li>
           </ul>
-
           <form class="recherche" action="">
             <label
               for="recherche__input"

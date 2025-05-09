@@ -9,7 +9,15 @@
 
   .entete__menu {
     flex-direction: column;
+    & a {
+      background-color: transparent;
+      color: white;
+      padding: 5px;
+
+    }
   }
+
+  
 }
 
 .entete {
@@ -47,7 +55,7 @@
   &__burger {
     display: none;
     @media screen and (max-width: $point-rupture) {
-      display: block;
+      display: block; 
       //position: absolute;
       //top: 2;
       //right: 2;

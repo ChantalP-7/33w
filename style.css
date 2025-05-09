@@ -69,6 +69,11 @@ h6 {
 #chk__menu:checked ~ .entete__nav .entete__menu {
   flex-direction: column;
 }
+#chk__menu:checked ~ .entete__nav .entete__menu a {
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+}
 
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
@@ -96,7 +101,7 @@ h6 {
   margin: 0 2rem 0 auto;
   padding-right: 20px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .entete__nav {
     display: none;
   }
@@ -104,7 +109,7 @@ h6 {
 .entete__burger {
   display: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .entete__burger {
     display: block;
   }
