@@ -60,7 +60,7 @@ h6 {
 /* Layout */
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 10px;
+  padding: 15px;
   /*------------------------------------- Nabigation */
 }
 .entete__contenu {
@@ -73,6 +73,9 @@ h6 {
 .entete__logo {
   width: 75px;
   height: 75px;
+  padding: 3px;
+  border-radius: 50%;
+  border: 2px solid white;
 }
 .entete__nav {
   margin: 0 2rem 0 auto;
@@ -83,24 +86,27 @@ h6 {
   display: flex;
   list-style: none;
   gap: 1rem;
-  margin-right: 20px;
 }
 .entete__menu-item {
   /* li */
   margin-left: auto;
 }
 .entete__menu-item a {
-  background-color: rgb(71, 181, 255);
-  padding: 8px 20px;
-  border-radius: 2px;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 22px;
+  border-radius: 30px;
+  color: rgba(0, 0, 0, 0.829);
   text-decoration: none;
   font-size: 20px;
   font-family: Quicksand;
 }
 .entete__menu-item a:hover {
-  background-color: white;
-  color: rgba(0, 0, 0, 0.829);
+  background-color: rgb(71, 181, 255);
+  color: rgb(255, 255, 255);
+}
+.entete__menu-item a:active {
+  background-color: rgb(71, 181, 255);
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -130,6 +136,7 @@ html {
   background-image: url(images/pexels-pixabay-273886.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -141,9 +148,9 @@ html {
   margin-left: 30px;
 }
 .hero__description {
-  background-color: rgba(255, 255, 255, 0.363);
-  padding: 10px;
-  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.541);
+  padding: 15px;
+  border-radius: 10px;
 }
 .hero__titre {
   font-weight: 400;
@@ -165,7 +172,9 @@ html {
   padding: 10px 20px;
 }
 
-.piedpage h4 {
+.piedpage p {
+  font-family: Courgette;
+  font-size: clamp(0.5rem, 1.65vw + 0.105rem, 1.15rem);
   font-weight: 300;
 }
 
@@ -196,10 +205,7 @@ html {
 }
 .recherche__bouton:hover {
   cursor: pointer;
-  background-color: rgb(255, 205, 40);
-}
-.recherche__bouton:hover svg:hover {
-  fill: black;
+  background-color: rgb(2, 137, 228);
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
