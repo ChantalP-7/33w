@@ -64,10 +64,7 @@
   }
 
   &__description-bouton-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    display: inline-flex;
     gap: 20px;
   }
 
