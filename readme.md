@@ -8,6 +8,6 @@
 
 # Finalisation du TP1
 
-# Voici ma githup page : https://chantalp-7.github.io/33w/
+# Voici l'adresse de ma githup page : https://chantalp-7.github.io/33w/
 
 
