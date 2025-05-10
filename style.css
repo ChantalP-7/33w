@@ -25,11 +25,10 @@ html {
 
 /* Inportation des feuilles de style du thème*/
 /* Variable*/
-/*@import "variable/couleurs";*/
 /* Base */
 h1 {
   font-family: Courgette;
-  font-size: clamp(2rem, 6.4795vw + 1.137rem, 5rem);
+  font-size: clamp(2rem, 5.4795vw + 0.913rem, 4rem);
 }
 
 h2 {
@@ -54,7 +53,7 @@ h5 {
 
 h6 {
   font-family: Courgette;
-  font-size: clamp(0.4rem, 2.4vw - 0.2rem, 1rem);
+  font-size: clamp(0.2rem, 1.4vw - 0.02rem, 0.5rem);
 }
 
 /* Layout */
@@ -76,7 +75,7 @@ h6 {
 }
 
 .entete {
-  background-color: rgba(0, 0, 0, 0.829);
+  background-color: rgba(0, 0, 0, 0.747);
   padding: 15px;
   /*------------------------------------- Nabigation */
 }
@@ -84,8 +83,8 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding-left: 20px;
-  padding-right: 20px;
 }
 .entete__logo {
   width: 75px;
@@ -101,15 +100,18 @@ h6 {
   margin: 0 2rem 0 auto;
   padding-right: 20px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .entete__nav {
     display: none;
   }
 }
+.entete__div {
+  margin-right: -50px;
+}
 .entete__burger {
   display: none;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .entete__burger {
     display: block;
     cursor: pointer;
@@ -167,7 +169,7 @@ html {
 }
 
 .hero {
-  background-image: url(images/pexels-pixabay-273886.jpg);
+  background-image: url(images/canyon.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -181,37 +183,52 @@ html {
 .hero__contenu {
   margin-left: 30px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  padding: 20px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
     gap: 20px;
+    padding: 10px;
   }
   .hero__contenu__description {
     max-width: 45ch;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
+    gap: 20px;
+    padding: 10px;
   }
   .hero__contenu__description {
     max-width: 35ch;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
+    gap: 20px;
+    padding: 10px;
   }
   .hero__contenu__description {
     max-width: 25ch;
   }
 }
+.hero__titre {
+  font-weight: 400;
+  color: white;
+}
 .hero__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
   background-color: rgba(255, 255, 255, 0.541);
   padding: 15px;
   border-radius: 10px;
@@ -219,8 +236,26 @@ html {
   font-size: 20px;
   width: 70ch;
 }
-.hero__titre {
-  font-weight: 400;
+.hero__description-bouton {
+  background-color: rgb(71, 181, 255);
+  width: fit-content;
+  padding: 8px 22px;
+  border-radius: 30px;
+  border: 1px solid rgb(22, 22, 22);
+  color: rgba(0, 0, 0, 0.829);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Quicksand;
+}
+.hero__description-bouton:hover {
+  background-color: rgb(255, 255, 255);
+  border-color: 1px solid rgb(71, 181, 255);
+  color: rgb(22, 22, 22);
+}
+.hero__description-media {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .piedpage {
@@ -246,7 +281,6 @@ html {
 */
 .recherche {
   display: flex;
-  /*border: 1px solid grey;*/
   align-items: center;
   gap: 10px;
 }
@@ -270,4 +304,35 @@ html {
   background-color: rgb(2, 137, 228);
 }
 
+.galerie {
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+  gap: 10px;
+}
+.galerie h3 {
+  text-align: center;
+}
+.galerie__img {
+  max-width: 250px;
+  aspect-ratio: 4/3;
+}
+@media screen and (max-width: 400px) {
+  .galerie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+/*@media screen and (max-width: $point-ruptureSmall) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px
+  }
+
+}*/
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
