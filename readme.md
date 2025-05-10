@@ -6,6 +6,8 @@
 
 # https://github.com/ChantalP-7/33w
 
-# Ajout de l'adresse du tp1 
+# Finalisation du TP1
+
+# Voici ma githup page : https://chantalp-7.github.io/33w/
 
 
