@@ -2,19 +2,19 @@
   background-image: url(images/canyon.jpg);
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   padding: 20px;
 
   &__contenu {
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 80px;
+    //flex-wrap: wrap;
     padding: 20px;
 
     @media screen and (max-width: $point-rupture) {
@@ -22,8 +22,13 @@
       justify-content: center;
       gap: 20px;
       padding: 10px;
+      h1 {
+        color: black;
+        margin-top: 50px;
+      }
       &__description {
         max-width: 45ch;
+        margin-bottom: 20px;
       }
     }
     @media screen and (max-width: $point-ruptureSmall) {
@@ -31,41 +36,63 @@
       justify-content: center;
       gap: 20px;
       padding: 10px;
+      h1 {
+        color: black;
+        margin-top: 20px;
+      }
+
       &__description {
         max-width: 35ch;
+        
       }
     }
     @media screen and (max-width: $point-ruptureXSmall) {
       margin-left: 0px;
       justify-content: center;
       gap: 20px;
-      padding: 10px;
+      h1 {
+        color: black;
+        margin-top: 20px;
+      }
       &__description {
         max-width: 25ch;
+        font-size: 12px;
+        line-height: 0.9rem;
+        margin-bottom: 30px;
       }
     }
+    
   }
 
   &__titre {
     font-weight: 400;
     color: white;
+    font-weight: 500;
   }
   &__description {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+    justify-content: flex-start; 
     background-color: rgba(255, 255, 255, 0.541);
-    padding: 15px;
+    color: black;
+    padding: 20px;
+    gap: 10px;
     border-radius: 10px;
     font-family: Quicksand;
-    font-size: 20px;
-    width: 70ch;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.8rem;
+    max-width: 80ch;
+    
+    p {
+      margin-top: 0px;
+    }
+
   }
 
   &__description-bouton-media {
     display: inline-flex;
-    gap: 20px;
+    gap: 30px;
   }
 
   &__description-bouton {
@@ -73,20 +100,23 @@
     width: fit-content;
     padding: 8px 22px;
     border-radius: 30px;
-    border: 1px solid rgb(22, 22, 22);
-    color: rgba(0, 0, 0, 0.829);
+    border: 1px solid rgba(49, 49, 49, 0.596);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 20px;
     font-family: Quicksand;
     &:hover {
       background-color: rgb(255, 255, 255);
       border-color: 1px solid rgb(71, 181, 255);
-      color: rgb(22, 22, 22);
+      color: rgb(0, 0, 0);
     }
   }
   &__description-media {
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
+  }
+  &:hover svg{
+    color: #FFFFFF;
   }
 }

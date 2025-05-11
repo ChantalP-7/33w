@@ -26,18 +26,24 @@
     align-items: center;
     gap: 20px;
     padding-left: 20px;
+
+    
+    h3 {
+      color: white;
+      font-weight: 400;
+    }
+
   }
 
   &__div-nav {
     display: flex;
-    gap: 50px;
     align-items: center;
   }
 
   &__logo {
     width: 75px;
     height: 75px;
-    padding: 3px;
+    padding: 2px;
     border-radius: 50%;
     border: 2px solid white;
   }
@@ -46,9 +52,16 @@
   &__nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    margin: 0 2rem 0 auto;
+    margin: 0 2rem 0 2rem;    
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;    
     padding-right: 20px;
+
+    
+    &:focus {
+      background-color: #47b5ff;
+    } 
 
     @media screen and (max-width: $point-rupture) {
       display: none;
@@ -87,7 +100,7 @@
       font-size: 20px;
       font-family: Quicksand;
       &:hover {
-        background-color: rgb(71, 181, 255);
+        background-color: #47b5ff;
         color: rgba(255, 255, 255);
       }
       &:active {
