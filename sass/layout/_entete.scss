@@ -5,13 +5,12 @@
 #chk__menu:checked ~ .entete__nav {
   display: flex;
   flex-direction: column;
-  // ul
+    // ul
   .entete__menu {
     flex-direction: column;
     & a {
       background-color: transparent;
       color: white;
-      padding: 5px;
     }
   }
 }
@@ -27,7 +26,6 @@
     gap: 20px;
     padding-left: 20px;
 
-    
     h3 {
       color: white;
       font-weight: 400;
@@ -37,6 +35,7 @@
 
   &__div-nav {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -65,11 +64,12 @@
 
     @media screen and (max-width: $point-rupture) {
       display: none;
+      //justify-content: flex-end;
     }
   }
 
   &__div {
-    margin-right: -50px;
+    margin-right: -20px;
   }
 
   &__burger {
