@@ -33,7 +33,7 @@ h1 {
 
 h2 {
   font-family: Courgette;
-  font-size: clamp(1.7rem, 4vw + 1rem, 2.8rem);
+  font-size: clamp(1.7rem, 3.5vw + 1rem, 2.8rem);
 }
 
 h3 {
@@ -200,35 +200,30 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 80px;
+  align-items: flex-start;
   padding: 20px;
 }
 @media screen and (max-width: 1000px) {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
-    gap: 20px;
     padding: 10px;
   }
   .hero__contenu h1 {
     color: black;
-    margin-top: 50px;
   }
   .hero__contenu__description {
     max-width: 45ch;
-    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 800px) {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
-    gap: 20px;
     padding: 10px;
   }
   .hero__contenu h1 {
     color: black;
-    margin-top: 20px;
   }
   .hero__contenu__description {
     max-width: 35ch;
@@ -238,41 +233,51 @@ html {
   .hero__contenu {
     margin-left: 0px;
     justify-content: center;
-    gap: 20px;
   }
   .hero__contenu h1 {
     color: black;
-    margin-top: 20px;
   }
   .hero__contenu__description {
-    max-width: 25ch;
-    font-size: 12px;
     line-height: 0.9rem;
-    margin-bottom: 30px;
   }
 }
 .hero__titre {
-  font-weight: 400;
   color: white;
   font-weight: 500;
 }
 .hero__description {
+  font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgba(255, 255, 255, 0.541);
   color: black;
   padding: 20px;
-  gap: 10px;
   border-radius: 10px;
   font-family: Quicksand;
   font-weight: 500;
-  font-size: 22px;
   line-height: 1.8rem;
   max-width: 80ch;
+  gap: 20px;
 }
 .hero__description p {
   margin-top: 0px;
+  margin-bottom: -10px;
+}
+.hero__iconesContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.hero__icone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__icone a {
+  color: rgb(21, 21, 221);
 }
 .hero__description-bouton-media {
   display: inline-flex;
@@ -288,6 +293,7 @@ html {
   text-decoration: none;
   font-size: 20px;
   font-family: Quicksand;
+  margin-top: 40px;
 }
 .hero__description-bouton:hover {
   background-color: rgb(255, 255, 255);
@@ -300,7 +306,7 @@ html {
   align-items: center;
 }
 .hero:hover svg {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .piedpage {
@@ -400,4 +406,90 @@ html {
   }
 
 }*/
+.infolettre {
+  display: block;
+  padding: 20px;
+}
+.infolettre h2 {
+  font-weight: 400;
+  text-align: center;
+}
+.infolettre p {
+  font-size: clamp(1.4rem, 0.554vw + 0.9345rem, 1.75rem);
+  text-align: center;
+  font-family: Quicksand;
+  font-weight: 700;
+}
+.infolettre input {
+  padding: 10px;
+  border: none;
+}
+.infolettre__formulaire {
+  background-image: url(images/fond-bleu-ciel.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid trasparent;
+  border-radius: 5px;
+  max-width: 800px;
+}
+@media screen and (max-width: 1000px) {
+  .infolettre__formulaire {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .infolettre__formulaire {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .infolettre__formulaire {
+    max-width: 300px;
+  }
+}
+.infolettre__div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .infolettre__div {
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
+  }
+}
+.infolettre__label {
+  font-family: Quicksand;
+}
+.infolettre__input {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.infolettre__bouton {
+  background-color: rgba(34, 34, 34, 0.671);
+  width: fit-content;
+  padding: 8px 22px;
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: Quicksand;
+}
+.infolettre__bouton:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(26, 26, 26);
+  cursor: pointer;
+}
+
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
