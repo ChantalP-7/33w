@@ -277,11 +277,15 @@ html {
   gap: 10px;
 }
 .hero__icone a {
-  color: rgb(21, 21, 221);
+  color: rgb(71, 181, 255);
 }
 .hero__description-bouton-media {
   display: inline-flex;
   gap: 30px;
+}
+.hero__description-bouton-media:hover {
+  cursor: pointer;
+  fill: white;
 }
 .hero__description-bouton {
   background-color: rgb(71, 181, 255);
@@ -423,11 +427,11 @@ html {
 .infolettre input {
   padding: 10px;
   border: none;
+  outline: none;
+  border-radius: 3px;
 }
 .infolettre__formulaire {
-  background-image: url(images/fond-bleu-ciel.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(71, 181, 255);
   margin: 50px auto;
   display: flex;
   flex-direction: column;
@@ -469,6 +473,7 @@ html {
 }
 .infolettre__label {
   font-family: Quicksand;
+  font-weight: 700;
 }
 .infolettre__input {
   display: flex;
@@ -477,7 +482,7 @@ html {
   gap: 10px;
 }
 .infolettre__bouton {
-  background-color: rgba(34, 34, 34, 0.671);
+  background-color: rgba(34, 34, 34, 0.877);
   width: fit-content;
   padding: 8px 22px;
   border-radius: 3px;

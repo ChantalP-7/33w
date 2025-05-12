@@ -91,7 +91,7 @@
     gap: 10px;
 
     a {
-      color: rgb(21, 21, 221);      
+      color: rgb(71, 181, 255);      
     }
   }
   
@@ -100,7 +100,12 @@
   &__description-bouton-media {
     display: inline-flex;
     gap: 30px;
+    &:hover  {
+      cursor: pointer;
+      fill: white;
+    }
   }
+  
 
 
   &__description-bouton {

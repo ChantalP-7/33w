@@ -18,12 +18,12 @@
     input {
         padding: 10px;
         border: none;
+        outline: none;
+        border-radius: 3px;
     }
 
    &__formulaire {
-        background-image: url(images/fond-bleu-ciel.jpg);
-        background-size:cover;
-        background-position: center;
+        background-color: rgb(71, 181, 255);
         margin: 50px auto;
         display: flex;
         flex-direction: column;
@@ -60,6 +60,7 @@
     
     &__label {
         font-family: Quicksand;
+        font-weight: 700;
     }    
     
     &__input {
@@ -70,7 +71,7 @@
     }
 
     &__bouton {
-        background-color: rgba(34, 34, 34, 0.671);
+        background-color: rgba(34, 34, 34, 0.877);
         width: fit-content;
         padding: 8px 22px;
         border-radius: 3px;;
