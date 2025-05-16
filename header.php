@@ -17,11 +17,13 @@
   <body>
     <header class="entete">
       <div class="entete__contenu">
-      <a href="#">
-        <figure  class="entete__logo">
-            <?= get_custom_logo();?>
-        </figure>
-        </a>
+          
+            <figure>
+            <a href="#">
+                <?= get_custom_logo();?>
+                </a>
+            </figure>
+            
                
         <!--<h3>Je voyage</h3>-->
         <div class="entete__div-nav">
@@ -48,8 +50,8 @@
               <?php  wp_nav_menu(array(
                 "menu" => "principal",
                 'container' => "nav",
-                "container_class" => "entete__nav",
-                "menu_class" => "entete__menu",
+                "container_class" => "entete__div-nav",
+                "menu_class" => "entete__nav",
             )); ?>
               <div class="entete__div">
                 <form class="recherche" action="">

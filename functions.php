@@ -7,6 +7,7 @@ function mon_theme_supports() {
     add_theme_support('custom-logo', array(
         'height'      => 75,
         'width'       => 75,
+        'border-radius' => 100,
         'flex-height' => true,
         'flex-width'  => true,
     ));
