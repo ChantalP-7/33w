@@ -1,15 +1,15 @@
 /*
-Theme Name: club-voyage
+Theme Name: Je voyage
 Theme URI: https://referenced.ca
-Author: Eddy Martin
-Author URI: https://github.com/eddytuto
-Description: Thème de base développer dans le cadre du cours de Worpress
+Author: chantal Pépin
+Author URI: https://github.com/ChantalP-7/33w/tree/tp1?
+Description: Thème de base développé dans le cadre du cours de Worpress
 Version: 1.0
 Tested up to: 6.2
 Requires PHP: 7.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: club-voyage
+Text Domain: Je voyage
 */
 
 html {
@@ -36,6 +36,7 @@ html {
 @import "base/titres";
 
 /* Layout */
+
 @import "layout/entete";
 @import "layout/general";
 @import "layout/hero";
@@ -47,4 +48,5 @@ html {
 @import "composants/galerie";
 @import "composants/infolettre";
 @import "composants/populaire";
+
 /*@import "composants/menu";*/

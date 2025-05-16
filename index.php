@@ -70,11 +70,11 @@
         </form>
       </section>
       <section class="galerie">
-        <h2>Destinations populaires</h2>
+        <h2>Destinations favorites</h2>
         <div class="galerie__items">
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Grèce.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Grece.jpg"
               class="galerie__img"
               alt="Grèce"
             />
@@ -82,7 +82,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Afrique.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Afrique.jpg"
               class="galerie__img"
               alt="Afrique"
             />
@@ -90,7 +90,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Cuba.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Cuba.jpg"
               class="galerie__img"
               alt="Cuba"
             />
@@ -98,7 +98,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Maroc.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Maroc.jpg"
               class="galerie__img"
               alt="Maroc"
             />
@@ -106,7 +106,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Martinique.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Martinique.jpg"
               class="galerie__img"
               alt="Martinique"
             />
@@ -114,7 +114,7 @@
           </picture>
           <picture class="galerie__picture">
                 <img
-                src="images/galerie/France.jpg"
+                src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/France.jpg"
                 class="galerie__img"
                 alt="France"
                 />
@@ -122,7 +122,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Thailande.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Thailande.jpg"
               class="galerie__img"
               alt="Thailance"
             />
@@ -130,7 +130,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Australie.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Australie.jpg"
               class="galerie__img"
               alt="Australie"
             />
@@ -138,7 +138,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Voilier-mer-bleue.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Voilier-mer-bleue.jpg"
               class="galerie__img"
               alt="Alaska"
             />
@@ -146,7 +146,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Amsterdam.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Amsterdam.jpg"
               class="galerie__img"
               alt="Amsterdam"
             />
@@ -155,12 +155,13 @@
       </div>
     </section>
     <section class="populaire">
+    <h2>Destinations populaires</h2>
     <?php  
     if(have_posts()){
       while(have_posts()){          
         the_post();     
         ?>
-        <h2 class="publication"><?php the_title(); ?></h2>
+        <h3><?php the_title(); ?></h3>
         <?php the_content();
       }
     }

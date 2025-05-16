@@ -12,8 +12,9 @@
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
+    gap: 50px;
     padding: 20px;
 
     @media screen and (max-width: $point-rupture) {
@@ -67,7 +68,7 @@
     font-weight: 500;
     line-height: 1.8rem;
     max-width: 80ch;
-    gap: 20px;
+    gap: 40px;
     
     p {
       margin-top: 0px;
@@ -93,8 +94,7 @@
     a {
       color: rgb(21, 21, 221);      
     }
-  }
-  
+  }  
 
 
   &__description-bouton-media {
@@ -104,8 +104,7 @@
       cursor: pointer;
       fill: white;
     }
-  }
-  
+  }  
 
 
   &__description-bouton {
@@ -118,7 +117,6 @@
     text-decoration: none;
     font-size: 20px;
     font-family: Quicksand;
-    margin-top: 40px; 
     &:hover {
       background-color: rgb(255, 255, 255);
       border-color: 1px solid rgb(71, 181, 255);

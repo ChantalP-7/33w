@@ -1,7 +1,20 @@
 .populaire {
     padding: 20px;
-    margin: 50px px;
+    margin: 50px auto;
     h2 {
+        text-align: center;
         font-weight: 400;
     }
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-family: Quicksand;
+        font-weight: 700;
+    }
+
+}
+p {
+    font-family: Quicksand;
+    font-size: clamp(1.1rem, 1.6vw + -0.08rem, 1.7rem);
+    //font-weight: 500;
 }

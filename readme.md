@@ -26,5 +26,5 @@ Ajout du fichier creer_dbb à la racine du projet. C'est un fichier php prépar�
 
 Une fois déposé, on l'active qu'une seule fois pour éviter des doublons dans la base de données.
 
-Ajout de lignes de codes wp pour lancer les articles, le menu de l'en-tête et le logo.
+Ajout des lignes de codes wp pour lancer les articles, le menu de l'en-tête et le logo.
 
