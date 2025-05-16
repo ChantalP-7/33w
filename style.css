@@ -79,14 +79,16 @@ h6 {
 
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 15px;
+  padding: 10px;
   /*------------------------------------- Navigation */
 }
 .entete__contenu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+  padding-right: 20px;
 }
 .entete__contenu h3 {
   color: white;
@@ -94,8 +96,10 @@ h6 {
 }
 .entete__div-nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  gap: 20px;
 }
 .entete__logo {
   width: 75px;
@@ -107,11 +111,7 @@ h6 {
 .entete__nav {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 2rem 0 2rem;
-  align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  padding-right: 20px;
 }
 .entete__nav:focus {
   background-color: #47b5ff;
@@ -119,10 +119,8 @@ h6 {
 @media screen and (max-width: 1000px) {
   .entete__nav {
     display: none;
+    justify-content: flex-end;
   }
-}
-.entete__div {
-  margin-right: -20px;
 }
 .entete__burger {
   display: none;
@@ -149,7 +147,7 @@ h6 {
   border-radius: 30px;
   color: rgba(0, 0, 0, 0.829);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-family: Quicksand;
 }
 .entete__menu-item a:hover {
@@ -494,6 +492,14 @@ html {
   background-color: rgb(255, 255, 255);
   color: rgb(26, 26, 26);
   cursor: pointer;
+}
+
+.populaire {
+  padding: 20px;
+  margin: 50px px;
+}
+.populaire h2 {
+  font-weight: 400;
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */

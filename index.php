@@ -113,11 +113,11 @@
             <figcaption class="galerie__caption">Martinique</figcaption>
           </picture>
           <picture class="galerie__picture">
-            <img
-              src="images/galerie/France.jpg"
-              class="galerie__img"
-              alt="France"
-            />
+                <img
+                src="images/galerie/France.jpg"
+                class="galerie__img"
+                alt="France"
+                />
             <figcaption class="galerie__caption">France</figcaption>
           </picture>
           <picture class="galerie__picture">
@@ -156,16 +156,15 @@
     </section>
     <section class="populaire">
     <?php  
-      if(have_posts()){
-        while(have_posts()){          
-          the_post();     
-          ?>
-          <h2 class="publication"><?php the_title(); ?></h2>
-          <?php the_content();
-        }
-    }?>
+    if(have_posts()){
+      while(have_posts()){          
+        the_post();     
+        ?>
+        <h2 class="publication"><?php the_title(); ?></h2>
+        <?php the_content();
+      }
+    }
+    ?>
     </section>
-    
-      
     <?php  get_footer();  ?>
   
