@@ -36,10 +36,10 @@
         border-radius: 5px;
         max-width: 800px;
         @media screen and (max-width: $point-rupture) {
-            max-width: 500px;           
+            max-width: 400px;           
         }
         @media screen and (max-width: $point-ruptureSmall) {
-            max-width: 400px;           
+            max-width: 350px;           
         }
         @media screen and (max-width: $point-ruptureXSmall) {
             max-width: 300px;           

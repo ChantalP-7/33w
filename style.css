@@ -450,12 +450,12 @@ html {
 }
 @media screen and (max-width: 1000px) {
   .infolettre__formulaire {
-    max-width: 500px;
+    max-width: 400px;
   }
 }
 @media screen and (max-width: 800px) {
   .infolettre__formulaire {
-    max-width: 400px;
+    max-width: 350px;
   }
 }
 @media screen and (max-width: 500px) {
