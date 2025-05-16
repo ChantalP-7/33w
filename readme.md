@@ -15,6 +15,9 @@ https://chantalp-7.github.io/33w/
 Fin du tp1 - partie1
 
 
+---------------------------------------------------------------------------------------------------------------------------
+
+
 TP1 - PARTIE 2  
 
 Segmentation de la page d'accueil : Ajout du fichier header.php et footer.php. Ajout du lien de ces deux pages dans la page index.php.
