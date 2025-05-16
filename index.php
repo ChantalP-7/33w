@@ -1,85 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prototype de la page d'accueil</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="entete">
-      <div class="entete__contenu">
-        <img
-          src="images/mon-logo-voyage-vf (3).png"
-          alt="logo club voyage"
-          class="entete__logo"
-        />
-        <label for="chk__menu" class="entete__burger">
-          <img
-            src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" fill="#FFFFFF"
-            width="32"
-            height="32"
-          />
-        </label>
-        <input type="checkbox" class="chk__menu" id="chk__menu" />
-        <nav class="entete__nav">
-          <ul class="entete__menu">
-            <li class="entete__menu-item"><a href="#">Aventure</a></li>
-            <li class="entete__menu-item"><a href="#">Culturel</a></li>
-            <li class="entete__menu-item"><a href="#">Zen</a></li>
-            <li class="entete__menu-item"><a href="#">Sport</a></li>
-            <li class="entete__menu-item"><a href="#">Croisière</a></li>
-            <li class="entete__menu-item"><a href="#">Repos</a></li>
-          </ul>
-          <form class="recherche" action="">
-            <label
-              for="recherche__input"
-              aria-label="champ de recherche"
-            ></label>
-            <input
-              class="recherche__input"
-              type="search"
-              name="recherche__input"
-              id="recherche__input"
-              placeholder="Chercher"
-            />
-            <button class="recherche__bouton">
-              <img
-                class="recherche__bouton-svg"
-                alt="loupe"
-                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
-                width="26"
-                height="26"
-              />
-            </button>
-          </form>
-        </nav>
-      </div>
-    </header>
+<?php get_header(); ?>
     <section class="hero">
       <div class="hero__contenu">
-        <h1>Club de voyage</h1>
-        <p class="hero__description">
-          Notre Club de voyage attire les passionné.e.s de découvertes et
-          d'aventures, où les membres partagent leurs expériences et conseils
-          pour organiser des voyages inoubliables. <br /><br />Grâce à une
-          communauté active, il permet de bénéficier d'offres exclusives, de
-          participer à des événements et de découvrir de nouvelles destinations.
-          Chaque voyage devient ainsi une occasion de se connecter, d'apprendre
-          et d'explorer le monde ensemble.
-        </p>
+          <h1 class="hero__titre">Je voyage</h1>
+            <div class="hero__description">
+                <p>
+                  <strong>Je voyage</strong> est un club de voyageurs passionné.e.s de
+                  découvertes et d'aventures, où les membres partagent leurs expériences et conseils pour organiser des voyages inoubliables. Ils bénéficient d'offres exclusives et découvrent de nouvelles destinations. ☀
+                </p>
+                <div class="hero__iconesContact">
+                    <div class="hero__icone">
+                      <img src="https://s2.svgbox.net/hero-solid.svg?ic=home&color=000" width="22" height="22"> 3800, rue Sherbrooke, Montréal, H1H 1H1
+                    </div>
+                    <div class="hero__icone">
+                      <img src="https://s2.svgbox.net/materialui.svg?ic=smartphone&color=000" width="20" height="20"> 514-000-0000
+                    </div>
+                    <div class="hero__icone">
+                      <img src="https://s2.svgbox.net/materialui.svg?ic=mail&color=000" width="22" height="22">
+                      <a href="#">info@jevoyage.vo</a>
+                    </div>
+                </div>       
+                <div class="hero__description-bouton-media">
+                    <div>
+                        <a class="hero__description-bouton" href="#">Je m'inscris !</a>
+                    </div>
+                    <div class="hero__descripton-media">
+                        <a href="#"
+                            ><img
+                            src="https://s2.svgbox.net/social.svg?ic=facebook&color=000"
+                            width="28"
+                            height="30" alt="icone facebook"
+                        /></a>
+                        <a href="#"
+                            ><img
+                            src="https://s2.svgbox.net/social.svg?ic=instagram&color=000"
+                            width="28"
+                            height="28" alt="icone instagram"
+                        /></a>
+                        <a href="#"
+                            ><img
+                            src="https://s2.svgbox.net/social.svg?ic=tiktok&color=000"
+                            width="28"
+                            height="28" alt="icone tiktok"
+                        /></a>
+                      
+                  </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="infolettre">
+        <h2>Notre infolettre</h2>
+        <p>Abonnez-vous!</p>
+        <form action="" class="infolettre__formulaire" method="post">
+            <div class="infolettre__div">
+                <div class="infolettre__input">
+                    <label class="infolettre__label" id="prenom">Prénom</label>
+                    <input type="text" class="" name="prenom" id="prenom">
+                </div>
+                <div class="infolettre__input">
+                    <label class="infolettre__label" id="nom">Nom</label>
+                    <input type="text" class="" name="nom" id="nom">
+                </div>
+                <div class="infolettre__input">
+                    <label class="infolettre__label" id="email">Courriel</label>
+                    <input type="email" class="" name="email" id="email">
+                </div>
+            </div>          
+          <input type="submit" class="infolettre__bouton" name="soumettre" value="Soumettre">
+        </form>
+      </section>
+      <section class="galerie">
+        <h2>Destinations populaires</h2>
+        <div class="galerie__items">
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Grèce.jpg"
+              class="galerie__img"
+              alt="Grèce"
+            />
+            <figcaption class="galerie__caption">Grèce</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Afrique.jpg"
+              class="galerie__img"
+              alt="Afrique"
+            />
+            <figcaption class="galerie__caption">Afrique</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Cuba.jpg"
+              class="galerie__img"
+              alt="Cuba"
+            />
+            <figcaption class="galerie__caption">Cuba</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Maroc.jpg"
+              class="galerie__img"
+              alt="Maroc"
+            />
+            <figcaption class="galerie__caption">Maroc</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Martinique.jpg"
+              class="galerie__img"
+              alt="Martinique"
+            />
+            <figcaption class="galerie__caption">Martinique</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/France.jpg"
+              class="galerie__img"
+              alt="France"
+            />
+            <figcaption class="galerie__caption">France</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Thailande.jpg"
+              class="galerie__img"
+              alt="Thailance"
+            />
+            <figcaption class="galerie__caption">Thailande</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Australie.jpg"
+              class="galerie__img"
+              alt="Australie"
+            />
+            <figcaption class="galerie__caption">Australie</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Voilier-mer-bleue.jpg"
+              class="galerie__img"
+              alt="Alaska"
+            />
+            <figcaption class="galerie__caption">Alaska</figcaption>
+          </picture>
+          <picture class="galerie__picture">
+            <img
+              src="images/galerie/Amsterdam.jpg"
+              class="galerie__img"
+              alt="Amsterdam"
+            />
+            <figcaption class="galerie__caption">Amsterdam</figcaption>
+          </picture>
       </div>
     </section>
-    <footer class="piedpage">
-      <p>Tous droits réservés : Club Voyage - 2025</p>
-      <p>Création : Chantal Pépin</p>
-    </footer>
-  </body>
-  <script src="script/checkbox.js"></script>
-</html>
+    <section class="populaire">
+    <?php  
+      if(have_posts()){
+        while(have_posts()){          
+          the_post();     
+          ?>
+          <h2 class="publication"><?php the_title(); ?></h2>
+          <?php the_content();
+        }
+    }?>
+    </section>
+    
+      
+    <?php  get_footer();  ?>
+  

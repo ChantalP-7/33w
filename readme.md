@@ -4,10 +4,10 @@
 
 # Auteure : Chantal Pépin
 
-# https://github.com/ChantalP-7/33w
-
 # Finalisation du TP1
 
-# Voici l'adresse de ma githup page : https://chantalp-7.github.io/33w/
+# Voici l'adresse de ma githup page : 
+
+https://chantalp-7.github.io/33w/
 
 
