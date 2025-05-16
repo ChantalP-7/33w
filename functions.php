@@ -5,8 +5,8 @@ function mon_theme_supports() {
     add_theme_support('title-tag');
     add_theme_support('menus');
     add_theme_support('custom-logo', array(
-        'height'      => 150,
-        'width'       => 150,
+        'height'      => 75,
+        'width'       => 75,
         'flex-height' => true,
         'flex-width'  => true,
     ));
