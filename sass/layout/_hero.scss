@@ -69,7 +69,28 @@
     line-height: 1.8rem;
     max-width: 80ch;
     gap: 40px;
+
     
+    
+    button .bouton {
+      background-color: rgb(71, 181, 255);
+      width: fit-content;
+      padding: 8px 22px;
+      border-radius: 30px;
+      border: 1px solid rgba(49, 49, 49, 0.596);
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      font-size: 20px;
+      font-family: Quicksand;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        border-color: 1px solid rgb(71, 181, 255);
+        color: rgb(0, 0, 0);
+      }
+    } 
+
+
+
     p {
       margin-top: 0px;
       margin-bottom: -10px;
