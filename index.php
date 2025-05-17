@@ -21,7 +21,7 @@
                 </div>       
                 <div class="hero__description-bouton-media">
                     <div>
-                        <a class="hero__description-bouton" href="#">Je m'inscris !</a>
+                        <a class="bouton" href="#">Je m'inscris !</a>
                     </div>
                     <div class="hero__descripton-media">
                         <a href="#"
@@ -66,7 +66,7 @@
                     <input type="email" class="" name="email" id="email">
                 </div>
             </div>          
-          <input type="submit" class="infolettre__bouton" name="soumettre" value="Soumettre">
+          <input type="submit" class="bouton__fonce" name="soumettre" value="Soumettre">
         </form>
       </section>
       <section class="galerie">

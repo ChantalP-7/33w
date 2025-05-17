@@ -9,12 +9,13 @@
         margin-top: 40px;
         margin-bottom: 20px;
         font-family: Quicksand;
-        font-weight: 700;
+        font-weight: 600;
     }
 
 }
 p {
     font-family: Quicksand;
     font-size: clamp(1.1rem, 1.6vw + -0.08rem, 1.7rem);
+    line-height: 1.7rem;
     //font-weight: 500;
 }
