@@ -39,21 +39,25 @@ h2 {
 h3 {
   font-family: Courgette;
   font-size: clamp(1.4rem, 2.8vw + 0.2rem, 1.8rem);
+  font-weight: 400;
 }
 
 h4 {
   font-family: Courgette;
   font-size: clamp(1.1rem, 2vw + 0.105rem, 1.7rem);
+  font-weight: 400;
 }
 
 h5 {
   font-family: Courgette;
   font-size: clamp(1.44rem, 1.8vw - 0.05rem, 1.6rem);
+  font-weight: 400;
 }
 
 h6 {
   font-family: Courgette;
   font-size: clamp(1.2rem, 1.4vw - 0.02rem, 1.5rem);
+  font-weight: 400;
 }
 
 .centre {
@@ -82,7 +86,7 @@ h6 {
 
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 15px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
   /*------------------------------------- Navigation */
 }
 .entete__contenu {
@@ -318,19 +322,92 @@ html {
 
 .piedpage {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  gap: 20px;
   background-color: rgba(0, 0, 0, 0.911);
   width: 100%;
-  text-align: center;
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
+}
+.piedpage img {
+  max-width: 400px;
+}
+.piedpage h5 {
+  font-family: Quicksand;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.piedpage__grille-carte {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.piedpage__grille {
+  width: 100%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 20% 35% 1fr;
+}
+@media screen and (max-width: 1000px) {
+  .piedpage__grille {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    gap: 50px;
+  }
+}
+.piedpage__carte {
+  background-color: white;
+  border-radius: 5px;
+  font-family: Quicksand;
+  padding: 10px;
+  color: rgb(34, 34, 34);
+  max-width: 100%;
+}
+.piedpage__carte a {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgb(34, 34, 34);
+}
+.piedpage__carte a:hover {
+  color: rgb(71, 181, 255);
+}
+.piedpage__carte ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.piedpage__carte ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.piedpage__carte__carrousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.piedpage__carte img {
+  align-items: center;
+}
+.piedpage__credits {
+  display: flex;
+  justify-content: space-between;
 }
 
 .piedpage p {
   font-family: Courgette;
-  font-size: clamp(0.1rem, 1.3vw + 0.4rem, 1.3rem);
-  font-weight: 300;
+  font-size: clamp(0.1rem, 1.3vw + 0.4rem, 1.1rem);
+  font-weight: 400;
 }
 
 /* composant */
@@ -353,8 +430,7 @@ html {
 }
 .recherche__bouton {
   background-color: rgb(71, 181, 255);
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px;
   border-radius: 3px;
 }
 .recherche__bouton:hover {
