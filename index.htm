@@ -22,57 +22,54 @@
           alt="logo club voyage"
           class="entete__logo"
         />
-        </a>        
-        <!--<h3>Je voyage</h3>-->
+        </a> 
         <div class="entete__div-nav">
-            <label for="chk__menu" class="entete__burger">
-              <img
-                src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF"
-                width="32"
-                height="32" alt="icone menu"
+          <label for="chk__menu" class="entete__burger">
+            <img
+              src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF"
+              width="32"
+              height="32" alt="icone menu"
+            />
+          </label>
+          <input type="checkbox" class="chk__menu" id="chk__menu" />
+          <nav class="entete__nav">
+            <ul class="entete__menu">
+              <li class="entete__menu-item"><a href="#">Aventure</a></li>
+              <li class="entete__menu-item"><a href="#">Culturel</a></li>
+              <li class="entete__menu-item"><a href="#">Zen</a></li>
+              <li class="entete__menu-item"><a href="#">Sport</a></li>
+              <li class="entete__menu-item"><a href="#">Croisière</a></li>
+              <li class="entete__menu-item"><a href="#">Repos</a></li>
+            </ul>
+            
+          </nav>
+        <!--</div>              
+        <div class="entete__div-recherche">-->
+            <form class="recherche" action="">
+              <label
+                for="recherche__input"
+                aria-label="champ de recherche"
+              ></label>
+              <input
+                class="recherche__input"
+                type="search"
+                name="recherche__input"
+                id="recherche__input"
+                placeholder="Chercher"
               />
-            </label>
-            <!--<label for="chk__menu-ferme" class="entete__burger-ferme">
-                      <img src="https://s2.svgbox.net/hero-outline.svg?ic=x-circle&color=FFFFFF" width="32" height="32">
-                  </label>-->
-            <input type="checkbox" class="chk__menu" id="chk__menu" />
-            <nav class="entete__nav">
-              <ul class="entete__menu">
-                <li class="entete__menu-item"><a href="#">Aventure</a></li>
-                <li class="entete__menu-item"><a href="#">Culturel</a></li>
-                <li class="entete__menu-item"><a href="#">Zen</a></li>
-                <li class="entete__menu-item"><a href="#">Sport</a></li>
-                <li class="entete__menu-item"><a href="#">Croisière</a></li>
-                <li class="entete__menu-item"><a href="#">Repos</a></li>
-              </ul>
-              <div class="entete__div">
-                <form class="recherche" action="">
-                  <label
-                    for="recherche__input"
-                    aria-label="champ de recherche"
-                  ></label>
-                  <input
-                    class="recherche__input"
-                    type="search"
-                    name="recherche__input"
-                    id="recherche__input"
-                    placeholder="Chercher"
-                  />
-                  <button class="recherche__bouton">
-                    <img
-                      class="recherche__bouton-svg"
-                      alt="loupe"
-                      src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
-                      width="26"
-                      height="26"
-                    />
-                  </button>
-                </form>
-              </div>
-            </nav>
-          </div>
+              <button class="recherche__bouton">
+                <img
+                  class="recherche__bouton-svg"
+                  alt="loupe"
+                  src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
+                  width="26"
+                  height="26"
+                />
+              </button>
+            </form>              
       </div>
-    </header>
+  </div>
+</header>
     <section class="hero">
       <div class="hero__contenu">
           <h1 class="hero__titre">Je voyage</h1>
@@ -144,11 +141,11 @@
         </form>
       </section>
       <section class="galerie">
-        <h2>Destinations populaires</h2>
+        <h2>Destinations favorites</h2>
         <div class="galerie__items">
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Grèce.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Grece.jpg"
               class="galerie__img"
               alt="Grèce"
             />
@@ -156,7 +153,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Afrique.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Afrique.jpg"
               class="galerie__img"
               alt="Afrique"
             />
@@ -164,7 +161,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Cuba.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Cuba.jpg"
               class="galerie__img"
               alt="Cuba"
             />
@@ -172,7 +169,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Maroc.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Maroc.jpg"
               class="galerie__img"
               alt="Maroc"
             />
@@ -180,23 +177,23 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Martinique.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Martinique.jpg"
               class="galerie__img"
               alt="Martinique"
             />
             <figcaption class="galerie__caption">Martinique</figcaption>
           </picture>
           <picture class="galerie__picture">
-            <img
-              src="images/galerie/France.jpg"
-              class="galerie__img"
-              alt="France"
-            />
+                <img
+                src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/France.jpg"
+                class="galerie__img"
+                alt="France"
+                />
             <figcaption class="galerie__caption">France</figcaption>
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Thailande.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Thailande.jpg"
               class="galerie__img"
               alt="Thailance"
             />
@@ -204,7 +201,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Australie.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Australie.jpg"
               class="galerie__img"
               alt="Australie"
             />
@@ -212,7 +209,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Voilier-mer-bleue.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Voilier-mer-bleue.jpg"
               class="galerie__img"
               alt="Alaska"
             />
@@ -220,7 +217,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="images/galerie/Amsterdam.jpg"
+              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Amsterdam.jpg"
               class="galerie__img"
               alt="Amsterdam"
             />
@@ -229,8 +226,41 @@
       </div>
     </section>
     <footer class="piedpage">
-      <p>Tous droits réservés : Je voyage ☀⛱ - 2025</p>
-      <p>Création : Chantal Pépin</p>
+      <div class="piedpage__grille">
+          <div class="piedpage__grille-carte">          
+            <h5>Menu</h5>
+              <article class="piedpage__carte">    
+                <ul >
+                  <li><img src="https://s2.svgbox.net/hero-outline.svg?ic=home&color=000" width="28" height="28"><a href="#">accueil</a></li>
+                  <li><img src="https://s2.svgbox.net/materialui.svg?ic=mark_chat_unread&color=000" width="28" height="28"><a href="#"> Blogue</a></li>
+                  <li><img src="https://s2.svgbox.net/hero-outline.svg?ic=document&color=000" width="28" height="28"><a href="#">À propos</a></li>
+                </ul>
+              </article>
+          </div>
+          <div class="piedpage__grille-carte">
+            <h5>Notre infolettre</h5>
+            <article class="piedpage__carte">      
+            <form action="" class="recherche">
+              <input type="search">
+              <input type="button">
+            </form>
+          </article>
+        </div>
+        <div class="piedpage__grille-carte">
+            <h5>Galeries de photos</h5>
+            <article  class="piedpage__carte">              
+                <div class="piedpage__carrousel">
+                    <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_left&color=000" width="35" height="35" alt="icone flèche gauche">
+                    <img class="piedpage__carrousel-petit" src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Voilier-mer-bleue.jpg" alt="Alaska">
+                    <img src="https://s2.svgbox.net/materialui.svg?ic=arrow_right&color=000" width="35" height="35" alt="icon flèche droite">
+                </div>        
+            </article>
+        </div>    
+      </div>
+      <div class="piedpage__credits">
+        <p>Tous droits réservés : Je voyage ☀⛱ - 2025</p>
+        <p>Création : Chantal Pépin</p>
+        </div>
     </footer>
   </body>
   <script src="script/checkbox.js"></script>
