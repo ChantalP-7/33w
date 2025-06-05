@@ -74,7 +74,7 @@
         <div class="galerie__items">
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Grece.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Grece.jpg"
               class="galerie__img"
               alt="Grèce"
             />
@@ -82,7 +82,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Afrique.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Afrique.jpg"
               class="galerie__img"
               alt="Afrique"
             />
@@ -90,7 +90,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Cuba.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Cuba.jpg"
               class="galerie__img"
               alt="Cuba"
             />
@@ -98,7 +98,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Maroc.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Maroc.jpg"
               class="galerie__img"
               alt="Maroc"
             />
@@ -106,7 +106,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Martinique.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Martinique.jpg"
               class="galerie__img"
               alt="Martinique"
             />
@@ -114,7 +114,7 @@
           </picture>
           <picture class="galerie__picture">
                 <img
-                src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/France.jpg"
+                src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/France.jpg"
                 class="galerie__img"
                 alt="France"
                 />
@@ -122,7 +122,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Thailande.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Thailande.jpg"
               class="galerie__img"
               alt="Thailance"
             />
@@ -130,7 +130,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Australie.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Australie.jpg"
               class="galerie__img"
               alt="Australie"
             />
@@ -138,7 +138,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Voilier-mer-bleue.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Voilier-mer-bleue.jpg"
               class="galerie__img"
               alt="Alaska"
             />
@@ -146,7 +146,7 @@
           </picture>
           <picture class="galerie__picture">
             <img
-              src="http://localhost/Voyage-33W-ete-25/wp-content/uploads/2025/05/Amsterdam.jpg"
+              src="https://gftnth00.mywhc.ca/33we_18/wp-content/uploads/2025/06/Amsterdam.jpg"
               class="galerie__img"
               alt="Amsterdam"
             />
