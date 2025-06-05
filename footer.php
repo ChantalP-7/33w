@@ -1,7 +1,7 @@
 <footer class="piedpage">
   	<div class="piedpage__grille">
 	  	<div class="piedpage__grille-carte">
-		  	<h6>Contactez-nous</h6>
+		  	<h6>En savoir plus</h6>
 		  	<article >      
 				<div class="piedpage__icones">					
 					<div class="piedpage__icone">
@@ -32,7 +32,7 @@
 				</article>
 			</div>
 			<div class="piedpage__grille-carte">
-			<h6>Menu</h6>
+			<h6>Contactez-nous</h6>
 			<article class="piedpage__carte">      
 				<form action="" class="piedpage__contact">                
 					<label for="nom">* Nom</label>
@@ -53,6 +53,27 @@
 	</div>
 	<div class="piedpage__credits">
 		<p>Tous droits réservés : Je voyage - 2025</p>
+		<div class="hero__description-media">
+			<a href="#"
+				><img
+				src="https://s2.svgbox.net/social.svg?ic=facebook&color=FFFFFF"
+				width="28"
+				height="30" alt="icone facebook"
+			/></a>
+			<a href="#"
+				><img
+				src="https://s2.svgbox.net/social.svg?ic=instagram&color=FFFFFF"
+				width="28"
+				height="28" alt="icone instagram"
+			/></a>
+			<a href="#"
+				><img
+				src="https://s2.svgbox.net/social.svg?ic=tiktok&color=FFFFFF"
+				width="28"
+				height="28" alt="icone tiktok"
+			/></a>
+			
+		</div>
 		<p>Création : Chantal Pépin</p>
 	</div>
 </footer>

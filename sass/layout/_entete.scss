@@ -1,27 +1,17 @@
-#chk__menu {
+.chk__menu {
   display: none;
 }
-
-#chk__menu:checked ~ .entete__nav {
+.chk__menu:checked ~ .entete__nav {
   display: flex;
   flex-direction: column;
-    // ul
   .entete__menu {
     flex-direction: column;
-    & a {
-      background-color: transparent;
-      color: white;
-      &:hover {
-        color: #47b5ff;
-      }
-    }
-    
   }
 }
 
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 10px 10px 10px 10px;  
+  padding: 10px 10px 10px 10px;
 
   &__contenu {
     display: flex;
@@ -34,21 +24,12 @@
     h3 {
       color: white;
       font-weight: 400;
-    }   
-
-  }
-
-  &__div-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
+    }
   }
 
   &__logo {
-    width: 75px;
-    height: 75px;
+    max-width: 75px;
+    max-height: 75px;
     padding: 2px;
     border-radius: 50%;
     border: 2px solid white;
@@ -57,18 +38,11 @@
   /*------------------------------------- Navigation */
   &__nav {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
-    //margin: 0 2rem 0 2rem;    
-    //align-items: center;
-    justify-content: space-between;
-    //padding-right: 20px;    
-    &:focus {
-      background-color: #47b5ff;
-    } 
-
+    margin: 0 2rem 0 auto;
     @media screen and (max-width: $point-rupture) {
       display: none;
-      justify-content: flex-end;
     }
   }
 
@@ -76,36 +50,35 @@
     display: none;
     @media screen and (max-width: $point-rupture) {
       display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 2;
       cursor: pointer;
     }
   }
 
   &__menu {
-    /* ul */
+    // ul
     display: flex;
-    list-style: none;
+    list-style-type: none;
     gap: 1rem;
   }
 
   &__menu-item {
     /* li */
-    margin-left: auto;
+    //margin-left auto;
 
     a {
-      background-color: rgb(255, 255, 255);
-      padding: 8px 22px;
-      border-radius: 30px;
-      color: rgba(0, 0, 0, 0.829);
+      color: white;
       text-decoration: none;
-      font-size: 18px;
+      font-size: 16px;
       font-family: Quicksand;
       &:hover {
-        background-color: #47b5ff;
-        color: rgba(255, 255, 255);
+        color: rgb(71, 181, 255);
       }
       &:active {
-        background-color: rgb(71, 181, 255);
-        color: rgba(255, 255, 255);
+        color: rgb(71, 181, 255);
       }
     }
   }

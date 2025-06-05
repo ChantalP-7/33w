@@ -23,12 +23,12 @@
                     <div>
                         <a class="bouton" href="#">Je m'inscris !</a>
                     </div>
-                    <div class="hero__descripton-media">
+                    <div class="hero__description-media">
                         <a href="#"
                             ><img
                             src="https://s2.svgbox.net/social.svg?ic=facebook&color=000"
                             width="28"
-                            height="30" alt="icone facebook"
+                            height="28" alt="icone facebook"
                         /></a>
                         <a href="#"
                             ><img

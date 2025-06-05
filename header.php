@@ -19,11 +19,11 @@
       <div class="entete__contenu">
           <figure>
             <a href="#">
-                <?= get_custom_logo();?>
+                <?php echo get_custom_logo();?>
               </a>
           </figure>  
           <!--<h3>Je voyage</h3>-->
-          <div class="entete__div-nav">
+          <!--<div class="entete__div-nav">-->
               <label for="chk__menu" class="entete__burger">
                 <img
                   src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF"
@@ -51,10 +51,7 @@
                   "menu_class" => "entete__menu entete__menu-item"
                   
               )); ?>
-              </nav>
-            <!--</div>              
-            <div class="entete__div-recherche">-->
-                <form class="recherche" action="">
+              <form class="recherche" action="">
                   <label
                     for="recherche__input"
                     aria-label="champ de recherche"
@@ -75,7 +72,11 @@
                       height="26"
                     />
                   </button>
-                </form>              
-          </div>
+                </form>      
+              </nav>
+            <!--</div>              
+            <div class="entete__div-recherche">-->
+                        
+          <!--</div>-->
       </div>
   </header>

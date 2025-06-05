@@ -45,18 +45,23 @@
       h1 {
         color: black;
       }
-      &__description { 
+      &__description {
         line-height: 0.9rem;
       }
     }
+  }
+
+  
+  &__contenu-html {
+    margin-bottom: 50px;
   }
 
   &__titre {
     color: white;
     font-weight: 500;
   }
-  &__description {    
-    font-size: clamp(1.1rem, .554vw + .9345rem, 1.35rem);
+  &__description {
+    font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,8 +75,6 @@
     max-width: 80ch;
     gap: 40px;
 
-    
-    
     button .bouton {
       background-color: rgb(71, 181, 255);
       width: fit-content;
@@ -87,9 +90,7 @@
         border-color: 1px solid rgb(71, 181, 255);
         color: rgb(0, 0, 0);
       }
-    } 
-
-
+    }
 
     p {
       margin-top: 0px;
@@ -97,39 +98,36 @@
     }
   }
 
-  
   &__iconesContact {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    gap: 5px; 
-    margin-bottom: 20px;    
+    gap: 5px;
+    margin-bottom: 20px;
   }
 
-  
   &__icone {
     display: flex;
     align-items: center;
     gap: 10px;
 
     a {
-      color: rgb(21, 21, 221);      
+      color: rgb(21, 21, 221);
     }
-  }  
-
+  }
 
   &__description-bouton-media {
     display: inline-flex;
     gap: 30px;
-    &:hover  {
+    &:hover {
       cursor: pointer;
       fill: white;
     }
-  } 
-  
+  }
+
   &__description-media {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
   }
   &:hover svg {
