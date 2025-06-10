@@ -35,6 +35,7 @@ Voici l'adresse de mon site : https://gftnth00.mywhc.ca/33we_18/
 Fin du TP2
 
 ---
+
 TP1 - Partie 3
 
 Ajouts de plusieurs fichiers, changements et modifications.
@@ -52,5 +53,4 @@ Tableau de bord Wordpress:
 2- Regroupement manuel des 5 premiers articles, leur ajouter la catégorie populaire et les faire afficher par défaut.
 3- Ajout d'images à l'avant pour les catégorie.
 
-
-
+Voir le site ici : https://gftnth00.mywhc.ca/33we_18/
