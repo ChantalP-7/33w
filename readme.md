@@ -33,3 +33,24 @@ Mise à jour du site distant suite aux changements de mon site local.
 Voici l'adresse de mon site : https://gftnth00.mywhc.ca/33we_18/
 
 Fin du TP2
+
+---
+TP1 - Partie 3
+
+Ajouts de plusieurs fichiers, changements et modifications.
+
+Theme local:
+1- Ajout de la categorie populaire dans le fichier function.php
+2- Ajout de trace de débogage dans 3 fichiers, index.php, category.php et front-page.php
+3- Segmentation de la page front-page.php
+4- ajout d'un dossier Gabarit à la racine du thème
+5- Ajout de deux fichiers "template" : carte.php et galerie.php
+6- On appelle ces deux fichiers dans la page front-page.php
+
+Tableau de bord Wordpress:
+1- Ajout manuellement de la catégorie populaire dans le tableau de bord wp dans la section Articles et l'onglet Categorie
+2- Regroupement manuel des 5 premiers articles, leur ajouter la catégorie populaire et les faire afficher par défaut.
+3- Ajout d'images à l'avant pour les catégorie.
+
+
+
