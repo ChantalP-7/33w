@@ -1,0 +1,27 @@
+a {
+  color: blue;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.conteneur {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  &__carte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 0 300px;
+    border: 1px solid #aaa;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  &__galerie {
+    flex: 1;
+  }
+
+}
