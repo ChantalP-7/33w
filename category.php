@@ -17,7 +17,7 @@
         the_post();      
         the_post_thumbnail('thumbnail');             
         ?>
-        <h3><?
+        <h3><?php
         /* Affiche le titre principal du " post " */
         the_title(); ?></h3>
         <?php 

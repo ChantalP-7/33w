@@ -8,8 +8,9 @@ a:hover {
 
 .conteneur {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
   &__carte {
     display: flex;
     flex-direction: column;
@@ -21,7 +22,7 @@ a:hover {
   }
   
   &__galerie {
-    flex: 1;
+    flex: 1 0 100%;
   }
 
 }

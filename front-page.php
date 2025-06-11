@@ -76,7 +76,7 @@
           <input type="submit" class="bouton__fonce" name="soumettre" value="Soumettre">
         </form>
       </section>
-      <section class="galerie">
+      <!--<section class="galerie">
         <h2>Destinations favorites</h2>
         <div class="galerie__items">
           <picture class="galerie__picture">
@@ -160,33 +160,26 @@
             <figcaption class="galerie__caption">Amsterdam</figcaption>
           </picture>
       </div>
-    </section>
+    </section>-->
     <section class="populaire">
-        <h2>Destinations populaires</h2>     
+<!--<h2>Destinations populaires</h2> -->    
         <div class="conteneur global">
           <?php if (have_posts()) {
           while (have_posts()) {
             /* affiche l'image « mise en avant » miniature */ 
             the_post();
             ?>
-            <article class="conteneur__carte">
-              <?php the_post_thumbnail('thumbnail'); ?>
-
-
-              <h5><?php
-                  /* affiche le titre pricipal du « post » */
-                  the_title(); ?></h5>
-              <p><?php
-                  /* cette fontion permet d'afficher l'ensemble du contenu du post (article ou page)*/
-                  // the_content();
-                  $lien = "<a href=" . get_permalink() . ">...Suite</a>";
-                  echo wp_trim_words(get_the_excerpt(), 10, $lien);
-                  //wp_trim_words()
-                  ?></p>
-            </article>
-          <?php }
-          } ?>
-        </div>
+             <p><?php
+              if (in_category('galerie')) {
+                 get_template_part("gabarit/galerie");
+              } else {  
+                get_template_part("gabarit/carte"); 
+              }  
+          }
+          
+        }
+          ?>
+           </div>
     </section>
     <?php  get_footer();  ?>
   

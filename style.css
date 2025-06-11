@@ -658,8 +658,9 @@ a:hover {
 
 .conteneur {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
 }
 .conteneur__carte {
   display: flex;
@@ -671,7 +672,7 @@ a:hover {
   border-radius: 3px;
 }
 .conteneur__galerie {
-  flex: 1;
+  flex: 1 0 100%;
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */
