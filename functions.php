@@ -11,16 +11,11 @@ function mon_theme_supports() {
         'border-radius' => 50,
         'flex-height' => true,
         'flex-width'  => true,
-    ));
-
-    
+    ));   
             
 }
 
-
-
 add_action( 'after_setup_theme', 'mon_theme_supports' );
-
 
 function theme_tp_enqueue_styles() { 
 wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css'); 
