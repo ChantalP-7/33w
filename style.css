@@ -146,6 +146,12 @@ h6 {
   color: rgb(71, 181, 255);
 }
 
+.custom-logo {
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -237,11 +243,12 @@ a {
   }
 }
 .hero__contenu-html {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .hero__titre {
   color: white;
   font-weight: 500;
+  margin-top: -20px;
 }
 .hero__description {
   font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
@@ -308,6 +315,16 @@ a {
 }
 .hero:hover svg {
   color: #ffffff;
+}
+
+.hero__contenu {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 20px;
 }
 
 .piedpage {

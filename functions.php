@@ -11,15 +11,37 @@ function mon_theme_supports() {
         'flex-height' => true,
         'flex-width'  => true,
     ));
+
+    add_image_size('miniature', array(
+        'height'      => 75,
+            'width'       => 75,
+            'flex-height' => true,
+            'flex-width'  => true,
+    
+    ));
 }
+
+
+
 add_action( 'after_setup_theme', 'mon_theme_supports' );
 
 
 function theme_tp_enqueue_styles() { 
-wp_enqueue_style('normalize', get_template_directory_uri() . 'normalize.css'); 
+wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css'); 
 wp_enqueue_style('main-style', get_stylesheet_uri()); 
 
-  $script_path = get_template_directory() . '/script/checkbox.js';
+    $css_path = get_template_directory() . '/style.css';
+    $css_url  = get_template_directory_uri() . '/style.css';
+
+    wp_enqueue_style(
+        'main-css',
+        $css_url,
+        array(),
+        filemtime($css_path),
+        true
+    );
+
+    $script_path = get_template_directory() . '/script/checkbox.js';
     $script_url  = get_template_directory_uri() . '/script/checkbox.js';
 
     wp_enqueue_script(
@@ -29,6 +51,9 @@ wp_enqueue_style('main-style', get_stylesheet_uri());
         filemtime($script_path),
         true
     );
+
+    
+
 
 add_action('wp_enqueue_scripts', 'mon_theme_ajouter_scripts');
 
