@@ -1,15 +1,13 @@
 <?php
+
 /**
- * Template-part carte.php
- * Affiche une carte dans un conteneur
+ * Template-part carte.phpAdd commentMore actions
+ * Affiche une carte dans un conteneur flex
  */
-
- $lien = "<a href=" . get_permalink() . ">...Suite</a>";
-
+$lien = "<a href=" . get_permalink() . ">... <?php echo ?> Suite</a>"
 ?>
-
 <article class="conteneur__carte">
     <?php the_post_thumbnail('thumbnail'); ?>
-    <h3><?php the_title(); ?></h3>
-    <p><?php  echo '<p>' . wp_trim_words(get_the_excerpt(), 100, $lien); ?> </p>        
+    <h4><?php the_title(); ?></h4>
+   <p><?php echo  wp_trim_words(get_the_excerpt(), 50, $lien) ?></p>
 </article>

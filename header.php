@@ -51,28 +51,9 @@
                   "menu_class" => "entete__menu entete__menu-item"
                   
               )); ?>
-              <form class="recherche" action="">
-                  <label
-                    for="recherche__input"
-                    aria-label="champ de recherche"
-                  ></label>
-                  <input
-                    class="recherche__input"
-                    type="search"
-                    name="recherche__input"
-                    id="recherche__input"
-                    placeholder="Chercher"
-                  />
-                  <button class="recherche__bouton">
-                    <img
-                      class="recherche__bouton-svg"
-                      alt="loupe"
-                      src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=FFFFFF"
-                      width="26"
-                      height="26"
-                    />
-                  </button>
-                </form>      
+              <?php
+              get_search_form();
+              ?>                            
               </nav>
             <!--</div>              
             <div class="entete__div-recherche">-->
