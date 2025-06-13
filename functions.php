@@ -4,6 +4,7 @@ function mon_theme_supports() {
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
     add_theme_support('menus');
+    add_image_size('miniature', 75, 75, true);
     add_theme_support('custom-logo', array(
         'height'      => 75,
         'width'       => 75,
@@ -12,13 +13,8 @@ function mon_theme_supports() {
         'flex-width'  => true,
     ));
 
-    add_image_size('miniature', array(
-        'height'      => 75,
-            'width'       => 75,
-            'flex-height' => true,
-            'flex-width'  => true,
     
-    ));
+            
 }
 
 
