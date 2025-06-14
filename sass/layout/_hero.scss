@@ -12,6 +12,7 @@
     margin-left: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 20px;
 
     @media screen and (max-width: $point-rupture) {
@@ -55,6 +56,7 @@
   &__titre {
     color: white;
     font-weight: 500;
+    margin-top: -10px;
   }
 
   &__description {
