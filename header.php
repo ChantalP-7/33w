@@ -21,29 +21,16 @@
             <a href="#">
                 <?php echo get_custom_logo();?>
               </a>
-          </figure>  
-          <!--<h3>Je voyage</h3>-->
-          <!--<div class="entete__div-nav">-->
+          </figure>           
               <label for="chk__menu" class="entete__burger">
                 <img
                   src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF"
                   width="32"
                   height="32" alt="icone menu"
                 />
-              </label>            
-              <!--<label for="chk__menu-ferme" class="entete__burger-ferme">
-                        <img src="https://s2.svgbox.net/hero-outline.svg?ic=x-circle&color=FFFFFF" width="32" height="32">
-                    </label>-->
+              </label>             
               <input type="checkbox" class="chk__menu" id="chk__menu" />
               <nav class="entete__nav">
-                <!--<ul class="entete__menu">
-                  <li class="entete__menu-item"><a href="#">Aventure</a></li>
-                  <li class="entete__menu-item"><a href="#">Culturel</a></li>
-                  <li class="entete__menu-item"><a href="#">Zen</a></li>
-                  <li class="entete__menu-item"><a href="#">Sport</a></li>
-                  <li class="entete__menu-item"><a href="#">Croisière</a></li>
-                  <li class="entete__menu-item"><a href="#">Repos</a></li>
-                </ul>-->
                 <?php  wp_nav_menu(array(
                   "menu" => "principal",
                   'container' => "nav",
@@ -55,9 +42,5 @@
               get_search_form();
               ?>                            
               </nav>
-            <!--</div>              
-            <div class="entete__div-recherche">-->
-                        
-          <!--</div>-->
       </div>
   </header>

@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <title>Je voyage</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <title>Je voyage</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
   <body>
     <header class="entete">
       <div class="entete__contenu">
-        <a href="#">
-          <img
-            src="images/mon-logo-voyage-bg-blanc.png"
-            alt="logo club voyage"
-            class="entete__logo"
-          />
-        </a>
-        <div class="entete__div-nav">
+        <figure>
+          <a href="#">
+            <img
+              src="images/mon-logo-voyage-bg-blanc.png"
+              alt="logo club voyage"
+              class="entete__logo"
+            />
+          </a>
+      </figure>
           <label for="chk__menu" class="entete__burger">
             <img
               src="https://s2.svgbox.net/hero-solid.svg?ic=menu-alt-1&color=FFFFFF"
@@ -34,15 +35,14 @@
           </label>
           <input type="checkbox" class="chk__menu" id="chk__menu" />
           <nav class="entete__nav">
-            <ul class="entete__menu">
-              <li class="entete__menu-item"><a href="#">Aventure</a></li>
-              <li class="entete__menu-item"><a href="#">Culturel</a></li>
-              <li class="entete__menu-item"><a href="#">Zen</a></li>
-              <li class="entete__menu-item"><a href="#">Sport</a></li>
-              <li class="entete__menu-item"><a href="#">Croisière</a></li>
-              <li class="entete__menu-item"><a href="#">Repos</a></li>
-            </ul>
-          </nav>
+                <ul class="entete__menu">
+                <li class="entete__menu-item"><a href="#">Aventure</a></li>
+                <li class="entete__menu-item"><a href="#">Culturel</a></li>
+                <li class="entete__menu-item"><a href="#">Zen</a></li>
+                <li class="entete__menu-item"><a href="#">Sport</a></li>
+                <li class="entete__menu-item"><a href="#">Croisière</a></li>
+                <li class="entete__menu-item"><a href="#">Repos</a></li>
+                </ul>          
           <form class="recherche" action="">
             <label
               for="recherche__input"
@@ -65,12 +65,12 @@
               />
             </button>
           </form>
-        </div>
+        </nav>
       </div>
     </header>
     <section class="hero">
-      <div class="hero__contenu contenu-html">
-          <h1 class="hero__titre">Je voyage</h1>
+        <div class="hero__contenu contenu-html">
+            <h1 class="hero__titre">Je voyage</h1>
             <div class="hero__description">
                 <p>
                   <strong>Je voyage</strong> est un club de voyageurs passionné.e.s de
@@ -112,178 +112,178 @@
                             height="28" alt="icone tiktok"
                         /></a>
                       
-                  </div>
-              </div>
+                    </div>
+                </div>
+                </div>
             </div>
-        </div>
-      </section>
-      <section class="infolettre">
-        <h2>Notre infolettre</h2>
-        <p>Abonnez-vous!</p>
-        <form action="" class="infolettre__formulaire" method="post">
-            <div class="infolettre__div">
-                <div class="infolettre__input">
-                    <label class="infolettre__label" id="prenom">Prénom</label>
-                    <input type="text" class="" name="prenom" id="prenom">
-                </div>
-                <div class="infolettre__input">
-                    <label class="infolettre__label" id="nom">Nom</label>
-                    <input type="text" class="" name="nom" id="nom">
-                </div>
-                <div class="infolettre__input">
-                    <label class="infolettre__label" id="email">Courriel</label>
-                    <input type="email" class="" name="email" id="email">
-                </div>
-            </div>          
-          <input type="submit" class="bouton__fonce" name="soumettre" value="Soumettre">
-        </form>
-      </section>
-      <section class="galerie">
-        <h2>Destinations favorites</h2>
-        <div class="galerie__items">
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Grèce.jpg"
-              class="galerie__img"
-              alt="Grèce"
-            />
-            <figcaption class="galerie__caption">Grèce</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Afrique.jpg"
-              class="galerie__img"
-              alt="Afrique"
-            />
-            <figcaption class="galerie__caption">Afrique</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Cuba.jpg"
-              class="galerie__img"
-              alt="Cuba"
-            />
-            <figcaption class="galerie__caption">Cuba</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Maroc.jpg"
-              class="galerie__img"
-              alt="Maroc"
-            />
-            <figcaption class="galerie__caption">Maroc</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Martinique.jpg"
-              class="galerie__img"
-              alt="Martinique"
-            />
-            <figcaption class="galerie__caption">Martinique</figcaption>
-          </picture>
-          <picture class="galerie__picture">
+        </section>
+        <section class="infolettre">
+            <h2>Notre infolettre</h2>
+            <p>Abonnez-vous!</p>
+            <form action="" class="infolettre__formulaire" method="post">
+                <div class="infolettre__div">
+                    <div class="infolettre__input">
+                        <label class="infolettre__label" id="prenom">Prénom</label>
+                        <input type="text" class="" name="prenom" id="prenom">
+                    </div>
+                    <div class="infolettre__input">
+                        <label class="infolettre__label" id="nom">Nom</label>
+                        <input type="text" class="" name="nom" id="nom">
+                    </div>
+                    <div class="infolettre__input">
+                        <label class="infolettre__label" id="email">Courriel</label>
+                        <input type="email" class="" name="email" id="email">
+                    </div>
+                </div>          
+            <input type="submit" class="bouton__fonce" name="soumettre" value="Soumettre">
+            </form>
+        </section>
+        <section class="galerie">
+            <h2>Destinations favorites</h2>
+            <div class="galerie__items">
+                <picture class="galerie__picture">
                 <img
-                src="./images/galerie/France.jpg"
+                src="./images/galerie/Grèce.jpg"
                 class="galerie__img"
-                alt="France"
+                alt="Grèce"
                 />
-            <figcaption class="galerie__caption">France</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Thailande.jpg"
-              class="galerie__img"
-              alt="Thailance"
-            />
-            <figcaption class="galerie__caption">Thailande</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Australie.jpg"
-              class="galerie__img"
-              alt="Australie"
-            />
-            <figcaption class="galerie__caption">Australie</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Voilier-mer-bleue.jpg"
-              class="galerie__img"
-              alt="Alaska"
-            />
-            <figcaption class="galerie__caption">Alaska</figcaption>
-          </picture>
-          <picture class="galerie__picture">
-            <img
-              src="./images/galerie/Amsterdam.jpg"
-              class="galerie__img"
-              alt="Amsterdam"
-            />
-            <figcaption class="galerie__caption">Amsterdam</figcaption>
-          </picture>
-      </div>
+                <figcaption class="galerie__caption">Grèce</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Afrique.jpg"
+                class="galerie__img"
+                alt="Afrique"
+                />
+                <figcaption class="galerie__caption">Afrique</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Cuba.jpg"
+                class="galerie__img"
+                alt="Cuba"
+                />
+                <figcaption class="galerie__caption">Cuba</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Maroc.jpg"
+                class="galerie__img"
+                alt="Maroc"
+                />
+                <figcaption class="galerie__caption">Maroc</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Martinique.jpg"
+                class="galerie__img"
+                alt="Martinique"
+                />
+                <figcaption class="galerie__caption">Martinique</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                    <img
+                    src="./images/galerie/France.jpg"
+                    class="galerie__img"
+                    alt="France"
+                    />
+                <figcaption class="galerie__caption">France</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Thailande.jpg"
+                class="galerie__img"
+                alt="Thailance"
+                />
+                <figcaption class="galerie__caption">Thailande</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Australie.jpg"
+                class="galerie__img"
+                alt="Australie"
+                />
+                <figcaption class="galerie__caption">Australie</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Voilier-mer-bleue.jpg"
+                class="galerie__img"
+                alt="Alaska"
+                />
+                <figcaption class="galerie__caption">Alaska</figcaption>
+            </picture>
+            <picture class="galerie__picture">
+                <img
+                src="./images/galerie/Amsterdam.jpg"
+                class="galerie__img"
+                alt="Amsterdam"
+                />
+                <figcaption class="galerie__caption">Amsterdam</figcaption>
+            </picture>
+        </div>
     </section>
     <section class="populaire">
-    <h2>Destinations populaires</h2>
+        <h2>Destinations populaires</h2>
     </section>
     <footer class="piedpage">
-      <div class="piedpage__grille">
-        <div class="piedpage__grille-carte">
-          <h6>Contactez-nous</h6>
-          <article >      
-          <div class="piedpage__icones">					
-            <div class="piedpage__icone">
-                <img src="https://s2.svgbox.net/hero-outline.svg?ic=home&color=000" width="26" height="26"><a href="#"> Accueil</a>
-            </div>
-          
-            <div class="piedpage__icone">
-                <img src="https://s2.svgbox.net/octicons.svg?ic=info&color=000" width="24" height="24"><a href="#">À propos</a>
-            </div>
-          
-            <div class="piedpage__icone"><img src="https://s2.svgbox.net/materialui.svg?ic=event_available&color=000" width="24" height="26"><a href="#">Événement</a></div>
-          
-            <div class="piedpage__icone">
-              <img src="https://s2.svgbox.net/hero-outline.svg?ic=chat&color=000" width="26" height="24"><a href="#"> Blogue</a>
-            </div>				
-            <div class="piedpage__icone">
-              <img src="https://s2.svgbox.net/hero-solid.svg?ic=plus-sm&color=000" width="26" height="26"><a href="#">Plus</a>
-            </div>
-          </ul>
-      </article>
-      </div>     
-      <div class="piedpage__grille-carte">
-          <h6>Galeries de photos</h6>
-          <article  class="piedpage__carte">              
-            <div class="piedpage__galerie">
-              <img class="piedpage__carrousel-petit" src="./images/galerie/Voilier-mer-bleue.jpg" alt="Alaska">
-            </div>        
-          </article>
-        </div>
-        <div class="piedpage__grille-carte">
-        <h6>Menu</h6>
-        <article class="piedpage__carte">      
-          <form action="" class="piedpage__contact">                
-            <label for="nom">* Nom</label>
-            <input type="text" id="nom" name="nom" required>
-            <label for="courriel">* Courriel</label>
-            <input type="email" id="courriel" name="courriel" required>                
-            <label for="message">* Message</label>
-            <textarea class="piedPage__contact-message"
-              name="message"
-              id="message"
-              rows="4" cols="50"
-              placeholder="Message" required>
-            </textarea>                
-            <input type="button" class="piedpage__contact-bouton  bouton" value="Envoyer">
-          </form>
+        <div class="piedpage__grille">
+            <div class="piedpage__grille-carte">
+            <h6>Contactez-nous</h6>
+            <article >      
+            <div class="piedpage__icones">					
+                <div class="piedpage__icone">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=home&color=000" width="26" height="26"><a href="#"> Accueil</a>
+                </div>
+            
+                <div class="piedpage__icone">
+                    <img src="https://s2.svgbox.net/octicons.svg?ic=info&color=000" width="24" height="24"><a href="#">À propos</a>
+                </div>
+            
+                <div class="piedpage__icone"><img src="https://s2.svgbox.net/materialui.svg?ic=event_available&color=000" width="24" height="26"><a href="#">Événement</a></div>
+            
+                <div class="piedpage__icone">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=chat&color=000" width="26" height="24"><a href="#"> Blogue</a>
+                </div>				
+                <div class="piedpage__icone">
+                <img src="https://s2.svgbox.net/hero-solid.svg?ic=plus-sm&color=000" width="26" height="26"><a href="#">Plus</a>
+                </div>
+            </ul>
         </article>
-      </div>    
-    </div>
-    <div class="piedpage__credits">
-      <p>Tous droits réservés : Je voyage - 2025</p>
-      <p>Création : Chantal Pépin</p>
-    </div>
-  </footer>
-  </body>
-  <script src="script/checkbox.js"></script>
+        </div>     
+        <div class="piedpage__grille-carte">
+            <h6>Galeries de photos</h6>
+            <article  class="piedpage__carte">              
+                <div class="piedpage__galerie">
+                <img class="piedpage__carrousel-petit" src="./images/galerie/Voilier-mer-bleue.jpg" alt="Alaska">
+                </div>        
+            </article>
+            </div>
+            <div class="piedpage__grille-carte">
+            <h6>Menu</h6>
+            <article class="piedpage__carte">      
+            <form action="" class="piedpage__contact">                
+                <label for="nom">* Nom</label>
+                <input type="text" id="nom" name="nom" required>
+                <label for="courriel">* Courriel</label>
+                <input type="email" id="courriel" name="courriel" required>                
+                <label for="message">* Message</label>
+                <textarea class="piedPage__contact-message"
+                name="message"
+                id="message"
+                rows="4" cols="50"
+                placeholder="Message" required>
+                </textarea>                
+                <input type="button" class="piedpage__contact-bouton  bouton" value="Envoyer">
+            </form>
+            </article>
+        </div>    
+        </div>
+        <div class="piedpage__credits">
+        <p>Tous droits réservés : Je voyage - 2025</p>
+        <p>Création : Chantal Pépin</p>
+        </div>
+    </footer>
+    </body>
+    <script src="script/checkbox.js"></script>
 </html>

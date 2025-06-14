@@ -12,9 +12,6 @@
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 50px;
     padding: 20px;
 
     @media screen and (max-width: $point-rupture) {
@@ -58,8 +55,8 @@
   &__titre {
     color: white;
     font-weight: 500;
-    margin-top: -20px;
   }
+
   &__description {
     font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
     display: flex;
@@ -133,14 +130,4 @@
   &:hover svg {
     color: #ffffff;
   }
-}
-
-.hero__contenu {
-  margin-left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 50px;
-  padding: 20px;
 }
