@@ -5,7 +5,6 @@
 ?>
 
 <?php get_header(); ?>
-<h3>--------- Trace Pour À retirer -------- Front-page.php --------------</h3>
 <section class="hero">
       <div class="hero__contenu contenu-html">
           <h1 class="hero__titre">Je voyage</h1>

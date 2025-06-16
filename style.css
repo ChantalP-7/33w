@@ -362,6 +362,18 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+.piedpage__carte {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  gap: 8px;
+}
+.piedpage__carte li {
+  padding: 10px;
+  list-style: none;
+  color: black;
+}
 .piedpage__contact {
   background-color: rgb(71, 181, 255);
   display: block;
@@ -408,6 +420,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -430,13 +443,24 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.911);
+  color: white;
   margin: -20px;
   padding: 20px;
 }
+.piedpage__menu-piedpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+.piedpage__menu-piedpage li {
+  list-style: none;
+  color: black;
+  font-size: 20px;
+}
 
 .piedpage p {
-  color: white;
-  font-family: Courgette;
   font-size: clamp(0.1rem, 1.3vw + 0.4rem, 1.1rem);
   font-weight: 400;
 }

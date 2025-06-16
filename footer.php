@@ -1,31 +1,8 @@
 <footer class="piedpage">
   	<div class="piedpage__grille">
-	  	<div class="piedpage__grille-carte">
-		  	<h6>En savoir plus</h6>
-		  	<article >      
-				<div class="piedpage__icones">					
-					<div class="piedpage__icone">
-					  	<img src="https://s2.svgbox.net/hero-outline.svg?ic=home&color=000" width="26" height="26"><a href="#"> Accueil</a>
-					</div>
-				
-					<div class="piedpage__icone">
-					  	<img src="https://s2.svgbox.net/octicons.svg?ic=info&color=000" width="24" height="24"><a href="#">À propos</a>
-					</div>
-				
-					<div class="piedpage__icone"><img src="https://s2.svgbox.net/materialui.svg?ic=event_available&color=000" width="24" height="26"><a href="#">Événement</a></div>
-				
-					<div class="piedpage__icone">
-						<img src="https://s2.svgbox.net/hero-outline.svg?ic=chat&color=000" width="26" height="24"><a href="#"> Blogue</a>
-					</div>				
-					<div class="piedpage__icone">
-						<img src="https://s2.svgbox.net/hero-solid.svg?ic=plus-sm&color=000" width="26" height="26"><a href="#">Plus</a>
-					</div>
-				</div>
-		</article>
-		</div>
-		<div class="piedpage__grille-carte">
-			<h6>Contactez-nous</h6>
-			<article class="piedpage__carte">      
+	  	<div>
+		  	<h3> Agences de voyage</h3>
+			  <article class="piedpage__carte">      
 				<?php				
 				wp_nav_menu(array(
 					"menu" => "externe",
@@ -33,8 +10,31 @@
 				))
 				?>
 			</article>
-		</div>    
+		</div>
+		<div class="piedpage__carte">
+			<h3>Nous joindre</h3>
+				<article>
+                    <div class="piedpage__icone">
+                      <img src="https://s2.svgbox.net/hero-solid.svg?ic=home&color=000" width="22" height="22"> 3800, rue Sherbrooke, Montréal, H1H 1H1
+                    </div>
+                    <div class="piedpage__icone">
+                      <img src="https://s2.svgbox.net/materialui.svg?ic=smartphone&color=000" width="20" height="20"> 514-000-0000
+                    </div>
+                    <div class="piedpage__icone">
+                      <img src="https://s2.svgbox.net/materialui.svg?ic=mail&color=000" width="22" height="22">
+                      <a href="#">info@jevoyage.vo</a>
+                    </div>
+				</article>
+		</div> 
+		<div>
+			<article>
+				<h3>Notre mission</h3>
+				<p>Notre mission est d'inspirer et d'informer nos membres sur des destinations de voyage qui répondent à leurs attentes. Nous favorisons les échanges et le partage d’expériences à travers des activités sociales variées, telles que des rencontres, des conférences et des dîners.
+				</p>
+			</article>
+		</div>
 	</div>
+	
 	<div class="piedpage__credits">
 		<p>Tous droits réservés : Je voyage - 2025</p>
 		<div class="hero__description-media">
@@ -57,7 +57,7 @@
 				height="28" alt="icone tiktok"
 			/></a>
 			<a href="https://github.com/ChantalP-7/33w/tree/tp1"
-				><img src="https://s2.svgbox.net/social.svg?ic=github&color=000" width="28" height="28" alt="github">
+				><img src="https://s2.svgbox.net/social.svg?ic=github&color=FFFFFF" width="28" height="28" alt="github">
 			</a>			
 		</div>
 		<p>Création : Chantal Pépin</p>

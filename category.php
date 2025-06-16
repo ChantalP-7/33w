@@ -6,8 +6,6 @@
 ?>
 
 <?php get_header(); ?>
-<h3>--------- Trace Pour débogage - À retirer ------- Category.php ------</h3>
-      
     <section class="populaire">
     <h2>Destinations populaires</h2>
     <?php  
