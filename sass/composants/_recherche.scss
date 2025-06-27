@@ -4,12 +4,11 @@
 
 .recherche {
   display: flex;
-  /*border: 1px solid grey;*/
   align-items: center;
-  gap: 10px;
+  gap: 5px;
 
   &__input {
-    width: 250px;
+    width: 200px;
     border: none;
     outline: none;
     padding: 10px;
@@ -20,12 +19,11 @@
 
   &__bouton {
     background-color: rgb(71, 181, 255);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     border-radius: 3px;
     &:hover {
       cursor: pointer;
-      background-color: white;
+      background-color: rgb(2, 137, 228);
     }
   }
 }

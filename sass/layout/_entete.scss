@@ -1,48 +1,90 @@
+.chk__menu {
+  display: none;
+}
+.chk__menu:checked ~ .entete__nav {
+  display: flex;
+  flex-direction: column;
+  .entete__menu {
+    flex-direction: column;
+  }
+}
+
 .entete {
   background-color: rgba(0, 0, 0, 0.747);
-  padding: 10px;
+  padding: 10px 10px 10px 10px;
 
   &__contenu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
+    padding-left: 20px;
+
+    h3 {
+      color: white;
+      font-weight: 400;
+    }
   }
 
   &__logo {
-    width: 75px;
-    height: 75px;
+    max-width: 75px;
+    max-height: 75px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid white;
   }
-  /*------------------------------------- Nabigation */
+
+  /*------------------------------------- Navigation */
   &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     margin: 0 2rem 0 auto;
-    padding-right: 20px;
+    @media screen and (max-width: $point-rupture) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $point-rupture) {
+      display: block;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      z-index: 3;
+      cursor: pointer;
+    }
   }
 
   &__menu {
-    /* ul */
+    // ul
     display: flex;
-    list-style: none;
+    list-style-type: none;
     gap: 1rem;
-    margin-right: 20px;
   }
 
   &__menu-item {
     /* li */
-    margin-left: auto;
-
     a {
-      background-color: rgb(71, 181, 255);
-      padding: 8px 20px;
-      border-radius: 2px;
       color: white;
       text-decoration: none;
-      font-size: 20px;
+      font-size: 16px;
       font-family: Quicksand;
       &:hover {
-        background-color: white;
-        color: rgba(0, 0, 0, 0.829);
+        color: rgb(71, 181, 255);
+      }
+      &:active {
+        color: rgb(71, 181, 255);
       }
     }
   }
+}
+
+.custom-logo {
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid white;
 }

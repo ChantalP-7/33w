@@ -1,0 +1,57 @@
+.galerie {
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 50px;
+    font-weight: 400;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+    gap: 40px;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__picture {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(141, 141, 141, 0.801);
+  }
+
+  &__img {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 15px;
+  }
+
+  &__caption {
+    font-family: Courgette;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (max-width: $point-ruptureXSmall) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__items {
+
+      gap: 80px;
+    }
+  }
+}
+/*@media screen and (max-width: $point-ruptureSmall) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px
+  }
+  
+}*/
