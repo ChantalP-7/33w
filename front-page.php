@@ -5,6 +5,9 @@
 ?>
 
 <?php get_header(); ?>
+<h1>trace /--------------------------------------</h1>
+<!-- Section hero -->
+<?php get_template_part('gabarit/hero') ?>
 <section class="hero">
       <div class="hero__contenu contenu-html">
           <h1 class="hero__titre">Je voyage</h1>
@@ -54,6 +57,7 @@
             </div>
         </div>
       </section>
+      <!-- section populaire  -->
       <section class="infolettre">
         <h2>Notre infolettre</h2>
         <p>Abonnez-vous!</p>

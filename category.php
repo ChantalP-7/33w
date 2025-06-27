@@ -8,7 +8,9 @@
 <?php get_header(); ?>
     <section class="populaire">
     <h2>Destinations populaires</h2>
-    <?php  
+    <!--<?= category_description()  ?>-->
+    <?php 
+    
     if(have_posts()){
       while(have_posts()){ 
         /*Affiche de l'image mise en avant (miniature) */        

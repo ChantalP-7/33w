@@ -5,9 +5,7 @@
  */
 ?>
 
-<?php get_header(); ?>
-<h3>--------- Trace Pour débogage À retirer -------- single.php ------------------</h3>
-    
+<?php get_header(); ?> 
       
     <section class="populaire">
     <h2>Destinations populaires</h2>
@@ -20,6 +18,7 @@
         ?>
         <h3><?php the_title(); ?></h3>
         <?php the_content();
+        edit_post_link();
       }
     }        /*Cette fonction permet d'afficher le contenu du post (article ou page) */
 
