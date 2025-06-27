@@ -5,7 +5,6 @@
 ?>
 
 <?php get_header(); ?>
-<h1>trace /--------------------------------------</h1>
 <!-- Section hero -->
 <?php get_template_part('gabarit/hero') ?>
 <section class="hero">
