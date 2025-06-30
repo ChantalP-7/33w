@@ -53,4 +53,16 @@ Tableau de bord Wordpress:
 2- Regroupement manuel des 5 premiers articles, leur ajouter la catégorie populaire et les faire afficher par défaut.
 3- Ajout d'images à l'avant pour les catégorie.
 
+<<<<<<< HEAD
 Voir le site ici : https://gftnth00.mywhc.ca/33we_23/
+=======
+Voir le site ici : https://gftnth00.mywhc.ca/33we_18/
+
+---
+
+TP2 - Partie 1
+
+Voir les progrès sur ce fichier
+https://github.com/ChantalP-7/33w/blob/a3cbe5d95be2ff5f9ab60a59df80e09dadbc7618/ReadmeTP2.md
+
+>>>>>>> a9869bca37d9296416d24bb745e3a698ba2dabd0
