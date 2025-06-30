@@ -7,17 +7,21 @@
 <?php
 $hero_auteur = get_theme_mod('hero_auteur', 'Mireille Fouchon');
 $hero_adresse = get_theme_mod('hero_adresse', '18, rue des Grenouilles, Paris, Canada');
-
+$hero_description = get_theme_mod("hero_description', '<strong>Je voyage</strong> est un club de voyageurs passionné.e.s de 
+découvertes et d'aventures, où les membres partagent leurs expériences et conseils pour organiser des voyages inoubliables. Ils bénéficient d\'offres exclusives et découvrent de nouvelles destinations. ☀");
 ?>
 
 <div class="hero__contenu">
-<h1 class="hero__titre"><?php bloginfo('name') ?></h1>
-<p class="hero__description">
-    <?php bloginfo('description') ?></p>
-<p>Auteur du thème : <?= $hero_auteur?></p>
-<p>Adresse du Club : <?= $hero_adresse?></p>
-
+    <h1 class="hero__titre"><?php bloginfo('name') ?></h1>
+    <div class="hero__description">
+        <p > <?= $hero_description ?></p>
+        <p>Auteur du thème: <?= $hero_auteur ?></p>
+        <p>Adresse du club: <?= $hero_adresse ?></p>
+    </div>
+    
+    
 </div>
+
 <?php 
 
 

@@ -5,11 +5,13 @@
 ?>
 
 <?php get_header(); ?>
-<!-- Section hero -->
-<section class="hero" style="background-image: url('<?= get_template_directory_uri()?> /images/galerie/Afrique.jpg');">
-<?php get_template_part('gabarit/hero') ?>
 
-      <div class="hero__contenu contenu-html">
+<!-- section hero -->
+<section class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/images/Afrique.jpg');">
+  <?php get_template_part("gabarit/hero"); ?>
+</section>
+
+      <!--<div class="hero__contenu contenu-html">
           <h1 class="hero__titre">Je voyage</h1>
             <div class="hero__description">
                 <p>
@@ -55,7 +57,7 @@
                   </div>
               </div>
             </div>
-        </div>
+        </div>-->
       </section>
       <!-- section populaire  -->
       <section class="infolettre">
