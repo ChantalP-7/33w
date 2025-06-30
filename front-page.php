@@ -6,8 +6,9 @@
 
 <?php get_header(); ?>
 <!-- Section hero -->
+<section class="hero" style="background-image: url('<?= get_template_directory_uri()?> /images/galerie/Afrique.jpg');">
 <?php get_template_part('gabarit/hero') ?>
-<section class="hero">
+
       <div class="hero__contenu contenu-html">
           <h1 class="hero__titre">Je voyage</h1>
             <div class="hero__description">
