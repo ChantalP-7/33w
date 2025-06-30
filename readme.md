@@ -65,4 +65,4 @@ TP2 - Partie 1
 Voir les progrès sur ce fichier
 https://github.com/ChantalP-7/33w/blob/a3cbe5d95be2ff5f9ab60a59df80e09dadbc7618/ReadmeTP2.md
 
->>>>>>> a9869bca37d9296416d24bb745e3a698ba2dabd0
+> > > > > > > a9869bca37d9296416d24bb745e3a698ba2dabd0
