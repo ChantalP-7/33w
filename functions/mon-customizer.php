@@ -67,6 +67,54 @@ function theme_31w_customize_register($wp_customize) {
         'section' => 'hero_section',
     )));
     
+    $wp_customize->add_setting('hero_background_0', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    /* Créer le contrôleur */
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_0', array(
+        'label' => __('Image en arrière plan', 'theme_31w'),
+        'section' => 'hero_section',
+    )));
+    
+    $wp_customize->add_setting('hero_background_1', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    /* Créer le contrôleur */
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_1', array(
+        'label' => __('Image en arrière plan', 'theme_31w'),
+        'section' => 'hero_section',
+    )));
+    
+    $wp_customize->add_setting('hero_background_2', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    /* Créer le contrôleur */
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_2', array(
+        'label' => __('Image en arrière plan', 'theme_31w'),
+        'section' => 'hero_section',
+    )));
+    
+    $wp_customize->add_setting('hero_background_3', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    /* Créer le contrôleur */
+    
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background_3', array(
+        'label' => __('Image en arrière plan', 'theme_31w'),
+        'section' => 'hero_section',
+    )));
+    
 
 
 

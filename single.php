@@ -20,7 +20,14 @@
         <?php the_content();
         edit_post_link();
       }
-    }        /*Cette fonction permet d'afficher le contenu du post (article ou page) */
+    } /* Cette fonction permet d'afficher le contenu du post (article ou page) */
+
+      /* cette fontion permet d'afficher l'ensemble du contenu (même les images) du post (article ou page)*/
+      the_content();
+      edit_post_link();
+    
+  ?>
+</section>
 
     ?>
     </section>

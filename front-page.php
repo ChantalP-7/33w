@@ -6,8 +6,18 @@
 
 <?php get_header(); ?>
 
+<?php $hero_background[0] = get_theme_mod("hero_background_0");?>
+<?php $hero_background[1] = get_theme_mod("hero_background_1");?>
+<?php $hero_background[2] = get_theme_mod("hero_background_2");?>
+
 <!-- section hero -->
-<section class="hero" style="background-image: url('<?= get_template_directory_uri() ?>/images/Afrique.jpg');">
+<section class="hero" >
+
+<div class="carrousel" style="background-image: url('<?= $hero_background[0] ?>'); opacity:1"></div>
+<div class="carrousel" style="background-image: url('<?= $hero_background[1] ?>'); opacity:0"></div>
+<div class="carrousel" style="background-image: url('<?= $hero_background[2] ?>'); opacity:0"></div>
+
+
   <?php get_template_part("gabarit/hero"); ?>
 </section>
 
@@ -168,23 +178,11 @@
     </section>-->
     <section class="populaire">
 <!--<h2>Destinations populaires</h2> -->    
-        <div class="conteneur global">
-          <?php if (have_posts()) {
-          while (have_posts()) {
-            /* affiche l'image « mise en avant » miniature */ 
-            the_post();
-            ?>
-             <p><?php
-              if (in_category('galerie')) {
-                 get_template_part("gabarit/galerie");
-              } else {  
-                get_template_part("gabarit/carte"); 
-              }  
-          }
-          
-        }
+        <?php
+                
+                get_template_part("gabarit/populaire"); 
           ?>
-           </div>
+          
     </section>
     <?php  get_footer();  ?>
   

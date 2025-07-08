@@ -65,5 +65,5 @@
 </footer>
 <?php  wp_footer(); ?>
 </body>
-  	<script src="script/checkbox.js"></script>
+  	
 </html>
