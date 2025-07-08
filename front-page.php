@@ -6,17 +6,24 @@
 
 <?php get_header(); ?>
 
-<?php $hero_background[0] = get_theme_mod("hero_background_0");?>
-<?php $hero_background[1] = get_theme_mod("hero_background_1");?>
-<?php $hero_background[2] = get_theme_mod("hero_background_2");?>
 
 <!-- section hero -->
 <section class="hero" >
+<?php $hero_background[0] = get_theme_mod("hero_background_0");?>
+<?php $hero_background[1] = get_theme_mod("hero_background_1");?>
+<?php $hero_background[2] = get_theme_mod("hero_background_2");
+?>
+
 
 <div class="carrousel" style="background-image: url('<?= $hero_background[0] ?>'); opacity:1"></div>
 <div class="carrousel" style="background-image: url('<?= $hero_background[1] ?>'); opacity:0"></div>
 <div class="carrousel" style="background-image: url('<?= $hero_background[2] ?>'); opacity:0"></div>
 
+<form class="carrousel__form">
+  <input type="radio" name="carrousel__radio" class="carrousel__radio">
+  <input type="radio" name="carrousel__radio" class="carrousel__radio">
+  <input type="radio" name="carrousel__radio" class="carrousel__radio">
+</form>
 
   <?php get_template_part("gabarit/hero"); ?>
 </section>
@@ -184,5 +191,13 @@
           ?>
           
     </section>
-    <?php  get_footer();  ?>
-  
+   
+
+    
+  <section class="destination">
+  <h2 class="destination__titre">Articles de la catégorie</h2>
+  <div class="destination__list"></div>
+</section>
+
+<?php  get_footer();  ?>
+      
