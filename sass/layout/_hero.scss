@@ -1,153 +1,178 @@
 .hero {
-  /*background-image: url("/images/galerie/");*/
-  position:relative;
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  &__titre {
+    animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+  }
+}
 
   &__contenu {
+    background-color: rgba(255, 255, 255, 0.603);
     margin-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
 
-    @media screen and (max-width: $point-rupture) {
-      margin-left: 0px;
-      justify-content: center;
-      padding: 10px;
-      h1 {
-        color: black;
-      }
-      &__description {
-        max-width: 45ch;
-      }
+    &__titre {
+      color: white;
+      font-weight: 500;
+      margin-top: -10px;
+      animation: anime-titre 1s 0.5s foward;
     }
-    @media screen and (max-width: $point-ruptureSmall) {
-      margin-left: 0px;
-      justify-content: center;
-      padding: 10px;
-      h1 {
-        color: black;
-      }
-      &__description {
-        max-width: 35ch;
-      }
-    }
-    @media screen and (max-width: $point-ruptureXSmall) {
-      margin-left: 0px;
-      justify-content: center;
-      h1 {
-        color: black;
-      }
-      &__description {
-        line-height: 0.9rem;
-      }
-    }
-  }
 
-  &__contenu-html {
-    padding-bottom: 50px;
-  }
-
-  &__titre {
-    color: white;
-    font-weight: 500;
-    margin-top: -10px;
-    animation: anime-titre 1s .5s foward;
-  }
-
-  &__description {
-    font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.541);
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: Quicksand;
-    font-weight: 500;
-    line-height: 1.8rem;
-    max-width: 80ch;
-    gap: 40px;
-
-    button .bouton {
-      background-color: rgb(71, 181, 255);
-      width: fit-content;
-      padding: 8px 22px;
-      border-radius: 30px;
-      border: 1px solid rgba(49, 49, 49, 0.596);
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 20px;
+    &__description {
+      font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: rgba(255, 255, 255, 0.541);
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
       font-family: Quicksand;
-      &:hover {
-        background-color: rgb(255, 255, 255);
-        border-color: 1px solid rgb(71, 181, 255);
-        color: rgb(0, 0, 0);
+      font-weight: 500;
+      line-height: 1.8rem;
+      max-width: 80ch;
+      gap: 40px;
+    }
+
+      @media screen and (max-width: $point-rupture) {
+        margin-left: 0px;
+        justify-content: center;
+        padding: 10px;
+        h1 {
+          color: black;
+        }
+        &__description {
+          max-width: 45ch;
+        }
+      }
+      @media screen and (max-width: $point-ruptureSmall) {
+        margin-left: 0px;
+        justify-content: center;
+        padding: 10px;
+        h1 {
+          color: black;
+        }
+        &__description {
+          max-width: 35ch;
+        }
+      }
+      @media screen and (max-width: $point-ruptureXSmall) {
+        margin-left: 0px;
+        justify-content: center;
+        h1 {
+          color: black;
+        }
+        &__description {
+          line-height: 0.9rem;
+        }
       }
     }
 
-    p {
-      margin-top: 0px;
-      margin-bottom: -10px;
+    &__contenu-html {
+      padding-bottom: 50px;
     }
-  }
 
-  &__iconesContact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
-    margin-bottom: 20px;
-  }
-
-  &__icone {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    a {
-      color: rgb(21, 21, 221);
+    &__titre {
+      color: white;
+      font-weight: 500;
+      margin-top: -10px;
+      animation: anime-titre 1s 0.5s foward;
     }
-  }
 
-  &__description-bouton-media {
-    display: inline-flex;
-    gap: 30px;
-    &:hover {
-      cursor: pointer;
-      fill: white;
+    &__description {
+      font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: rgba(255, 255, 255, 0.541);
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Quicksand;
+      font-weight: 500;
+      line-height: 1.8rem;
+      max-width: 80ch;
+      gap: 40px;
+
+      button .bouton {
+        background-color: rgb(71, 181, 255);
+        width: fit-content;
+        padding: 8px 22px;
+        border-radius: 30px;
+        border: 1px solid rgba(49, 49, 49, 0.596);
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Quicksand;
+        &:hover {
+          background-color: rgb(255, 255, 255);
+          border-color: 1px solid rgb(71, 181, 255);
+          color: rgb(0, 0, 0);
+        }
+      }
+
+      p {
+        margin-top: 0px;
+        margin-bottom: -10px;
+      }
     }
-  }
 
-  &__description-media {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-  }
-  &:hover svg {
-    color: #ffffff;
-  }
-}
+    &__iconesContact {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 5px;
+      margin-bottom: 20px;
+    }
+
+    &__icone {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        color: rgb(21, 21, 221);
+      }
+    }
+
+    &__description-bouton-media {
+      display: inline-flex;
+      gap: 30px;
+      &:hover {
+        cursor: pointer;
+        fill: white;
+      }
+    }
+
+    &__description-media {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    &:hover svg {
+      color: #ffffff;
+    }
+  
+
 
 @keyframes anime-titre {
-
-  0%{
-
-    transform : translateY(-200px)
+  0% {
+    transform: translateY(-200px);
   }
 
-  100%{
-    transform : translateY(0)
+  100% {
+    transform: translateY(0);
   }
-  
 }
 
-.carrousel {
+/*.carrousel {
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -164,7 +189,5 @@
     justify-content: center;
     gap: 10px;
     align-items: center;
-
   }
-
-}
+}*/

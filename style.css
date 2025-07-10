@@ -199,61 +199,24 @@ a {
   flex-direction: column;
   justify-content: space-around;
 }
+.hero h1 {
+  color: white;
+}
 .hero__contenu {
+  background-color: rgba(255, 255, 255, 0.603);
   margin-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 20px;
 }
-@media screen and (max-width: 1050px) {
-  .hero__contenu {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero__contenu h1 {
-    color: black;
-  }
-  .hero__contenu__description {
-    max-width: 45ch;
-  }
-}
-@media screen and (max-width: 800px) {
-  .hero__contenu {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero__contenu h1 {
-    color: black;
-  }
-  .hero__contenu__description {
-    max-width: 35ch;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero__contenu {
-    margin-left: 0px;
-    justify-content: center;
-  }
-  .hero__contenu h1 {
-    color: black;
-  }
-  .hero__contenu__description {
-    line-height: 0.9rem;
-  }
-}
-.hero__contenu-html {
-  padding-bottom: 50px;
-}
-.hero__titre {
+.hero__contenu__titre {
   color: white;
   font-weight: 500;
   margin-top: -10px;
   animation: anime-titre 1s 0.5s foward;
 }
-.hero__description {
+.hero__contenu__description {
   font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
   display: flex;
   flex-direction: column;
@@ -268,7 +231,69 @@ a {
   max-width: 80ch;
   gap: 40px;
 }
-.hero__description button .bouton {
+@media screen and (max-width: 1050px) {
+  .hero__contenu__description {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .hero__contenu__description h1 {
+    color: black;
+  }
+  .hero__contenu__description__description {
+    max-width: 45ch;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero__contenu__description {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .hero__contenu__description h1 {
+    color: black;
+  }
+  .hero__contenu__description__description {
+    max-width: 35ch;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__contenu__description {
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .hero__contenu__description h1 {
+    color: black;
+  }
+  .hero__contenu__description__description {
+    line-height: 0.9rem;
+  }
+}
+.hero__contenu__contenu-html {
+  padding-bottom: 50px;
+}
+.hero__contenu__titre {
+  color: white;
+  font-weight: 500;
+  margin-top: -10px;
+  animation: anime-titre 1s 0.5s foward;
+}
+.hero__contenu__description {
+  font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.541);
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: Quicksand;
+  font-weight: 500;
+  line-height: 1.8rem;
+  max-width: 80ch;
+  gap: 40px;
+}
+.hero__contenu__description button .bouton {
   background-color: rgb(71, 181, 255);
   width: fit-content;
   padding: 8px 22px;
@@ -279,44 +304,44 @@ a {
   font-size: 20px;
   font-family: Quicksand;
 }
-.hero__description button .bouton:hover {
+.hero__contenu__description button .bouton:hover {
   background-color: rgb(255, 255, 255);
   border-color: 1px solid rgb(71, 181, 255);
   color: rgb(0, 0, 0);
 }
-.hero__description p {
+.hero__contenu__description p {
   margin-top: 0px;
   margin-bottom: -10px;
 }
-.hero__iconesContact {
+.hero__contenu__iconesContact {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 5px;
   margin-bottom: 20px;
 }
-.hero__icone {
+.hero__contenu__icone {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.hero__icone a {
+.hero__contenu__icone a {
   color: rgb(21, 21, 221);
 }
-.hero__description-bouton-media {
+.hero__contenu__description-bouton-media {
   display: inline-flex;
   gap: 30px;
 }
-.hero__description-bouton-media:hover {
+.hero__contenu__description-bouton-media:hover {
   cursor: pointer;
   fill: white;
 }
-.hero__description-media {
+.hero__contenu__description-media {
   display: flex;
   gap: 20px;
   align-items: center;
 }
-.hero:hover svg {
+.hero__contenu:hover svg {
   color: #ffffff;
 }
 

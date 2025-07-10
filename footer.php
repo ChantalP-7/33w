@@ -1,4 +1,8 @@
 <footer class="piedpage">
+<?php
+$footer_couleur = "#0f0";
+vague("#aaa", $footer_couleur); ?>
+<footer class="piedpage" style="background-color: <?= $footer_couleur ?> ;">
   	<div class="piedpage__grille">
 	  	<div>
 		  	<h3> Agences de voyage</h3>
@@ -37,28 +41,8 @@
 	
 	<div class="piedpage__credits">
 		<p>Tous droits réservés : Je voyage - 2025</p>
-		<div class="hero__description-media">
-			<a href="https://facebook.com"
-				><img
-				src="https://s2.svgbox.net/social.svg?ic=facebook&color=FFFFFF"
-				width="28"
-				height="30" alt="icone facebook"
-			/></a>
-			<a href="https://instagram.com"
-				><img
-				src="https://s2.svgbox.net/social.svg?ic=instagram&color=FFFFFF"
-				width="28"
-				height="28" alt="icone instagram"
-			/></a>
-			<a href="https://tiktok.com"
-				><img
-				src="https://s2.svgbox.net/social.svg?ic=tiktok&color=FFFFFF"
-				width="28"
-				height="28" alt="icone tiktok"
-			/></a>
-			<a href="https://github.com/ChantalP-7/33w/tree/tp1"
-				><img src="https://s2.svgbox.net/social.svg?ic=github&color=FFFFFF" width="28" height="28" alt="github">
-			</a>			
+		<div class="piedpage__icone">
+			<?php icone_sociaux('#ffffff') ?>
 		</div>
 		<p>Création : Chantal Pépin</p>
 	</div>
