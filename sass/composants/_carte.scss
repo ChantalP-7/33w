@@ -1,27 +1,35 @@
-a {
-  color: blue;
-}
-
-a:hover {
-  cursor: pointer;
-}
-
-.conteneur {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 25px;
-  &__carte {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1 0 300px;
-    border: 1px solid #aaa;
-    padding: 10px;
-    border-radius: 3px;
+.carte {
+  ul a {
+    text-decoration: none;
+    color: blue;
+    font-weight: 400;
+    font-family: Quicksand;
+    font-size: clamp(1.1rem, 1.6vw + -0.08rem, 1.7rem);
+    line-height: 1.7rem;
   }
 
-  &__galerie {
-    flex: 1 0 100%;
+  ul {
+    list-style: none;
+  }
+
+  &__conteneur {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &__carte {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex: 1 0 300px;
+      padding: 10px;
+      border-radius: 3px;
+      box-shadow: 0 0 14px rgba(197, 197, 197, 0.699);
+    }
+
+    &__galerie {
+      flex: 1 0 100%;
+    }
   }
 }

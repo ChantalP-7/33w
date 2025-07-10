@@ -188,10 +188,23 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 400;
+  font-size: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+  font-family: Quicksand;
+  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  line-height: 1.7rem;
+}
+
+ul {
+  list-style: none;
 }
 
 .hero {
-  /*background-image: url("/images/galerie/");*/
   position: relative;
   height: 100vh;
   width: 100%;
@@ -199,75 +212,15 @@ a {
   flex-direction: column;
   justify-content: space-around;
 }
-.hero h1 {
-  color: white;
+.hero__titre {
+  animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
 }
 .hero__contenu {
-  background-color: rgba(255, 255, 255, 0.603);
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 20px;
-}
-.hero__contenu__titre {
-  color: white;
-  font-weight: 500;
-  margin-top: -10px;
-  animation: anime-titre 1s 0.5s foward;
-}
-.hero__contenu__description {
-  font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgba(255, 255, 255, 0.541);
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: Quicksand;
-  font-weight: 500;
-  line-height: 1.8rem;
-  max-width: 80ch;
-  gap: 40px;
-}
-@media screen and (max-width: 1050px) {
-  .hero__contenu__description {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero__contenu__description h1 {
-    color: black;
-  }
-  .hero__contenu__description__description {
-    max-width: 45ch;
-  }
-}
-@media screen and (max-width: 800px) {
-  .hero__contenu__description {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero__contenu__description h1 {
-    color: black;
-  }
-  .hero__contenu__description__description {
-    max-width: 35ch;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero__contenu__description {
-    margin-left: 0px;
-    justify-content: center;
-  }
-  .hero__contenu__description h1 {
-    color: black;
-  }
-  .hero__contenu__description__description {
-    line-height: 0.9rem;
-  }
 }
 .hero__contenu__contenu-html {
   padding-bottom: 50px;
@@ -293,6 +246,37 @@ a {
   max-width: 80ch;
   gap: 40px;
 }
+.hero__contenu__description__iconesContact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.hero__contenu__description__icone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero__contenu__description__icone a {
+  color: rgb(21, 21, 221);
+}
+.hero__contenu__description__description-bouton-media {
+  display: inline-flex;
+  gap: 30px;
+}
+.hero__contenu__description__description-bouton-media:hover {
+  cursor: pointer;
+  fill: white;
+}
+.hero__contenu__description__description-media {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.hero__contenu__description:hover svg {
+  color: #ffffff;
+}
 .hero__contenu__description button .bouton {
   background-color: rgb(71, 181, 255);
   width: fit-content;
@@ -313,36 +297,43 @@ a {
   margin-top: 0px;
   margin-bottom: -10px;
 }
-.hero__contenu__iconesContact {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 5px;
-  margin-bottom: 20px;
+@media screen and (max-width: 1050px) {
+  .hero__contenu {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .hero__contenu h1 {
+    color: black;
+  }
+  .hero__contenu__description {
+    max-width: 45ch;
+  }
 }
-.hero__contenu__icone {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+@media screen and (max-width: 800px) {
+  .hero__contenu {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .hero__contenu h1 {
+    color: black;
+  }
+  .hero__contenu__description {
+    max-width: 35ch;
+  }
 }
-.hero__contenu__icone a {
-  color: rgb(21, 21, 221);
-}
-.hero__contenu__description-bouton-media {
-  display: inline-flex;
-  gap: 30px;
-}
-.hero__contenu__description-bouton-media:hover {
-  cursor: pointer;
-  fill: white;
-}
-.hero__contenu__description-media {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.hero__contenu:hover svg {
-  color: #ffffff;
+@media screen and (max-width: 500px) {
+  .hero__contenu {
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .hero__contenu h1 {
+    color: black;
+  }
+  .hero__contenu__description {
+    line-height: 0.9rem;
+  }
 }
 
 @keyframes anime-titre {
@@ -382,6 +373,7 @@ a {
   width: 100%;
   color: rgb(24, 24, 24);
   padding: 20px;
+  border: 1px solid rgb(33, 117, 212);
 }
 .piedpage img {
   max-width: 400px;
@@ -696,6 +688,17 @@ a {
   font-family: Quicksand;
   font-weight: 600;
 }
+.populaire ul a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+  font-family: Quicksand;
+  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  line-height: 1.7rem;
+}
+.populaire ul {
+  list-style: none;
+}
 
 p {
   font-family: Quicksand;
@@ -735,30 +738,33 @@ p {
   cursor: pointer;
 }
 
-a {
+.carte ul a {
+  text-decoration: none;
   color: blue;
+  font-weight: 400;
+  font-family: Quicksand;
+  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  line-height: 1.7rem;
 }
-
-a:hover {
-  cursor: pointer;
+.carte ul {
+  list-style: none;
 }
-
-.conteneur {
+.carte__conteneur {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 25px;
 }
-.conteneur__carte {
+.carte__conteneur__carte {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1 0 300px;
-  border: 1px solid #aaa;
   padding: 10px;
   border-radius: 3px;
+  box-shadow: 0 0 14px rgba(197, 197, 197, 0.699);
 }
-.conteneur__galerie {
+.carte__conteneur__galerie {
   flex: 1 0 100%;
 }
 

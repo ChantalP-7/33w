@@ -1,9 +1,8 @@
 (function () {
-  const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
-  const domaine =document.querySelector("base").href
+  const categoryId = 4; // Remplacez par l'ID de la catégorie souhaitée
+  const domaine = document.querySelector("base").href;
   const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
-  console.log(apiUrl);
-
+  console.log("apiUrl = ", apiUrl);
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {

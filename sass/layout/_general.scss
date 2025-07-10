@@ -30,4 +30,18 @@ a {
   text-decoration: none;
   color: white;
   font-weight: 400;
+  font-size: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+  font-family: Quicksand;
+  font-size: clamp(1.1rem, 1.6vw + -0.08rem, 1.7rem);
+  line-height: 1.7rem;
+}
+
+ul {
+  list-style: none;
 }
