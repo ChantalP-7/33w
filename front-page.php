@@ -8,7 +8,6 @@
 <?php get_header() ?>
 <!-- section hero -->
 
-
 <section class="hero">
   <?php
   $hero_background[0] = get_theme_mod("hero_background_0");
@@ -18,14 +17,15 @@
   <div class="carrousel" style="background-image: url('<?= $hero_background[0] ?>'); opacity:1"></div>
   <div class="carrousel" style="background-image: url('<?= $hero_background[1] ?>'); opacity:0"></div>
   <div class="carrousel" style="background-image: url('<?= $hero_background[2] ?>'); opacity:0"></div>
+  
   <form class="carrousel__form">
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
   </form>
 
-
   <?php get_template_part("gabarit/hero"); ?>
+  
 </section>
 
 <!-- section populaire -->

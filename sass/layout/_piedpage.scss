@@ -3,11 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   color: rgb(24, 24, 24);
-  padding: 20px;
-  border: 1px solid rgb(33, 117, 212);
 
   img {
     max-width: 400px;
@@ -29,7 +27,7 @@
     width: 100%;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: 20% 1fr 1fr;
+    grid-template-columns: 25% 1fr 1fr;
     @media screen and (max-width: $point-rupture) {
       display: flex;
       flex-wrap: wrap;
@@ -55,11 +53,17 @@
     align-items: flex-start;
     gap: 8px;
 
-    & li {
+    div {
       padding: 10px;
-      list-style: none;
-      color: black;
+      line-height: 1.7rem;
+      
     }
+
+    span {
+      color: black;      
+      font-size: 20px;      
+    }
+
   }
   &__contact {
     background-color: rgb(71, 181, 255);
@@ -155,6 +159,10 @@
     color: black;
     font-size: 20px;
   }
+}
+
+.piedpage > div {
+  padding: 20px;
 }
 
 .piedpage p {

@@ -165,6 +165,8 @@ h6 {
 body {
   font-family: "Mohave, sans-serif";
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -186,14 +188,13 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
   font-weight: 400;
   font-size: 20px;
 }
 
 ul a {
   text-decoration: none;
-  color: blue;
+  color: rgb(31, 104, 240);
   font-weight: 400;
   font-family: Quicksand;
   font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
@@ -221,15 +222,12 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-}
-.hero__contenu__contenu-html {
-  padding-bottom: 50px;
-}
-.hero__contenu__titre {
-  color: white;
-  font-weight: 500;
-  margin-top: -10px;
-  animation: anime-titre 1s 0.5s foward;
+  /*&__titre {
+     color: white;
+     font-weight: 500;
+     margin-top: -10px;
+     animation: anime-titre 1s 0.5s foward;
+   }*/
 }
 .hero__contenu__description {
   font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
@@ -369,11 +367,9 @@ ul {
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
-  background-color: rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   color: rgb(24, 24, 24);
-  padding: 20px;
-  border: 1px solid rgb(33, 117, 212);
 }
 .piedpage img {
   max-width: 400px;
@@ -392,7 +388,7 @@ ul {
   width: 100%;
   margin: 30px auto;
   display: grid;
-  grid-template-columns: 20% 1fr 1fr;
+  grid-template-columns: 25% 1fr 1fr;
 }
 @media screen and (max-width: 1050px) {
   .piedpage__grille {
@@ -418,10 +414,13 @@ ul {
   align-items: flex-start;
   gap: 8px;
 }
-.piedpage__carte li {
+.piedpage__carte div {
   padding: 10px;
-  list-style: none;
+  line-height: 1.7rem;
+}
+.piedpage__carte span {
   color: black;
+  font-size: 20px;
 }
 .piedpage__contact {
   background-color: rgb(71, 181, 255);
@@ -507,6 +506,10 @@ ul {
   list-style: none;
   color: black;
   font-size: 20px;
+}
+
+.piedpage > div {
+  padding: 20px;
 }
 
 .piedpage p {
@@ -677,6 +680,14 @@ ul {
 .populaire {
   padding: 20px;
   margin: 50px auto;
+  margin-bottom: 20px;
+}
+.populaire div {
+  border-radius: 8px;
+  border: 1px solid rgba(201, 201, 201, 0.459);
+  box-shadow: 0 0 14px rgba(197, 197, 197, 0.699);
+  padding: 30px;
+  margin-top: 50px;
 }
 .populaire h2 {
   text-align: center;
@@ -698,6 +709,10 @@ ul {
 }
 .populaire ul {
   list-style: none;
+}
+.populaire img {
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
 p {
@@ -738,34 +753,40 @@ p {
   cursor: pointer;
 }
 
-.carte ul a {
+.conteneur {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.conteneur ul a {
   text-decoration: none;
   color: blue;
   font-weight: 400;
   font-family: Quicksand;
-  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.5rem);
   line-height: 1.7rem;
 }
-.carte ul {
+.conteneur ul {
   list-style: none;
 }
-.carte__conteneur {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 25px;
-}
-.carte__conteneur__carte {
+.conteneur__carte {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   flex: 1 0 300px;
+  border: 1px solid #aaa;
   padding: 10px;
-  border-radius: 3px;
-  box-shadow: 0 0 14px rgba(197, 197, 197, 0.699);
 }
-.carte__conteneur__galerie {
+.conteneur__galerie {
   flex: 1 0 100%;
+}
+
+.destination {
+  padding: 20px;
+}
+
+.destination > * + * {
+  margin-top: 20px;
 }
 
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */

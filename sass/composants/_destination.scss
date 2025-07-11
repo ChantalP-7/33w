@@ -1,0 +1,9 @@
+.destination {
+    padding: 20px;
+    
+}
+
+.destination > *+* {
+    margin-top: 20px;
+
+}
