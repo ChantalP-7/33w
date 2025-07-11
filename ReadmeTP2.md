@@ -15,3 +15,7 @@ Suite TP2 - partie 2
 Ajout du fichier composant.php dans le dossier functions. Ajout dans ce fichier d'une fonction qui permet de récupérer des icones sociaux et de choisir la couleur.
 
 Ajout d'un champ couleur dans le customizer pour changer la couleur du texte et de l'arrière plan de la section héro. Ajout du contenu couleur dans le fichier hero.php
+
+Ajout du code pour les vagues svg qui servent de séparateur du pied de page. Choix des couleurs de celles-ci. 
+
+Amélioration du css dans le pied de page, et l'ensemble du site.
