@@ -6,7 +6,7 @@
 ?>
 
 <?php get_header(); ?>
-    <section class="populaire">
+    <section class="article">
     <!--<?= category_description()  ?>-->
    
     <?php 
