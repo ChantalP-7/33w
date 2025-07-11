@@ -6,13 +6,15 @@
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      const destinationList = document.querySelector(".destination__list");
+      const destinationList = document.querySelector(".destination__liste");
       data.forEach((article) => {
         const articleElement = document.createElement("div");
         articleElement.innerHTML = `
+                    <div class="destination__div">
                     <h4>${article.title.rendered}</h4>
                     <div>${article.excerpt.rendered}</div>
                     <a href="${article.link}">Lire plus</a>
+                    </div>
                 `;
         destinationList.appendChild(articleElement);
       });

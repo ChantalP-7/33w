@@ -15,6 +15,21 @@
       cursor: pointer;
     }
   }
+  
+  h3 {
+    font-family: Mohave;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    font-family: Mohave;
+  }
+
+  a:hover {
+    color: rgb(71, 181, 255);
+  }
 
   h6 {
     font-family: Quicksand;
@@ -25,15 +40,16 @@
 
   &__grille {
     width: 100%;
-    margin: 30px auto;
+    margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 25% 1fr 1fr;
-    @media screen and (max-width: $point-rupture) {
+    grid-template-columns: 25% 35% 1fr; 
+    gap: 20px;
+    
+    @media screen and (max-width: $point-ruptureSmall) {    
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: left;
+      justify-content: center;
+      align-items: flex-start;
       gap: 50px;
     }
   }
@@ -43,7 +59,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  &__grille-carte li a {
+    font-size: 22px;
   }
 
   &__carte {
@@ -51,17 +71,17 @@
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
-    gap: 8px;
+    gap: 8px;  
 
     div {
       padding: 10px;
       line-height: 1.7rem;
-      
     }
 
     span {
       color: black;      
-      font-size: 20px;      
+      font-size: 20px; 
+      font-family: Quicksand;     
     }
 
   }
@@ -127,10 +147,9 @@
 
     & a {
       text-decoration: none;
-      font-size: 20px;
+      font-size: 22px;
       text-align: left;
-      font-family: Quicksand;
-      color: black;
+      font-family: Mohave;
       &:hover {
         color: rgb(71, 181, 255);
       }
@@ -144,6 +163,15 @@
     color: white;
     margin: -20px;
     padding: 20px;
+    @media screen and (max-width: $point-ruptureSmall) {    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      &__icone svg {
+        width: 18px;
+    }
   }
 
   &__menu-piedpage {
@@ -156,9 +184,14 @@
 
   &__menu-piedpage li {
     list-style: none;
-    color: black;
     font-size: 20px;
   }
+
+/* Section Media query */
+
+
+}
+
 }
 
 .piedpage > div {
@@ -166,6 +199,9 @@
 }
 
 .piedpage p {
-  font-size: clamp(0.1rem, 1.3vw + 0.4rem, 1.1rem);
+  font-size: 20px;
   font-weight: 400;
 }
+
+ 
+    

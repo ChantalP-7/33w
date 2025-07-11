@@ -1,13 +1,13 @@
 <footer class="piedpage">
 <?php
 $footer_couleur = "ffffff";
-vague("#313131ff", "#2dc7c7ff"); ?>
+vague("#0088bee1", "#2dc7c7a9"); ?>
 <footer class="piedpage" style="background-color: <?= $footer_couleur ?> ;">
 	<div>
 		<div class="piedpage__grille">
-			<div>
+			<div class="piedpage__grille-carte">
 				<h3> Agences de voyage</h3>
-				<article class="piedpage__carte">      
+				<article class="piedpage__carte menu">      
 					<?php				
 					wp_nav_menu(array(
 						"menu" => "externe",

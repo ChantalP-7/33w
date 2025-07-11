@@ -36,6 +36,20 @@ function theme_31w_customize_register($wp_customize)
         'type' => 'text',
     ));
 
+    ////////////////////// Description
+    /* configuration du champ */
+    $wp_customize->add_setting('hero_description', array(
+        'default' => __('Je voyage est un club de voyageurs passionné.e.s de
+                  découvertes et d\'aventures, où les membres partagent leurs expériences et conseils pour organiser des voyages inoubliables. Ils bénéficient d\'offres exclusives et découvrent de nouvelles destinations.'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('hero_description', array(
+        'label' => __('Description ', 'theme_31w'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+
 
     ////////////////////// image 0
     /* créer le champ */
@@ -94,6 +108,17 @@ function theme_31w_customize_register($wp_customize)
     $wp_customize->add_section('footer_section', array(
         'title' => __('Section pied de page', 'theme_31w'),
         'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('footer_menu-externe', array(
+        'default' => __('Agence de voyage', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('footer_menu-externe', array(
+        'label' => __('Menu Externe pied de page ', 'theme_31w'),
+        'section' => 'footer_section',
+        'type' => 'text',
     ));
 }
 

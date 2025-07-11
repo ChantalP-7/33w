@@ -1,35 +1,30 @@
 <?php
+
 /**
- * 
- * le modèle index représente le modèle par défaut.
+ * le modèle single.php
+ * Représente le modèle par défaut
  */
+
 ?>
 
-<?php get_header(); ?> 
-      
-    <section class="populaire">
-    <h2>Destinations populaires</h2>
-    <?php  
-    if(have_posts()){
-      while(have_posts()){         
-        the_post();
-        /*Affiche l'image mise en avant (miniature) */
-        the_post_thumbnail('thumbnail');             
-        ?>
-        <h3><?php the_title(); ?></h3>
-        <?php the_content();
-        edit_post_link();
-      }
-    } /* Cette fonction permet d'afficher le contenu du post (article ou page) */
+<?php get_header() ?>
+<section class="populaire">
+  <?php if (have_posts()) {
+    while (have_posts()) {
+      /* affiche l'image « mise en avant » miniature */
+      the_post();
+      the_post_thumbnail('large');
+  ?>
+      <h2 class="text-left"><?php
+          /* affiche le titre pricipal du « post » */
+          the_title(); ?></h2>
 
+  <?php
       /* cette fontion permet d'afficher l'ensemble du contenu (même les images) du post (article ou page)*/
       the_content();
       edit_post_link();
-    
-  ?>
+    }
+  } ?>
 </section>
-
-    ?>
-    </section>
-    <?php  get_footer();  ?>
+<?php get_footer();
   

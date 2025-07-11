@@ -26,7 +26,6 @@
 
   &__carte {
     display: flex;
-    justify-content: space-between;
     flex: 1 0 300px;
     padding: 10px;
     border-radius: 8px;
@@ -36,7 +35,8 @@
     & img {
       margin-top: -20px;
       max-width: 100%;
-      aspect-ratio: 2/5;
+      height: auto;
+      aspect-ratio: 5/3;
       object-fit: cover;
     }
 

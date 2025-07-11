@@ -23,19 +23,29 @@
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
   </form>
+  <div></div>
 
   <?php get_template_part("gabarit/hero"); ?>
   
 </section>
+<section class="infolettre">
+  <?php get_template_part("gabarit/infolettre"); ?>
+</section>
 
 <!-- section populaire -->
 <section class="populaire">
+  <h3 class="text-center">Voici des infos qui pourraient vous intéresser.</h3>
+  <br>
   <?php get_template_part("gabarit/populaire"); ?>
 </section>
 
 <section class="destination">
-  <h2 class="destination__titre">Articles de la catégorie</h2>
-  <div class="destination__list"></div>
+  <div class="destination__div">
+    <br>
+    <h3 class="destination__titre">Articles de la catégorie Populaire</h3>
+    <div class="destination__liste"></div>
+    <br>
+  </div>
 </section>
 
 <?php get_footer();

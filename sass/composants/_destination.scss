@@ -1,9 +1,12 @@
 .destination {
     padding: 20px;
-    
-}
-
-.destination > *+* {
-    margin-top: 20px;
+    &__div {
+        margin-top: 20px;
+    } 
+    &__titre {
+        font-family: Mohave;
+        font-size: 36px;
+        font-weight: 700;
+    }
 
 }

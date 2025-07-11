@@ -43,6 +43,4 @@ function vague($couleur_haut, $couleur_bas)
         </path>
     </svg>
 
-
-
 <?php } ?>
