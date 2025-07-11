@@ -19,3 +19,15 @@ Ajout d'un champ couleur dans le customizer pour changer la couleur du texte et 
 Ajout du code pour les vagues svg qui servent de séparateur du pied de page. Choix des couleurs de celles-ci. 
 
 Amélioration du css dans le pied de page, et l'ensemble du site.
+
+
+-----------------------------------------------------------------------
+
+
+TP2 - Partie 3
+
+Affichage du carrousel d'image background de l'entête. Pour l'instant, il n'est pas dynamique, on doit cliquer sur les boutons radio pour afficher la prochaine image.
+
+Ajout d'une liste d'article d'une catégorie dans le bas de la section principale de la page d'accueil.
+
+

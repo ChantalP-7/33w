@@ -6,13 +6,11 @@
 ?>
 
 <?php get_header(); ?>
-    <section class="article">
-    <!--<?= category_description()  ?>-->
-   
-    <?php 
-    
-    if(have_posts()){
-      
+    <section class="article">      
+    <h3>Catégorie : <?php single_cat_title(); ?> </h3>
+
+    <?php
+    if(have_posts()){      
       while(have_posts()){ 
         ?>
          <div>
@@ -32,8 +30,7 @@
         </div>
         <?php
       }
-    } 
-         
+    }         
 
     ?>
       

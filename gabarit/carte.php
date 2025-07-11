@@ -13,7 +13,8 @@ $lien = "<a href=" . get_permalink() . ">... <?php echo ?> Suite</a>"
         <br>
         <br>
         <h4><?php the_title(); ?></h4>
-        <p class="blue"><?=  wp_trim_words(get_the_excerpt(), 15, $lien) ?></p>
+        <br>
+        <p class="blue"><?=  wp_trim_words(get_the_excerpt(), 10, $lien) ?></p>
         <br>
         <p><stron>Température minimale : </strong> <em><?php the_field('temperature_minimale'); ?> &deg;C</em> </p>
         <p><stron>Température minimale : </strong> <em><?php the_field('temperature_moyenne') ; ?> &deg;C</em> </p>

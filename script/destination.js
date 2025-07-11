@@ -1,5 +1,5 @@
 (function () {
-  const categoryId = 4; // Remplacez par l'ID de la catégorie souhaitée
+  const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
   const domaine = document.querySelector("base").href;
   const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
   console.log("apiUrl = ", apiUrl);
@@ -10,7 +10,7 @@
       data.forEach((article) => {
         const articleElement = document.createElement("div");
         articleElement.innerHTML = `
-                    <h3>${article.title.rendered}</h3>
+                    <h4>${article.title.rendered}</h4>
                     <div>${article.excerpt.rendered}</div>
                     <a href="${article.link}">Lire plus</a>
                 `;
