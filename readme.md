@@ -57,7 +57,7 @@ Voir le site ici : https://gftnth00.mywhc.ca/33we_23/
 
 ---
 
-TP2 - Partie 1 et 2
+TP2 - Partie 1, 2 et 3
 
 Voir les progrès sur ce fichier
 https://github.com/ChantalP-7/33w/blob/tp2/ReadmeTP2.md

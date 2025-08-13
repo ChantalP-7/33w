@@ -4,7 +4,8 @@ $footer_couleur = "ffffff";
 vague($footer_couleur, "#2dc7c7a9"); ?>
 <footer class="piedpage" style="background-color: <?= $footer_couleur ?> ;">
 	<div>
-		<div class="piedpage__grille">
+		<?php get_template_part("gabarit/piedpage"); ?>
+		<!--<div class="piedpage__grille">
 			<div class="piedpage__grille-carte">
 				<h3> Agences de voyage</h3>
 				<article class="piedpage__carte menu">      
@@ -46,7 +47,7 @@ vague($footer_couleur, "#2dc7c7a9"); ?>
 				<?php icone_sociaux('#ffffff') ?>
 			</div>
 			<p>Création : Chantal Pépin</p>
-		</div>
+		</div>-->
 	</div>
 </footer>
 <?php  wp_footer(); ?>

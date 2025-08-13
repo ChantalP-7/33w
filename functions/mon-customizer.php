@@ -86,9 +86,6 @@ function theme_31w_customize_register($wp_customize)
     )));
 
 
-
-
-
     /////////////////// couleur du texte de la section hero
     ////////////////////// champ couleur
     /* créer le champ */
@@ -103,23 +100,79 @@ function theme_31w_customize_register($wp_customize)
     )));
 
 
+    // *******************************************************************************************************
+
     ///////////////////////// Ajout du panneau « pied de page »
-    // Le code pour ajouter des sections, des réglages et des contrôles ira ici.
-    $wp_customize->add_section('footer_section', array(
+    // Le code pour ajouter des sections, des réglages et des contrôles ira ici.    
+    $wp_customize->add_section('piedpage_section', array(
         'title' => __('Section pied de page', 'theme_31w'),
         'priority' => 30,
     ));
 
-    $wp_customize->add_setting('footer_menu-externe', array(
-        'default' => __('Agence de voyage', 'theme_31w'),
+    ////////////////////// Adresse
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_adresse', array(
+        'default' => __('3800 Sherbrook-est', 'theme_31w'),
         'sanitize_callback' => 'sanitize_text_field'
     ));
     /* configuration du contrôleur */
-    $wp_customize->add_control('footer_menu-externe', array(
-        'label' => __('Menu Externe pied de page ', 'theme_31w'),
-        'section' => 'footer_section',
+    $wp_customize->add_control('piedpage_adresse', array(
+        'label' => __('Adresse ', 'theme_31w'),
+        'section' => 'piedpage_section',
         'type' => 'text',
     ));
+
+    ////////////////////// Téléphone
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_telephone', array(
+        'default' => __('514-000-0000', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_telephone', array(
+        'label' => __('Téléphone ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
+    ));
+
+    ////////////////////// Menu externe
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_menu-externe', array(
+        'default' => __('Menu Externe', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_menu-externe', array(
+        'label' => __('Menu Externe pied de page ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
+    ));
+
+    ////////////////////// Mission
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_mission', array(
+        'default' => __('Notre mission est d\'inspirer et d\'informer nos membres sur des destinations de voyage qui répondent à leurs attentes. Nous favorisons les échanges et le partage d\’expériences à travers des activités sociales variées, telles que des rencontres, des conférences et des dîners.', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_mission', array(        
+        'label' => __('Mission ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
+    ));
+
+    /////////////////// couleur du texte de la section pied de page
+    ////////////////////// champ couleur
+    /* créer le champ */
+    $wp_customize->add_setting('piedpage_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'piedpage_couleur', array(
+        'label' => __('Couleur du texte', 'theme_31w'),
+        'section' => 'piedpage_section',
+    )));
 }
 
 add_action('customize_register', 'theme_31w_customize_register');
