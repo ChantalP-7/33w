@@ -1,5 +1,15 @@
 (function () {
+  const liste_categories = document.querySelectorAll('.liste_categories li');
+  console.log(liste_categories.length, liste_categories.length);
+  liste_categories.forEach((categorie) => {
+    
+    categorie.addEventListener("mousedown", (e) => {
+      console.log(categorie.dataset.id)
+    })
+
+  });
   const categoryId = 3; // Remplacez par l'ID de la catégorie souhaitée
+  
   const domaine = document.querySelector("base").href;
   const apiUrl = `${domaine}/wp-json/wp/v2/posts?categories=${categoryId}`;
   console.log("apiUrl = ", apiUrl);

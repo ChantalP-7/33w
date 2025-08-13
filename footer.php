@@ -1,7 +1,7 @@
 <footer class="piedpage">
 <?php
 $footer_couleur = "ffffff";
-vague("#0088bee1", "#2dc7c7a9"); ?>
+vague($footer_couleur, "#2dc7c7a9"); ?>
 <footer class="piedpage" style="background-color: <?= $footer_couleur ?> ;">
 	<div>
 		<div class="piedpage__grille">

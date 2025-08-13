@@ -41,12 +41,14 @@
 
 <section class="destination">
   <div class="destination__div">
-    <br>
+    <br>    
     <h3 class="destination__titre">Articles de la catégorie Populaire</h3>
     <div class="destination__liste"></div>
     <br>
   </div>
 </section>
+
+<!-- Section rest api -->
 
 <?php get_footer();
       

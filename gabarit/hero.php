@@ -17,7 +17,9 @@ $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montré
         span {
             margin-top: 10px;
         }
-        
+        h1 {
+            color: <?= $hero_couleur ?>;
+        }        
         <?php bloginfo($hero_couleur) ?>
     }
 
@@ -27,14 +29,14 @@ $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montré
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        color: black;
+        color: rgb(43, 43, 43);
         padding: 20px;
         border-radius: 8px;
         font-family: Quicksand;
         font-weight: 500;
         line-height: 1.8rem;
         max-width: 80ch;
-        gap: 10px;
+        gap: 15px;
     }
 
 </style>
