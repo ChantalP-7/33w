@@ -88,7 +88,7 @@ function theme_31w_customize_register($wp_customize)
 
     /////////////////// couleur du texte de la section hero
     ////////////////////// champ couleur
-    /* créer le champ */
+    /* créer le champ texte */
     $wp_customize->add_setting('hero_couleur', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -100,6 +100,18 @@ function theme_31w_customize_register($wp_customize)
     )));
 
 
+     /* créer le champ icone */
+    $wp_customize->add_setting('hero_couleur-icone', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur-icone', array(
+        'section' => 'hero_section',
+        'label' => __('Couleur de l\'icône', 'theme_31w'),
+    )));
+
+
     // *******************************************************************************************************
 
     ///////////////////////// Ajout du panneau « pied de page »
@@ -107,6 +119,19 @@ function theme_31w_customize_register($wp_customize)
     $wp_customize->add_section('piedpage_section', array(
         'title' => __('Section pied de page', 'theme_31w'),
         'priority' => 30,
+    ));
+
+    ////////////////////// Menu externe
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_menu-externe', array(
+        'default' => __('Menu Externe', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_menu-externe', array(
+        'label' => __('Menu Externe pied de page ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
     ));
 
     ////////////////////// Adresse
@@ -133,20 +158,7 @@ function theme_31w_customize_register($wp_customize)
         'label' => __('Téléphone ', 'theme_31w'),
         'section' => 'piedpage_section',
         'type' => 'text',
-    ));
-
-    ////////////////////// Menu externe
-    /* configuration du champ */
-    $wp_customize->add_setting('piedpage_menu-externe', array(
-        'default' => __('Menu Externe', 'theme_31w'),
-        'sanitize_callback' => 'sanitize_text_field'
-    ));
-    /* configuration du contrôleur */
-    $wp_customize->add_control('piedpage_menu-externe', array(
-        'label' => __('Menu Externe pied de page ', 'theme_31w'),
-        'section' => 'piedpage_section',
-        'type' => 'text',
-    ));
+    ));    
 
     ////////////////////// Mission
     /* configuration du champ */
@@ -163,7 +175,7 @@ function theme_31w_customize_register($wp_customize)
 
     /////////////////// couleur du texte de la section pied de page
     ////////////////////// champ couleur
-    /* créer le champ */
+    /* créer le champ texte */
     $wp_customize->add_setting('piedpage_couleur', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
@@ -173,6 +185,28 @@ function theme_31w_customize_register($wp_customize)
         'label' => __('Couleur du texte', 'theme_31w'),
         'section' => 'piedpage_section',
     )));
+
+    /* créer le champ crédit */
+    $wp_customize->add_setting('piedpage_couleur-credit', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'piedpage_couleur-credit', array(
+        'section' => 'piedpage_section',
+        'label' => __('Couleur du texte bas de page', 'theme_31w'),
+    )));
+    /* créer le champ icone */
+    $wp_customize->add_setting('piedpage_couleur-icone', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'piedpage_couleur-icone', array(
+        'section' => 'piedpage_section',
+        'label' => __('Couleur de l\'icône', 'theme_31w'),
+    )));
+
 }
 
 add_action('customize_register', 'theme_31w_customize_register');
