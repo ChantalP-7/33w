@@ -12,7 +12,7 @@ $piedpage_couleurCredit = get_theme_mod('piedpage_couleur-credit');
 $piedpage_telephone = get_theme_mod('piedpage_telephone', '514-000-0000');
 $piedpage_adresse = get_theme_mod('piedpage_adresse', '3800, rue Sherbrooke Est, Montréal');
 $piedpage_courriel = get_theme_mod('piedpage_courriel', 'info@jevoyage.voyage');
-$piedpage_mission = get_theme_mod('piedpage_mission', 'ok');
+$piedpage_mission = get_theme_mod('piedpage_mission', 'Notre mission est d\'inspirer et d\'informer nos membres sur des destinations de voyage qui répondent à leurs attentes. Nous favorisons les échanges et le partage d\'expériences à travers des activités sociales variées, telles que des rencontres, des conférences et des dîners.');
 
 ?>
 <style>

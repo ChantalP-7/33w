@@ -101,14 +101,14 @@ function theme_31w_customize_register($wp_customize)
 
 
      /* créer le champ icone */
-    $wp_customize->add_setting('hero_couleur-icone', array(
+    $wp_customize->add_setting('hero_couleurIcone', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
     ));
     /* créer le contrôleur */
-    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur-icone', array(
-        'section' => 'hero_section',
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleurIcone', array(        
         'label' => __('Couleur de l\'icône', 'theme_31w'),
+        'section' => 'hero_section',
     )));
 
 

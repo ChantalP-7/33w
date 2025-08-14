@@ -39,8 +39,14 @@
   <?php get_template_part("gabarit/populaire"); ?>
 </section>
 
+<!-- Section rest api -->
+
 <section class="destination">
   <div class="destination__div">
+    <ul class="list_categories">
+      <li data-id="4">Aventure</li>
+      <li data-id="3">Culturel</li>
+    </ul>
     <br>    
     <h3 class="destination__titre">Articles de la catégorie Populaire</h3>
     <div class="destination__liste"></div>
@@ -48,7 +54,8 @@
   </div>
 </section>
 
-<!-- Section rest api -->
+
+
 
 <?php get_footer();
       

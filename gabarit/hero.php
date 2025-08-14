@@ -9,7 +9,7 @@
 
 $hero_couleurTexte = get_theme_mod('hero_couleurTexte');
 $hero_couleur = get_theme_mod('hero_couleur');
-$hero_couleurIcone = get_theme_mod('hero_couleur-icone');
+$hero_couleurIcone = get_theme_mod('hero_couleurIcone');
 $hero_auteur = get_theme_mod('hero_auteur', 'Chantal Pépin');
 $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montréal');
 ?>
@@ -39,13 +39,13 @@ $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montré
         font-weight: 500;
         line-height: 1.8rem;
         max-width: 80ch;
-        gap: 15px;        
+        gap: 15px;               
     }
     
     .hero__icone svg {
-        fill: <?= $hero_couleurIcone ?>
+        color: <?= $hero_couleurIcone ?>    
+    } 
     
-    }
 </style>
 
 <div class="hero__contenu">
@@ -54,7 +54,6 @@ $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montré
         <p><strong>Description:</strong> <?php bloginfo('description')?></p>
         <p><strong>Auteur du thème:</strong> <?= $hero_auteur ?></p>
         <p><strong>Adresse du club:</strong> <?= $hero_adresse ?></p>
-        <span><?php icone_sociaux($hero_couleurIcone) ?> </span>
-        
+        <span><?php icone_sociaux($hero_couleurIcone) ?> </span>        
     </div>
 </div>

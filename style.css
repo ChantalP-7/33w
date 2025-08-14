@@ -304,44 +304,6 @@ ul {
   margin-top: 0px;
   margin-bottom: -10px;
 }
-@media screen and (max-width: 1050px) {
-  .hero {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero h1 {
-    color: black;
-  }
-  .hero__description {
-    max-width: 45ch;
-  }
-}
-@media screen and (max-width: 800px) {
-  .hero {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .hero h1 {
-    color: black;
-  }
-  .hero__description {
-    max-width: 35ch;
-  }
-}
-@media screen and (max-width: 500px) {
-  .hero {
-    margin-left: 0px;
-    justify-content: center;
-  }
-  .hero h1 {
-    color: black;
-  }
-  .hero__description {
-    line-height: 0.9rem;
-  }
-}
 
 @keyframes anime-titre {
   0% {
@@ -377,6 +339,44 @@ ul {
   justify-content: center;
   gap: 10px;
   align-items: center;
+}
+@media screen and (max-width: 1050px) {
+  .carrousel {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .carrousel h1 {
+    color: black;
+  }
+  .carrousel__description {
+    max-width: 45ch;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carrousel {
+    margin-left: 0px;
+    justify-content: center;
+    padding: 10px;
+  }
+  .carrousel h1 {
+    color: black;
+  }
+  .carrousel__description {
+    max-width: 35ch;
+  }
+}
+@media screen and (max-width: 500px) {
+  .carrousel {
+    margin-left: 0px;
+    justify-content: center;
+  }
+  .carrousel h1 {
+    color: black;
+  }
+  .carrousel__description {
+    line-height: 0.9rem;
+  }
 }
 
 .piedpage {
@@ -737,12 +737,12 @@ ul {
   font-family: Quicksand;
   font-weight: 600;
 }
-.populaire ul a {
+.populaire a {
   text-decoration: none;
   color: rgb(26, 163, 255);
   font-weight: 400;
   font-family: Quicksand;
-  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  font-size: clamp(1rem, 1.3vw - 0.08rem, 1.4rem);
   line-height: 1.7rem;
 }
 .populaire ul {
@@ -755,7 +755,7 @@ ul {
 
 p {
   font-family: Quicksand;
-  font-size: clamp(1.1rem, 1.6vw - 0.08rem, 1.7rem);
+  font-size: clamp(1rem, 1.3vw - 0.08rem, 1.4rem);
   line-height: 1.7rem;
 }
 
