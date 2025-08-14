@@ -832,10 +832,10 @@ p {
 .destination {
   padding: 20px;
 }
-.destination__div {
+.destination__liste div {
   margin-top: 20px;
 }
-.destination__titre {
+.destination__liste__titre {
   font-family: Mohave;
   font-size: 36px;
   font-weight: 700;
@@ -859,4 +859,20 @@ p {
   margin-top: 20px;
 }
 
+.accordeon__chk {
+  display: none;
+}
+.accordeon__excerpt {
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* L'input checkbox : input type="checkbox" */
+.accordeon__chk:checked ~ .accordeon__excerpt {
+  max-height: 200px;
+}
+
+/*#accordeon__chk {
+
+}*/
 /*@import "composants/menu";*//*# sourceMappingURL=style.css.map */

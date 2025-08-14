@@ -1,0 +1,22 @@
+.accordeon {
+	&__chk {
+		display: none;
+	}
+
+	&__excerpt {
+		//display: none;
+        max-height: 0;
+        overflow: hidden;
+	}
+}
+
+/* L'input checkbox : input type="checkbox" */
+
+.accordeon__chk:checked ~ .accordeon__excerpt {
+    max-height: 200px;
+	//display: block;
+}
+
+/*#accordeon__chk {
+
+}*/
