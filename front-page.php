@@ -43,10 +43,7 @@
 
 <section class="destination">
   <div class="destination__div">
-    <ul class="list_categories">
-      <li data-id="4">Aventure</li>
-      <li data-id="3">Culturel</li>
-    </ul>
+    <?php extraire_list_categories("destination"); ?>
     <br>    
     <h3 class="destination__titre">Articles de la catégorie Populaire</h3>
     <div class="destination__liste"></div>
