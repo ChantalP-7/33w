@@ -20,7 +20,7 @@ function mon_fetch(categoryId) {
 		.then((response) => response.json())
 		.then((data) => {
 			const destinationList =
-				document.querySelector(".destination__list");
+				document.querySelector(".destination__liste");
 			destinationList.innerHTML = "";
 			data.forEach((article) => {
 				const articleElement = document.createElement("div");
