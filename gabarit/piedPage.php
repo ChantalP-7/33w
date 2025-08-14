@@ -13,6 +13,8 @@ $piedpage_telephone = get_theme_mod('piedpage_telephone', '514-000-0000');
 $piedpage_adresse = get_theme_mod('piedpage_adresse', '3800, rue Sherbrooke Est, Montréal');
 $piedpage_courriel = get_theme_mod('piedpage_courriel', 'info@jevoyage.voyage');
 $piedpage_mission = get_theme_mod('piedpage_mission', 'Notre mission est d\'inspirer et d\'informer nos membres sur des destinations de voyage qui répondent à leurs attentes. Nous favorisons les échanges et le partage d\'expériences à travers des activités sociales variées, telles que des rencontres, des conférences et des dîners.');
+$piedpage_texteCredit = get_theme_mod('piedpage_texteCredit', 'Tous droits réservés : Je voyage - 2025');
+$piedpage_texteCreation = get_theme_mod('piedpage_texteCredit', 'Création : Chantal Pépin');
 
 ?>
 <style>
@@ -65,9 +67,9 @@ $piedpage_mission = get_theme_mod('piedpage_mission', 'Notre mission est d\'insp
 </div>
 
 <div class="piedpage__credits">
-    <p>Tous droits réservés : Je voyage - 2025</p>
+    <p><?=$piedpage_texteCredit ?></p>
     <div class="piedpage__icone">
         <?php icone_sociaux('#ffffff') ?>
     </div>
-    <p>Création : Chantal Pépin</p>
+    <p><?=$piedpage_texteCreation ?></p>
 </div>

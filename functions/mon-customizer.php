@@ -86,8 +86,9 @@ function theme_31w_customize_register($wp_customize)
     )));
 
 
-    /////////////////// couleur du texte de la section hero
+    /////////////////// couleur du texte et des icônes de la section hero
     ////////////////////// champ couleur
+
     /* créer le champ texte */
     $wp_customize->add_setting('hero_couleur', array(
         'default' => '',
@@ -99,7 +100,6 @@ function theme_31w_customize_register($wp_customize)
         'section' => 'hero_section',
     )));
 
-
      /* créer le champ icone */
     $wp_customize->add_setting('hero_couleurIcone', array(
         'default' => '',
@@ -107,7 +107,7 @@ function theme_31w_customize_register($wp_customize)
     ));
     /* créer le contrôleur */
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleurIcone', array(        
-        'label' => __('Couleur de l\'icône', 'theme_31w'),
+        'label' => __('Couleur des icônes', 'theme_31w'),
         'section' => 'hero_section',
     )));
 
@@ -172,9 +172,36 @@ function theme_31w_customize_register($wp_customize)
         'section' => 'piedpage_section',
         'type' => 'text',
     ));
+    ////////////////////// Crédit
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_texteCredit', array(
+        'default' => __('Tous droits réservés : Je voyage - 2025', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_texteCredit', array(        
+        'label' => __('Crédit ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
+    ));
+    ////////////////////// Mission
+    /* configuration du champ */
+    $wp_customize->add_setting('piedpage_texteCreation', array(
+        'default' => __('Création : Chantal Pépin', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('piedpage_texteCreation', array(        
+        'label' => __('Création ', 'theme_31w'),
+        'section' => 'piedpage_section',
+        'type' => 'text',
+    ));
 
-    /////////////////// couleur du texte de la section pied de page
+
+
+    /////////////////// couleur du texte et des icones de la section pied de page
     ////////////////////// champ couleur
+
     /* créer le champ texte */
     $wp_customize->add_setting('piedpage_couleur', array(
         'default' => '',
@@ -204,7 +231,7 @@ function theme_31w_customize_register($wp_customize)
     /* créer le contrôleur */
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'piedpage_couleur-icone', array(
         'section' => 'piedpage_section',
-        'label' => __('Couleur de l\'icône', 'theme_31w'),
+        'label' => __('Couleur des icônes', 'theme_31w'),
     )));
 
 }

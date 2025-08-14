@@ -54,6 +54,11 @@ $hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montré
         <p><strong>Description:</strong> <?php bloginfo('description')?></p>
         <p><strong>Auteur du thème:</strong> <?= $hero_auteur ?></p>
         <p><strong>Adresse du club:</strong> <?= $hero_adresse ?></p>
-        <span><?php icone_sociaux($hero_couleurIcone) ?> </span>        
+        <div class="hero__icone">
+            <span><?php icone_sociaux($hero_couleurIcone) ?> </span>
+        </div>
+        <div class="description-bouton-media">
+            <a class="bouton" href="#">Contactez-nous</a>
+        </div>        
     </div>
 </div>

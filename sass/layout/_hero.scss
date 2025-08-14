@@ -1,31 +1,32 @@
 .hero {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
 
- &__titre {
-    animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
-  }
+	&__titre {
+		animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54)
+			forwards;
+	}
 
-  &__contenu {
-    animation: anime-texte 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
- 
+	&__contenu {
+		animation: anime-texte 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54)
+			forwards;
+		margin-left: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 20px;
 
- &__titre {
-    color: white;
-    font-weight: 500;
-    margin-top: -10px;
-    animation: anime-titre 1s 0.5s foward;
-  }
+		/*&__titre {
+			color: white;
+			font-weight: 500;
+			margin-top: -10px;
+			animation: anime-titre 1s 0.5s foward;
+		}*/
 
- /* &__description {
+		/* &__description {
     animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
     font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
     display: flex;
@@ -39,142 +40,138 @@
     line-height: 1.8rem;
     max-width: 80ch;*/
 
-    &__description span {
-      margin-top: 15px;
-    }
+		&__description > div {
+			margin-top: 20px;
+		}
 
-    &__iconesContact {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      gap: 5px;
-      margin-bottom: 20px;
-    }
-  
-    &__icone {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-  
-      a {
-        color: rgb(21, 21, 221);
-      }
-    }
-  
-    &__description-bouton-media {
-      display: inline-flex;
-      gap: 30px;
-      &:hover {
-        cursor: pointer;
-        fill: white;
-      }
-    }
-  
-    &__description-media {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
-    &:hover svg {
-      color: #ffffff;
-    }
+		&__iconesContact {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			gap: 5px;
+			margin-bottom: 20px;
+		}
 
-    button .bouton {
-      background-color: rgb(71, 181, 255);
-      width: fit-content;
-      padding: 8px 22px;
-      border-radius: 30px;
-      border: 1px solid rgba(49, 49, 49, 0.596);
-      color: rgb(0, 0, 0);
-      text-decoration: none;
-      font-size: 20px;
-      font-family: Quicksand;
-      &:hover {
-        background-color: rgb(255, 255, 255);
-        border-color: 1px solid rgb(71, 181, 255);
-        color: rgb(0, 0, 0);
-      }
-    }
+		&__icone {
+			display: flex;
+			align-items: center;
+			gap: 10px;
 
-    p {
-      margin-top: 0px;
-      margin-bottom: -10px;
-    }
-  }
-  
+			a {
+				color: rgb(21, 21, 221);
+			}
+		}
+
+		&__description-bouton-media {
+			display: inline-flex;
+			gap: 30px;
+			&:hover {
+				cursor: pointer;
+				/*fill: white;*/
+			}
+		}
+
+		&__description-media {
+			display: flex;
+			gap: 20px;
+			align-items: center;
+		}
+		&:hover svg {
+			color: #202020;
+		}
+
+		button .bouton {
+			background-color: rgb(71, 181, 255);
+			width: fit-content;
+			padding: 8px 22px;
+			border-radius: 30px;
+			border: 1px solid rgb(71, 181, 255);
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			font-size: 20px;
+			font-family: Quicksand;
+			&:hover {
+				background-color: rgb(255, 255, 255);
+				color: rgb(0, 0, 0);
+			}
+		}
+
+		p {
+			margin-top: 0px;
+			margin-bottom: -10px;
+		}
+	}
 }
 
-
 @keyframes anime-titre {
-  0% {
-    transform: translateY(-200px);
-  }
+	0% {
+		transform: translateY(-200px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes anime-texte {
-  0% {
-    transform: translateY(200px);
-  }
+	0% {
+		transform: translateY(200px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 .carrousel {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  &__form {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-  }
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	&__form {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 10%;
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		align-items: center;
+	}
 
-
-  @media screen and (max-width: $point-rupture) {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-    h1 {
-      color: black;
-    }
-    &__description {
-      max-width: 45ch;
-    }
-  }
-  @media screen and (max-width: $point-ruptureSmall) {
-    margin-left: 0px;
-    justify-content: center;
-    padding: 10px;
-    h1 {
-      color: black;
-    }
-    &__description {
-      max-width: 35ch;
-    }
-  }
-  @media screen and (max-width: $point-ruptureXSmall) {
-    margin-left: 0px;
-    justify-content: center;
-    h1 {
-      color: black;
-    }
-    &__description {
-      line-height: 0.9rem;
-      }
-      }
-  }
+	@media screen and (max-width: $point-rupture) {
+		margin-left: 0px;
+		justify-content: center;
+		padding: 10px;
+		h1 {
+			color: black;
+		}
+		&__description {
+			max-width: 45ch;
+		}
+	}
+	@media screen and (max-width: $point-ruptureSmall) {
+		margin-left: 0px;
+		justify-content: center;
+		padding: 10px;
+		h1 {
+			color: black;
+		}
+		&__description {
+			max-width: 35ch;
+		}
+	}
+	@media screen and (max-width: $point-ruptureXSmall) {
+		margin-left: 0px;
+		justify-content: center;
+		h1 {
+			color: black;
+		}
+		&__description {
+			line-height: 0.9rem;
+		}
+	}
+}

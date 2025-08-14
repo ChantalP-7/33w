@@ -34,25 +34,21 @@
 
 <!-- section populaire -->
 <section class="populaire">
-  <h3 class="text-center">Voici des infos qui pourraient vous intéresser.</h3>
+  <h3 class="text-center">Destinations populaires</h3>
   <br>
   <?php get_template_part("gabarit/populaire"); ?>
 </section>
 
 <!-- Section rest api -->
-
 <section class="destination">
   <div class="destination__div">
     <?php extraire_list_categories("destination"); ?>
     <br>    
-    <h3 class="destination__titre">Articles de la catégorie Populaire</h3>
+    <h3 class="destination__titre">Articles de la catégorie</h3>
     <div class="destination__liste"></div>
     <br>
   </div>
 </section>
-
-
-
 
 <?php get_footer();
       
