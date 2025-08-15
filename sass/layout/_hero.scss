@@ -26,21 +26,24 @@
 			animation: anime-titre 1s 0.5s foward;
 		}*/
 
-		/* &__description {
-    animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
-    font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.644);
-    color: black;
-    padding: 20px;
-    font-family: Quicksand;
-    font-weight: 500;
-    line-height: 1.8rem;
-    max-width: 80ch;*/
-
-		&__description > div {
+	/*&__description {
+        animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+        font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, 0.644);
+        color: black;
+        padding: 10px;
+        font-family: Quicksand;
+        font-weight: 500;
+        line-height: 1.8rem;
+        max-width: 80ch;
+        min-height: auto;
+        gap: 50px;
+            
+    } */   
+		&__description  div {
 			margin-top: 20px;
 		}
 
@@ -50,26 +53,46 @@
 			justify-content: flex-start;
 			gap: 5px;
 			margin-bottom: 20px;
-		}
+		}		
 
-		&__icone {
+		.description-bouton-media {
 			display: flex;
-			align-items: center;
-			gap: 10px;
-
-			a {
-				color: rgb(21, 21, 221);
-			}
-		}
-
-		&__description-bouton-media {
-			display: inline-flex;
+            justify-content: flex-start;
+            flex-direction: row !important;
+            align-items: center;
 			gap: 30px;
 			&:hover {
 				cursor: pointer;
-				/*fill: white;*/
-			}
+				fill: white;
+			}            
 		}
+
+        &__icone {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                color: rgb(21, 21, 221);
+            }
+        }
+
+        a .bouton {
+            background-color: rgb(71, 181, 255);
+            width: fit-content;
+            padding: 8px 22px;
+            border-radius: 30px;
+            border: 1px solid rgb(71, 181, 255);
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            font-size: 20px;
+            font-family: Quicksand;
+            margin-bottom: 10px;
+            &:hover {
+                background-color: rgb(255, 255, 255);
+                color: rgb(0, 0, 0);
+            }
+        }
 
 		&__description-media {
 			display: flex;
@@ -78,28 +101,14 @@
 		}
 		&:hover svg {
 			color: #202020;
-		}
-
-		button .bouton {
-			background-color: rgb(71, 181, 255);
-			width: fit-content;
-			padding: 8px 22px;
-			border-radius: 30px;
-			border: 1px solid rgb(71, 181, 255);
-			color: rgb(0, 0, 0);
-			text-decoration: none;
-			font-size: 20px;
-			font-family: Quicksand;
-			&:hover {
-				background-color: rgb(255, 255, 255);
-				color: rgb(0, 0, 0);
-			}
-		}
+		}		
 
 		p {
 			margin-top: 0px;
-			margin-bottom: -10px;
 		}
+		/*p:nth-last-of-type {
+			margin-bottom: 20px;
+		}*/
 	}
 }
 

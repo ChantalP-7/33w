@@ -42,9 +42,10 @@
 <!-- Section rest api -->
 <section class="destination">
   <div class="destination__div">
+     <h3 class="destination__titre">Nos catégories</h3>
     <?php extraire_list_categories("destination"); ?>
     <br>    
-    <h3 class="destination__titre">Articles de la catégorie</h3>
+    <h3 class="destination__titre">Articles de la catégorie choisie</h3>
     <div class="destination__liste"></div>
     <br>
   </div>
