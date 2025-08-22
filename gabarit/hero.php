@@ -1,28 +1,66 @@
 <?php
+
 /**
- *  Template-part hero.php
- *  permet d'afficher la section hero
- * */ 
+ * Template-part hero.php
+ * permet d'afficher la section  « Hero »
+ */
 ?>
 <?php
-$hero_auteur = get_theme_mod('hero_auteur', 'Mireille Fouchon');
-$hero_adresse = get_theme_mod('hero_adresse', '18, rue des Grenouilles, Paris, Canada');
-$hero_description = get_theme_mod("hero_description', '<strong>Je voyage</strong> est un club de voyageurs passionné.e.s de 
-découvertes et d'aventures, où les membres partagent leurs expériences et conseils pour organiser des voyages inoubliables. Ils bénéficient d\'offres exclusives et découvrent de nouvelles destinations. ☀");
+
+$hero_couleurTexte = get_theme_mod('hero_couleurTexte');
+$hero_couleur = get_theme_mod('hero_couleur');
+$hero_couleurIcone = get_theme_mod('hero_couleurIcone');
+$hero_auteur = get_theme_mod('hero_auteur', 'Chantal Pépin');
+$hero_adresse = get_theme_mod('hero_adresse', '3800, rue Sherbrooke Est, Montréal');
 ?>
+<style>
+    .hero__contenu {
+        span {
+            margin-top: 10px;
+        }
+        h1 {
+            color: <?= $hero_couleur ?>;
+        }         
+       
+
+        <?php bloginfo($hero_couleur) ?>
+    }
+
+    .hero__description {        
+        background-color: rgba(255, 255, 255, 0.644);
+        font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        color: rgb(43, 43, 43);
+        padding: 20px;
+        border-radius: 8px;
+        font-family: Quicksand;
+        font-weight: 500;
+        line-height: 1.8rem;
+        max-width: 80ch;
+        gap: 15px;               
+    }
+    
+    .hero__icone svg {
+        color: <?= $hero_couleurIcone ?>    
+    } 
+    
+</style>
 
 <div class="hero__contenu">
     <h1 class="hero__titre"><?php bloginfo('name') ?></h1>
     <div class="hero__description">
-        <p > <?= $hero_description ?></p>
-        <p>Auteur du thème: <?= $hero_auteur ?></p>
-        <p>Adresse du club: <?= $hero_adresse ?></p>
-    </div>
-    
-    
+        <p><strong>Description:</strong> <?php bloginfo('description')?></p>
+        <p><strong>Auteur du thème:</strong> <?= $hero_auteur ?></p>
+        <p><strong>Adresse du club:</strong> <?= $hero_adresse ?></p>
+        <div class="description-bouton-media">
+            <div class="hero__icone">
+                <span><?php icone_sociaux($hero_couleurIcone) ?> </span>
+            </div>
+            <div>
+                <a class="bouton" href="#">Contactez-nous</a>
+            </div>            
+        </div>
+    </div> 
 </div>
-
-<?php 
-
-
-?>

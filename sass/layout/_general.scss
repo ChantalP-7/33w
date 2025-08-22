@@ -5,8 +5,8 @@
 body {
   font-family: "Mohave, sans-serif";
   font-size: 16px;
-  //margin: 0;
-  //padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -28,6 +28,27 @@ html {
 
 a {
   text-decoration: none;
-  color: white;
   font-weight: 400;
+  font-size: 20px;
+}
+
+ul a {
+  text-decoration: none;
+  color: rgb(31, 104, 240);
+  font-weight: 400;
+  font-family: Quicksand;
+  font-size: clamp(1.1rem, 1.6vw + -0.08rem, 1.7rem);
+  line-height: 1.7rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }

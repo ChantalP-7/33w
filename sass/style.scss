@@ -13,13 +13,15 @@ Text Domain: Je voyage
 */
 
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	scrollbar-width: unset;
+	scrollbar-color: unset;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Mohave:ital,wght@0,300..700;1,300..700&display=swap");
@@ -50,5 +52,8 @@ html {
 @import "composants/populaire";
 @import "composants/bouton";
 @import "composants/carte";
+@import "composants/destination";
+@import "composants/article";
+@import "composants/accordeon";
 
 /*@import "composants/menu";*/
