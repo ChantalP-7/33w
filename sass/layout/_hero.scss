@@ -5,6 +5,14 @@
 	display: flex;
 	flex-direction: column;
 
+	&__radio {
+		display: none;
+		animation: slideAnimation 5s infinite;
+		&__active {
+			display: block;
+		}
+	}
+
 	&__titre {
 		animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54)
 			forwards;
@@ -26,7 +34,7 @@
 			animation: anime-titre 1s 0.5s foward;
 		}*/
 
-	/*&__description {
+		/*&__description {
         animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
         font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
         display: flex;
@@ -42,8 +50,8 @@
         min-height: auto;
         gap: 50px;
             
-    } */   
-		&__description  div {
+    } */
+		&__description div {
 			margin-top: 20px;
 		}
 
@@ -53,46 +61,46 @@
 			justify-content: flex-start;
 			gap: 5px;
 			margin-bottom: 20px;
-		}		
+		}
 
 		.description-bouton-media {
 			display: flex;
-            justify-content: flex-start;
-            flex-direction: row !important;
-            align-items: center;
+			justify-content: flex-start;
+			flex-direction: row !important;
+			align-items: center;
 			gap: 30px;
 			&:hover {
 				cursor: pointer;
 				fill: white;
-			}            
+			}
 		}
 
-        &__icone {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+		&__icone {
+			display: flex;
+			align-items: center;
+			gap: 10px;
 
-            a {
-                color: rgb(21, 21, 221);
-            }
-        }
+			a {
+				color: rgb(21, 21, 221);
+			}
+		}
 
-        a .bouton {
-            background-color: rgb(71, 181, 255);
-            width: fit-content;
-            padding: 8px 22px;
-            border-radius: 30px;
-            border: 1px solid rgb(71, 181, 255);
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            font-size: 20px;
-            font-family: Quicksand;
-            margin-bottom: 10px;
-            &:hover {
-                background-color: rgb(255, 255, 255);
-                color: rgb(0, 0, 0);
-            }
-        }
+		a .bouton {
+			background-color: rgb(71, 181, 255);
+			width: fit-content;
+			padding: 8px 22px;
+			border-radius: 30px;
+			border: 1px solid rgb(71, 181, 255);
+			color: rgb(0, 0, 0);
+			text-decoration: none;
+			font-size: 20px;
+			font-family: Quicksand;
+			margin-bottom: 10px;
+			&:hover {
+				background-color: rgb(255, 255, 255);
+				color: rgb(0, 0, 0);
+			}
+		}
 
 		&__description-media {
 			display: flex;
@@ -101,7 +109,7 @@
 		}
 		&:hover svg {
 			color: #202020;
-		}		
+		}
 
 		p {
 			margin-top: 0px;
@@ -130,6 +138,22 @@
 	100% {
 		transform: translateY(0);
 	}
+}
+
+/* Animation de base pour faire glisser les images */
+@keyframes slideAnimation {
+	0% {
+		opacity: 0;
+	} /* Démarrage : image invisible */
+	10% {
+		opacity: 1;
+	} /* Apparition progressive */
+	90% {
+		opacity: 1;
+	} /* Reste visible */
+	100% {
+		opacity: 0;
+	} /* Disparition progressive */
 }
 
 .carrousel {

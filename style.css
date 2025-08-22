@@ -222,6 +222,13 @@ ul {
   display: flex;
   flex-direction: column;
 }
+.hero__radio {
+  display: none;
+  animation: slideAnimation 5s infinite;
+}
+.hero__radio__active {
+  display: block;
+}
 .hero__titre {
   animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
 }
@@ -239,22 +246,22 @@ ul {
   	animation: anime-titre 1s 0.5s foward;
   }*/
   /*&__description {
-         animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
-         font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
-         display: flex;
-         flex-direction: column;
-         justify-content: flex-start;
-         background-color: rgba(255, 255, 255, 0.644);
-         color: black;
-         padding: 10px;
-         font-family: Quicksand;
-         font-weight: 500;
-         line-height: 1.8rem;
-         max-width: 80ch;
-         min-height: auto;
-         gap: 50px;
+        animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
+        font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: rgba(255, 255, 255, 0.644);
+        color: black;
+        padding: 10px;
+        font-family: Quicksand;
+        font-weight: 500;
+        line-height: 1.8rem;
+        max-width: 80ch;
+        min-height: auto;
+        gap: 50px;
 
-     } */
+    } */
   /*p:nth-last-of-type {
   	margin-bottom: 20px;
   }*/
@@ -331,6 +338,21 @@ ul {
   100% {
     transform: translateY(0);
   }
+}
+/* Animation de base pour faire glisser les images */
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+  } /* Démarrage : image invisible */
+  10% {
+    opacity: 1;
+  } /* Apparition progressive */
+  90% {
+    opacity: 1;
+  } /* Reste visible */
+  100% {
+    opacity: 0;
+  } /* Disparition progressive */
 }
 .carrousel {
   position: absolute;

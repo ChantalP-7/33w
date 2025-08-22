@@ -8,6 +8,7 @@
 <?php get_header(); ?>
     <section class="article">      
     <h3>Catégorie : <?php single_cat_title(); ?> </h3>
+    <?= category_description(); ?>
 
     <?php
     if(have_posts()){      
