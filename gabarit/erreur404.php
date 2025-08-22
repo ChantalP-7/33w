@@ -23,12 +23,17 @@ $erreur404_message = get_theme_mod('erreur404_message', 'Pas de panique, cher me
     
 </style>
 <div class="erreur404__conteneur">
-    <h1 class="erreur404__titre"><?php $erreur404_titre ?></h1>
-    <div class="erreur404__message">
-        <p><?php $page404_message?></p>
-    </div>
-        <a href="/">Retour à l'accueil</a>
-        <div class="erreur404__menu">
+    
+       <h1 class="erreur404__titre"><?php $erreur404_titre ?> Oops, vous avez échoué sur l'île 404 !</h1>
+        
+        <div class="erreur404__contenu">
+            
+            <div class="erreur404__message">
+                <p><?php $page404_message?>
+                    Pas de panique, cher membre explorateur ! Vous avez dérivé d'une vague trop loin des destinations sélectionnées pour vous. Rejoignez votre groupe en cliquant sur "Accueil" pour découvrir à nouveau votre voyage d'exception
+            </p>
+            </div>
+            <a href="/">Retour à l'accueil</a>
             <?php  wp_nav_menu(array(
                   "menu" => "erreur404",
                   'container' => "div",
@@ -36,10 +41,11 @@ $erreur404_message = get_theme_mod('erreur404_message', 'Pas de panique, cher me
                   "menu_class" => "erreur404__boutons-menu"
                   
               )); ?>
+              <?php
+                    get_search_form();
+                ?>   
                        
         </div>
-        <?php
-            get_search_form();
-        ?>    
+         
 </div>
   

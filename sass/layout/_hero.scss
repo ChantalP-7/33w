@@ -26,31 +26,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 20px;
-
-		/*&__titre {
-			color: white;
-			font-weight: 500;
-			margin-top: -10px;
-			animation: anime-titre 1s 0.5s foward;
-		}*/
-
-		/*&__description {
-        animation: anime-titre 1s 0.5s cubic-bezier(0.08, 0.91, 0.75, 1.54) forwards;
-        font-size: clamp(1.1rem, 0.554vw + 0.9345rem, 1.35rem);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background-color: rgba(255, 255, 255, 0.644);
-        color: black;
-        padding: 10px;
-        font-family: Quicksand;
-        font-weight: 500;
-        line-height: 1.8rem;
-        max-width: 80ch;
-        min-height: auto;
-        gap: 50px;
-            
-    } */
+		
 		&__description div {
 			margin-top: 20px;
 		}
