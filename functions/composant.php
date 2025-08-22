@@ -59,7 +59,25 @@ function extraire_list_categories($nom_categorie)
     }
     echo "</ul>";
 }
+function boutons ($couleur_arriere_plan) {
 
+    // pour enle ver le # de la position 0 on extrait à partir de la position 1   
+    $couleur_arriere_plan = substr($couleur_arriere_plan, 1); ?>
+
+    <a href="front-end.php">Retour à l'accueil</a>
+        <div class="erreur-404__menu">
+            <?php  wp_nav_menu(array(
+                  "menu" => "erreur-404",
+                  'container' => "div",
+                  "container_class" => "erreur-404__div",
+                  "menu_class" => "erreur-404__boutons-menu"
+                  
+              )); ?>
+                       
+        </div>
+    <?php
+    
+}
 
 ?>
 

@@ -594,23 +594,34 @@ ul {
   font-weight: 400;
 }
 
-.erreur-404 {
+.erreur404__conteneur {
   position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.erreur-404__menu {
+.erreur404__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.erreur404__boutons-menu {
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
   gap: 30px;
 }
-.erreur-404__menu:hover {
+.erreur404__boutons-menu a {
+  background-color: gold;
+  padding: 10px;
+  color: black;
+}
+.erreur404__boutons-menu a:hover {
   cursor: pointer;
-  color: white;
+  background-color: white;
 }
 
 /* composant */

@@ -1,0 +1,38 @@
+.erreur404 {
+
+    &__conteneur {
+
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+	
+
+	&__menu {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__boutons-menu {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		gap: 30px;
+
+		a {
+			background-color: gold;
+			padding: 10px;
+			color: black;
+			&:hover {
+				cursor: pointer;
+				background-color: white;
+			}
+		}
+	}
+}

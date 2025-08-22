@@ -235,24 +235,71 @@ function theme_31w_customize_register($wp_customize)
     )));
 
 
-    /// Section page 404
+    ///////////////////////// Section erreur-404
 
-    $wp_customize->add_section('404_section', array(
-        'title' => __('Section page - 404', 'theme_31w'),
+    $wp_customize->add_section('erreur404_section', array(
+        'title' => __('Section erreur - 404', 'theme_31w'),
         'priority' => 30,
     ));
 
-     // image 1
+     // image du background de la page 
     /* créer le champ */
-    $wp_customize->add_setting('404_background', array(
+    $wp_customize->add_setting('erreur404_background', array(
         'default' => '',
         'sanitize_callback' => 'esc_url_raw',
     ));
     /* créer le contrôleur */
-    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, '404_background', array(
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'erreur404_background', array(
         'label' => __('Image en arrière plan', 'theme_31w'),
-        'section' => '404_section',
+        'section' => 'erreur404_section',
     )));
+
+
+    $wp_customize->add_setting('erreur404_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'erreur404_couleur', array(
+        'label' => __('Couleur du texte', 'theme_31w'),
+        'section' => 'erreur404_section',
+    )));
+
+    $wp_customize->add_setting('erreur404_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'erreur404_couleur', array(
+        'label' => __('Couleur arrière-plan des boutons', 'theme_31w'),
+        'section' => 'erreur404_section',
+    )));
+
+    ////////////////////// Titre
+    /* configuration du champ */
+    $wp_customize->add_setting('erreur404_titre', array(
+        'default' => __('Oops, vous avez échoué sur l\'île 404 !'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('erreur404_titre', array(        
+        'label' => __('Titre ', 'theme_31w'),
+        'section' => 'erreur404_section',
+        'type' => 'text',
+    ));
+
+    ////////////////////// Message
+    /* configuration du champ */
+    $wp_customize->add_setting('erreur404_message', array(
+        'default' => __('Pas de panique, cher membre explorateur ! Vous avez dérivé une vague trop loin des destinations sélectionnées pour vous. Rejoignez votre groupe en cliquant sur "Accueil" pour découvrir à nouveau votre voyage d\'exception!', 'theme_31w'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    /* configuration du contrôleur */
+    $wp_customize->add_control('erreur404_message', array(        
+        'label' => __('Message ', 'theme_31w'),
+        'section' => 'erreur404_section',
+        'type' => 'text',
+    ));
 
 }
 
