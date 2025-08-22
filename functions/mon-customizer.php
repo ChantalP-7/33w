@@ -234,6 +234,26 @@ function theme_31w_customize_register($wp_customize)
         'label' => __('Couleur des icônes', 'theme_31w'),
     )));
 
+
+    /// Section page 404
+
+    $wp_customize->add_section('404_section', array(
+        'title' => __('Section page - 404', 'theme_31w'),
+        'priority' => 30,
+    ));
+
+     // image 1
+    /* créer le champ */
+    $wp_customize->add_setting('404_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    /* créer le contrôleur */
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, '404_background', array(
+        'label' => __('Image en arrière plan', 'theme_31w'),
+        'section' => '404_section',
+    )));
+
 }
 
 add_action('customize_register', 'theme_31w_customize_register');
