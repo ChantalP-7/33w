@@ -8,7 +8,7 @@ Continuation de la partie 2 qui n'est pas terminée et début de la partie 3 qui
 
 Réorganisation de la section héro, correction de bug pour afficher l'image background pour la partie 2 du TP2.
 
-Début partie 3 : Ajout d'un carrousel de trois images pour le background héro dans le customizer. Dans ces commit, il y aura des informations pour la partie 2 qui n'est pas terminéeet pour la partie 3 qui est commencée.
+
 
 Suite TP2 - partie 2
 
@@ -28,6 +28,8 @@ Amélioration du css dans le pied de page, et l'ensemble du site.
 
 TP2 - Partie 3
 
+Début partie 3 : Ajout d'un carrousel de trois images pour le background héro dans le customizer. 
+
 Affichage du carrousel d'image background de l'entête. Pour l'instant, il n'est pas dynamique, on doit cliquer sur les boutons radio pour afficher la prochaine image.
 
 Ajout d'une liste d'article d'une catégorie dans le bas de la section principale de la page d'accueil.
@@ -37,5 +39,7 @@ Rest-API
 Mise à jour de la section rest-api de la page d'accueil 
 
 Mise à jour du fichier destination.js dans le dossier script: modification de la fonction d'affichage de la liste d'articles.
+
+Création de la branche tp2-vf suite au bug de mon serveur et de la perte de ma base de données. Exportation de la base de données distante et importation dans mon phpmyadmin local. Réorganisation de mon nouveau wp avec cette nouvelle bd.
 
 
