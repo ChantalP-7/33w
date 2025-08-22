@@ -293,7 +293,7 @@ ul {
   gap: 10px;
 }
 .hero__contenu__icone a {
-  color: rgb(21, 21, 221);
+  color: rgb(51, 51, 51);
 }
 .hero__contenu a .bouton {
   background-color: rgb(71, 181, 255);
@@ -592,6 +592,25 @@ ul {
 .piedpage p {
   font-size: 20px;
   font-weight: 400;
+}
+
+.erreur-404 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.erreur-404__menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.erreur-404__menu:hover {
+  cursor: pointer;
+  color: white;
 }
 
 /* composant */

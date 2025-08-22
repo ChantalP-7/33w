@@ -7,32 +7,30 @@
 ?>
 <?php
 
-$page_404_couleurTexte = get_theme_mod('404_couleurTexte');
-$page_404_couleurBouton = get_theme_mod('404_couleurBouton');
+$erreur_404_couleurTexte = get_theme_mod('erreur-404_couleurTexte');
+$erreur_404_couleurBouton = get_theme_mod('erreur-404_couleurBouton');
 
-$page_404_titre = get_theme_mod('404_titre', 'Oops, vous avez échoué sur l\'île 404 !');
-$page_404_description = get_theme_mod('404_description', 'Pas de panique, cher membre explorateur ! Vous avez dérivé une vague trop loin des destinations sélectionnées pour vous. Rejoignez votre groupe en cliquant sur "Accueil" pour découvrir à nouveau votre voyage d\'exception!');
+$erreur_404_titre = get_theme_mod('erreur-404_titre', 'Oops, vous avez échoué sur l\'île 404 !');
+$erreur_404_description = get_theme_mod('erreur-404_description', 'Pas de panique, cher membre explorateur ! Vous avez dérivé une vague trop loin des destinations sélectionnées pour vous. Rejoignez votre groupe en cliquant sur "Accueil" pour découvrir à nouveau votre voyage d\'exception!');
 ?>
-<?php get_header(); ?>
-   
-<div class="hero__contenu">
-    <h1 class="hero__titre"><?php $page_404_titre ?></h1>
-    <div class="hero__description">
+<div class="erreur-404__contenu">
+    <h1 class="erreur-404__titre"><?php $erreur_404_titre ?></h1>
+    <div class="erreur-404__description">
         <p><?php $page_404_description ?></p>
+    </div>
         <a href="front-end.php">Retour à l'accueil</a>
-        <div class="description-bouton-media">
+        <div class="erreur-404__menu">
             <?php  wp_nav_menu(array(
-                  "menu" => "404",
+                  "menu" => "erreur-404",
                   'container' => "nav",
                   "container_class" => "entete__div-nav entete__contenu",
-                  "menu_class" => "entete__menu entete__menu-item"
+                  "menu_class" => "erreur-404__boutons-menu"
                   
               )); ?>
-            <div>
-                <a class="bouton" href="#">Contactez-nous</a>
-            </div>            
+                       
         </div>
-    </div> 
+        <?php
+            get_search_form();
+        ?>    
 </div>
-<?php  get_footer();  ?>
   
