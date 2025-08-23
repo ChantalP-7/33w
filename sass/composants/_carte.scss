@@ -47,4 +47,13 @@
   }
 }
 
+.zoom {
+    cursor: pointer;
+    transition: transform .6s ease-in-out; 
+}
+  
+.zoom:hover {
+transform: scale(1.1); 
+}
+
  

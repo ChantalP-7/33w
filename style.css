@@ -898,6 +898,15 @@ p {
   flex: 1 0 100%;
 }
 
+.zoom {
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
 .destination {
   padding: 20px;
 }

@@ -7,8 +7,8 @@
 $lien = "<a href=" . get_permalink() . ">... <?php echo ?> Suite</a>"
 ?>
 
-<article class="conteneur__carte">
-   <div>
+<article class="conteneur__carte zoom">
+   <div class="">
         <br>
         <?php the_post_thumbnail('thumbnails'); ?>
         <br>
