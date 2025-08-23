@@ -215,6 +215,10 @@ ul {
   text-align: left;
 }
 
+.margin-top-50 {
+  margin-top: 60px;
+}
+
 .hero {
   position: relative;
   height: 100vh;
@@ -298,6 +302,10 @@ ul {
 }
 .hero__contenu p {
   margin-top: 0px;
+}
+
+.active {
+  opacity: 1;
 }
 
 @keyframes anime-titre {
@@ -900,7 +908,7 @@ p {
 
 .zoom {
   cursor: pointer;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 1s ease-in-out;
 }
 
 .zoom:hover {

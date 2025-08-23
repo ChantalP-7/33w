@@ -14,9 +14,9 @@
   $hero_background[1] = get_theme_mod("hero_background_1");
   $hero_background[2] = get_theme_mod("hero_background_2");
   ?>
-  <div class="carrousel active" style="background-image: url('<?= $hero_background[0] ?>'); "></div>
-  <div class="carrousel active" style="background-image: url('<?= $hero_background[1] ?>'); "></div>
-  <div class="carrousel active" style="background-image: url('<?= $hero_background[2] ?>'); "></div>
+  <div class="carrousel active" style="background-image: url('<?= $hero_background[0] ?>'); opacity:1"></div>
+  <div class="carrousel active" style="background-image: url('<?= $hero_background[1] ?>'); opacity:0"></div>
+  <div class="carrousel active" style="background-image: url('<?= $hero_background[2] ?>'); opacity:0"></div>
   
   <form class="carrousel__form">
     <input type="radio" class="carrousel__radio" name="carrousel__radio">
@@ -33,7 +33,7 @@
 </section>
 
 <!-- section populaire -->
-<section class="populaire">
+<section class="populaire margin-top-50">
   <h3 class="text-center">Destinations populaires</h3>
   <br>
   <?php get_template_part("gabarit/populaire"); ?>
@@ -42,7 +42,7 @@
 <!-- Section rest api -->
 <section class="destination">
   <div class="destination__div">
-     <h3 class="destination__titre">Nos catégories</h3>
+     <h3 class="destination__titre margin-top-50">Nos catégories</h3>
     <?php extraire_list_categories("destination"); ?>
     <br>    
     <h3 class="destination__titre">Articles de la catégorie choisie</h3>
