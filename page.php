@@ -8,7 +8,6 @@
 ?>
 
 <?php get_header() ?>
-<h3>Trace à retirer -------------------- page d'exemple trace ------------------------</h3>
 <section class="populaire">
   <?php if (have_posts()) {
     while (have_posts()) {

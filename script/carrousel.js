@@ -22,13 +22,13 @@ let currentSlide = 0;
 
 function showSlide(index) {
 	// Cache toutes les diapositives
-	radios.forEach((radio) => slide.classList.remove("active"));
+	carrousels.forEach((carrousel) => carrousel.classList.remove("active"));
 	// Affiche la diapositive sélectionnée
-	radios[index].classList.add("active");
+	carrousels[index].classList.add("active");
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % radios.length;
+    currentSlide = (currentSlide + 1) % carrousels.length;
     showSlide(currentSlide);
 }
 

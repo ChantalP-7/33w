@@ -36,7 +36,7 @@ $piedpage_texteCreation = get_theme_mod('piedpage_texteCredit', 'Création : Cha
         <article class="piedpage__carte menu">      
             <?php				
             wp_nav_menu(array(
-                "menu" => "externe",
+                "menu" => "menu-externe",
                 "container" => "nav"
             ))
             ?>

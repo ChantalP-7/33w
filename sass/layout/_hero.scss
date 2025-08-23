@@ -149,6 +149,12 @@
 		justify-content: center;
 		gap: 10px;
 		align-items: center;
+
+		.active {
+			opacity: 1;
+		}
+
+
 	}
 
 	@media screen and (max-width: $point-rupture) {

@@ -55,7 +55,7 @@ function extraire_list_categories($nom_categorie)
     $list_categories = get_categories($tableau);
     echo "<ul class='list_categories'>";
     foreach ($list_categories as $categorie) {
-        echo "<li data-id='" . $categorie->term_id . "'>" . $categorie->name . '<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#fff"><path d="M0 0h24v24H0z" fill="none"></path><path d="M8 5v14l11-7z"></path></svg></li>';
+        echo "<li data-id='" . $categorie->term_id . "'>" . $categorie->name . '<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="#fff"><path d="M0 0h24v24H0z" fill="none"></path><path d="M8 5v14l11-7z"></path></svg></li>';
     }
     echo "</ul>";
 }

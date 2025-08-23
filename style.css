@@ -350,6 +350,9 @@ ul {
   gap: 10px;
   align-items: center;
 }
+.carrousel__form .active {
+  opacity: 1;
+}
 @media screen and (max-width: 1050px) {
   .carrousel {
     margin-left: 0px;
@@ -572,7 +575,6 @@ ul {
 }
 
 .erreur404__conteneur {
-  background-image: url("../../images/");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -585,7 +587,7 @@ ul {
   padding: 20px;
 }
 .erreur404__contenu {
-  width: 1000px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -593,7 +595,8 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.erreur404__contenu h1, .erreur404__contenu p {
+.erreur404__contenu h1,
+.erreur404__contenu p {
   color: black;
 }
 .erreur404__contenu {

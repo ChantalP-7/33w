@@ -242,7 +242,7 @@ function theme_31w_customize_register($wp_customize)
         'priority' => 30,
     ));
 
-     // image du background de la page 
+    // image background erreur 404
     /* créer le champ */
     $wp_customize->add_setting('erreur404_background', array(
         'default' => '',
@@ -253,7 +253,6 @@ function theme_31w_customize_register($wp_customize)
         'label' => __('Image en arrière plan', 'theme_31w'),
         'section' => 'erreur404_section',
     )));
-
 
     $wp_customize->add_setting('erreur404_couleur', array(
         'default' => '',

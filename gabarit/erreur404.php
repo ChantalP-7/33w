@@ -22,9 +22,9 @@ $erreur404_message = get_theme_mod('erreur404_message', 'Pas de panique, cher me
     } 
     
 </style>
-<div class="erreur404__conteneur">
+
     
-       <h1 class="erreur404__titre"><?php $erreur404_titre ?> Oops, vous avez échoué sur l'île 404 !</h1>
+       <h2 class="erreur404__titre"><?php $erreur404_titre ?> Oops, vous avez échoué sur l'île 404 !</h2>
         
         <div class="erreur404__contenu">
             
@@ -46,6 +46,3 @@ $erreur404_message = get_theme_mod('erreur404_message', 'Pas de panique, cher me
                 ?>   
                        
         </div>
-         
-</div>
-  
